@@ -1,8 +1,9 @@
 window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
-    version: "1.0.0",
+    version: "1.1.0",
     lastUpdated: "May 20, 2026",
+    evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
     currentFinding: "Alberta has moved from announcement to hiring, but key funding, governance, and rights-economy questions remain unanswered."
   },
   sources: [

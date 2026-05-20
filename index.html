@@ -214,14 +214,18 @@
           <a class="button secondary" href="https://github.com/DJNxDx/alberta-music-watch/issues" target="_blank" rel="noreferrer">View Queue</a>
         </div>
         <div class="intake-layout">
-          <form class="evidence-form" id="evidenceForm">
+          <form class="evidence-form" id="evidenceForm" enctype="multipart/form-data">
             <label>
               Source or organization name
               <input id="evidenceTitle" name="title" type="text" placeholder="Organization, person, program, or source title" required>
             </label>
             <label>
               Source links
-              <textarea id="evidenceLinks" name="links" rows="5" placeholder="One public URL per line, including PDFs or documents" required></textarea>
+              <textarea id="evidenceLinks" name="links" rows="5" placeholder="One public URL per line, including PDFs or documents"></textarea>
+            </label>
+            <label>
+              Source documents
+              <input id="evidenceDocuments" name="documents[]" type="file" accept=".pdf,.doc,.docx,.txt,.csv,.xls,.xlsx,.png,.jpg,.jpeg,.webp" multiple>
             </label>
             <label>
               What should the audit understand?
@@ -257,6 +261,10 @@
               <input id="evidencePublic" name="publicRecord" type="checkbox" required>
               <span>This submission uses public or shareable source material.</span>
             </label>
+            <label class="screen-reader-field" aria-hidden="true">
+              Website
+              <input id="evidenceWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
+            </label>
             <button class="button primary" type="submit">Submit Evidence</button>
             <p class="form-note" id="evidenceFormNote" aria-live="polite"></p>
           </form>
@@ -266,7 +274,7 @@
               <li>Public records and original documents carry the most weight.</li>
               <li>Stakeholder claims are logged, then verified against public evidence.</li>
               <li>Submissions can inform sources, entity profiles, funding questions, and daily findings.</li>
-              <li>Private, confidential, or personal records should not be submitted through this public queue.</li>
+              <li>Private, confidential, or personal records should not be submitted through this intake.</li>
             </ul>
           </aside>
         </div>

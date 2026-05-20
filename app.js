@@ -360,9 +360,11 @@
       URL.revokeObjectURL(url);
     });
 
-    document.getElementById("evidenceForm").addEventListener("submit", (event) => {
+    document.getElementById("evidenceForm").addEventListener("submit", async (event) => {
       event.preventDefault();
 
+      const form = event.currentTarget;
+      const formData = new FormData(form);
       const title = document.getElementById("evidenceTitle").value.trim();
       const links = document.getElementById("evidenceLinks").value.trim();
       const claim = document.getElementById("evidenceClaim").value.trim();
@@ -371,6 +373,13 @@
       const submitter = document.getElementById("evidenceSubmitter").value.trim() || "Not provided";
       const publicRecord = document.getElementById("evidencePublic").checked ? "Yes" : "No";
       const note = document.getElementById("evidenceFormNote");
+      const endpoint = data.meta.evidenceEndpoint;
+      const files = Array.from(document.getElementById("evidenceDocuments").files || []);
+
+      if (links === "" && files.length === 0) {
+        note.textContent = "Add at least one public source link or source document.";
+        return;
+      }
 
       const issueTitle = `[Evidence] ${title}`;
       const body = [
@@ -403,7 +412,34 @@
       issueUrl.searchParams.set("title", issueTitle);
       issueUrl.searchParams.set("body", body);
 
-      note.textContent = "Opening the evidence queue for review and submission.";
+      if (endpoint) {
+        note.textContent = "Submitting evidence to the intake queue.";
+        try {
+          const response = await fetch(endpoint, {
+            method: "POST",
+            body: formData
+          });
+          const result = await response.json();
+
+          if (!response.ok || !result.ok) {
+            throw new Error(result.error || "Submission failed.");
+          }
+
+          const issueText = result.issueUrl ? ` GitHub queue item: ${result.issueUrl}` : "";
+          note.textContent = `Evidence received. Reference: ${result.submissionId}.${issueText}`;
+          form.reset();
+          return;
+        } catch (error) {
+          if (files.length > 0) {
+            note.textContent = "The upload endpoint is not available yet. Submit public document links for now, or try again after the backend is deployed.";
+            return;
+          }
+          note.textContent = "The intake endpoint is not available yet. Opening the GitHub evidence queue instead.";
+        }
+      } else {
+        note.textContent = "Opening the GitHub evidence queue for review and submission.";
+      }
+
       window.open(issueUrl.toString(), "_blank", "noopener,noreferrer");
     });
   }

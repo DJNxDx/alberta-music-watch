@@ -2,3 +2,6 @@
 Icon?
 *.log
 .deploy/
+backend/config.local.php
+backend/private/evidence-submissions.jsonl
+backend/private/uploads/

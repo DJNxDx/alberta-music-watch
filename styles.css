@@ -892,6 +892,14 @@ summary {
   font-weight: 700;
 }
 
+.screen-reader-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .form-note {
   min-height: 24px;
   margin: 0;
