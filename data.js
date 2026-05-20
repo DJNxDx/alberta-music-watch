@@ -62,6 +62,24 @@ window.AMW_DATA = {
       note: "Classification standard relevant to the posted Senior Manager Zone 1 role."
     },
     {
+      id: "estimates-march11",
+      title: "Standing Committee estimates: Arts, Culture and Status of Women",
+      publisher: "Legislative Assembly of Alberta",
+      type: "Legislative record",
+      date: "March 11, 2026",
+      url: "https://docs.assembly.ab.ca/LADDAR_files/docs/committees/ef/legislature_31/session_2/20260311_1900_01_ef.pdf",
+      note: "Committee exchange on the Action Plan, music commissioner, venue pressures, annual music-sector funding, and whether the plan is new spending."
+    },
+    {
+      id: "assembly-may4-hansard",
+      title: "Alberta Hansard: Alberta Music Action Plan member statement",
+      publisher: "Legislative Assembly of Alberta",
+      type: "Legislative record",
+      date: "May 4, 2026",
+      url: "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20260504_1330_01_han.pdf",
+      note: "Government caucus statement describing the plan as industry-driven, supported by government, and intended to create a unified industry voice."
+    },
+    {
       id: "afa-launch",
       title: "The Alberta Music Action Plan debuts at Number 1",
       publisher: "Alberta Foundation for the Arts",
@@ -119,6 +137,14 @@ window.AMW_DATA = {
   briefItems: [
     {
       date: "May 20, 2026",
+      label: "Legislative record",
+      title: "Committee transcript sharpens the funding test",
+      summary: "In March estimates, the minister said the Action Plan focus is not new spending, but optimizing and modernizing existing programs. Opposition questions also pressed on an independent commissioner, venue pressures, agent-of-change policy, and grant-rule barriers.",
+      finding: "The core audit question is now clearer: implementation may be real while still depending on reallocation rather than additive investment.",
+      sourceIds: ["estimates-march11", "action-plan", "open-letter"]
+    },
+    {
+      date: "May 20, 2026",
       label: "Hiring",
       title: "Music Commissioner competition is now public",
       summary: "The province posted the Music Commissioner role on May 19, 2026. The posting closes June 8, 2026 and places the role inside the Ministry of Arts, Culture and Status of Women.",
@@ -151,9 +177,9 @@ window.AMW_DATA = {
     },
     {
       label: "Fiscal transparency",
-      score: 22,
+      score: 24,
       status: "Weak",
-      rationale: "The nearly $15M annual claim and $800K early-action grants still need recipient-level disclosure."
+      rationale: "The $14.8M annual claim is now repeated in estimates, but recipient-level schedules and early-action grant details remain unpublished."
     },
     {
       label: "Industry independence",
@@ -188,10 +214,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "In motion",
       officialAction: "Establish an Alberta Music Commission with a mandate to lead implementation of the provincial music action plan and function as a liaison between industry and government.",
-      evidence: "Commission page and Commissioner job posting are live. Appointment and budget are not yet public.",
+      evidence: "Commission page and Commissioner job posting are live. A May 4 government statement frames the Commission as a clear unified voice for industry, but appointment and budget are not yet public.",
       auditQuestion: "Will the Commission publish its budget, work plan, advisory structure, and annual outcomes?",
       risk: "A government-housed Commission could centralize sector advocacy unless safeguards exist.",
-      sourceIds: ["action-plan", "commission-page", "job-posting", "job-profile"]
+      sourceIds: ["action-plan", "commission-page", "job-posting", "job-profile", "assembly-may4-hansard"]
     },
     {
       id: "1.2",
@@ -224,22 +250,22 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "High scrutiny",
       officialAction: "Explore options to modernize how Alberta provides funding to ensure existing allocations have the most impact.",
-      evidence: "The job profile references options for redistributing existing funding toward new actions.",
+      evidence: "The job profile references options for redistributing existing funding toward new actions. In estimates, the minister said the plan is not focused on new spending and is about optimizing and modernizing existing programs.",
       auditQuestion: "Is any Commission activity funded by reducing direct artist, music-business, venue, or sector-development supports?",
       risk: "Modernization could become reallocation without new investment.",
-      sourceIds: ["action-plan", "job-profile", "open-letter"]
+      sourceIds: ["action-plan", "job-profile", "estimates-march11", "open-letter"]
     },
     {
       id: "4.1",
       priority: "Priority 4",
       title: "Explore under-utilized performance and rehearsal spaces",
       timing: "Long term, 2027-28",
-      status: "Not started",
+      status: "Announced",
       officialAction: "Explore how government can facilitate use of existing cost-efficient performance and rehearsal spaces.",
-      evidence: "No public implementation evidence found in version 1.",
+      evidence: "The minister told estimates that venue sustainability is being considered through the Action Plan. No public program instrument, eligibility, or space-access mechanism has been found.",
       auditQuestion: "Will this produce actual space access, local agreements, liability support, and affordability measures?",
       risk: "A study-only approach would not create usable space.",
-      sourceIds: ["action-plan"]
+      sourceIds: ["action-plan", "estimates-march11"]
     },
     {
       id: "4.2",
@@ -368,10 +394,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "High scrutiny",
       officialAction: "Working within existing budget allocations, research funding opportunities for artists, producers, and technical professions.",
-      evidence: "The plan explicitly limits this research to existing budget allocations.",
+      evidence: "The plan explicitly limits this research to existing budget allocations, and estimates testimony framed the plan as optimization rather than new spending.",
       auditQuestion: "Will this lead to direct, multi-year artist and music business investment?",
       risk: "Research within existing budgets may not add capacity to an undercapitalized sector.",
-      sourceIds: ["action-plan", "open-letter"]
+      sourceIds: ["action-plan", "estimates-march11", "open-letter"]
     },
     {
       id: "7.2",
@@ -392,8 +418,8 @@ window.AMW_DATA = {
       amount: 14800000,
       display: "$14.8M average per year",
       status: "Needs breakdown",
-      detail: "The Action Plan cites average annual music support since 2021 across grants, venues, education, festivals, artists, and organizations.",
-      sourceIds: ["action-plan", "open-letter"]
+      detail: "The Action Plan and estimates testimony cite average annual music support since 2021 across grants, venues, education, festivals, artists, and organizations.",
+      sourceIds: ["action-plan", "estimates-march11", "open-letter"]
     },
     {
       label: "Early-action grants",
@@ -421,12 +447,18 @@ window.AMW_DATA = {
     }
   ],
   fundingQuestions: [
+    "Does the March 11 estimates statement that the Action Plan is not focused on new spending mean implementation will rely primarily on reallocation and optimization?",
     "Is Commission funding new money or reallocated from existing arts and music supports?",
     "Will the province publish the full nearly $15M annual funding schedule by recipient, program, source, deliverable, and selection process?",
     "What portion of early-action funding directly reaches artists, music businesses, venues, or rights holders?",
     "Will Alberta commit that no existing direct music funding is reduced to fund Commission administration, research, websites, or reporting?"
   ],
   timeline: [
+    {
+      date: "March 11, 2026",
+      title: "Committee estimates scrutiny",
+      summary: "Opposition questions raise funding, independent commissioner, venue pressure, agent-of-change, and grant-rule issues; the minister frames the plan as optimization rather than new spending."
+    },
     {
       date: "April 2026",
       title: "Action Plan published",
@@ -467,7 +499,7 @@ window.AMW_DATA = {
       name: "Tanya Fir",
       type: "Elected official",
       role: "Minister responsible for the Action Plan and public framing of music as an economic sector.",
-      accountability: "Answer whether implementation includes new investment and independent industry safeguards.",
+      accountability: "Answer how optimization differs from reallocation, and whether implementation includes new investment and independent industry safeguards.",
       links: ["ministry", "commissioner"]
     },
     {
@@ -528,6 +560,18 @@ window.AMW_DATA = {
     }
   ],
   reactions: [
+    {
+      label: "Government caucus signal",
+      title: "Industry-driven and government-supported is now the official frame",
+      summary: "A May 4 member statement says the plan is industry-driven, supported by government, and intended to give the sector a unified voice. That is an implementation claim, not yet evidence of independent governance.",
+      sourceIds: ["assembly-may4-hansard"]
+    },
+    {
+      label: "Opposition scrutiny",
+      title: "Venue protection, independent commission, and grant rules are on the record",
+      summary: "The March 11 estimates exchange put venue displacement, agent-of-change policy, grant-rule barriers, the timing of a commissioner, and annual music investment into the legislative record.",
+      sourceIds: ["estimates-march11"]
+    },
     {
       label: "Founding critique",
       title: "Fiscal transparency, governance clarity, and music-rights strategy",
