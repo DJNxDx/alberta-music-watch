@@ -80,6 +80,15 @@ window.AMW_DATA = {
       note: "Government caucus statement describing the plan as industry-driven, supported by government, and intended to create a unified industry voice."
     },
     {
+      id: "assembly-may5-hansard",
+      title: "Alberta Hansard: Music Industry Support questions",
+      publisher: "Legislative Assembly of Alberta",
+      type: "Legislative record",
+      date: "May 5, 2026",
+      url: "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20260505_1330_01_han.pdf",
+      note: "Question period exchange where Joe Ceci raised touring, tourism, and separatism risks, and Minister Fir restated the Commission, Commissioner, nearly $15M annual support, and $800K early-action grants."
+    },
+    {
       id: "afa-launch",
       title: "The Alberta Music Action Plan debuts at Number 1",
       publisher: "Alberta Foundation for the Arts",
@@ -135,6 +144,14 @@ window.AMW_DATA = {
     }
   ],
   briefItems: [
+    {
+      date: "May 20, 2026",
+      label: "Question period",
+      title: "Opposition scrutiny now includes touring and tourism risk",
+      summary: "A May 5 exchange shows Joe Ceci pressing the minister on how broader political uncertainty could affect touring musicians, music tourism, and Alberta artists' ability to build careers across Canada.",
+      finding: "Priority 6.5 should be audited as more than tourism promotion: the province will need to show that music-sector strategy protects touring routes, reputation, and artist mobility.",
+      sourceIds: ["assembly-may5-hansard", "action-plan"]
+    },
     {
       date: "May 20, 2026",
       label: "Legislative record",
@@ -382,10 +399,10 @@ window.AMW_DATA = {
       timing: "Medium term, 2026-27",
       status: "Announced",
       officialAction: "Create and promote travel experiences driven by music events.",
-      evidence: "The job profile includes tourism and cultural engagement as growth channels.",
+      evidence: "The job profile includes tourism and cultural engagement as growth channels. A May 5 question period exchange put touring mobility, reputation, and music tourism risk into the legislative record.",
       auditQuestion: "Will tourism promotion revenue reach local artists, venues, festivals, and communities?",
-      risk: "Tourism branding may extract cultural value without strengthening the music base.",
-      sourceIds: ["action-plan", "job-profile"]
+      risk: "Tourism branding may extract cultural value without strengthening the music base or protecting artist mobility.",
+      sourceIds: ["action-plan", "job-profile", "assembly-may5-hansard"]
     },
     {
       id: "7.1",
@@ -427,7 +444,7 @@ window.AMW_DATA = {
       display: "$800K announced",
       status: "Needs recipient detail",
       detail: "Launch materials say additional grants went to organizations including NMC, Alberta Music, and West Anthem.",
-      sourceIds: ["afa-launch", "open-letter"]
+      sourceIds: ["afa-launch", "assembly-may5-hansard", "open-letter"]
     },
     {
       label: "AFA Music Individual Project Funding",
@@ -475,6 +492,11 @@ window.AMW_DATA = {
       summary: "Nich Davies asks for fiscal transparency, governance clarity, dedicated investment architecture, and music-rights strategy."
     },
     {
+      date: "May 5, 2026",
+      title: "Music Industry Support question period",
+      summary: "Joe Ceci raises touring, tourism, and separatism concerns; Minister Fir responds by pointing to the Action Plan, Commission, Commissioner, nearly $15M annual support, and $800K early-action grants."
+    },
+    {
       date: "May 19, 2026",
       title: "Commissioner posting opens",
       summary: "Government posts the Music Commissioner role as an open competition."
@@ -514,7 +536,7 @@ window.AMW_DATA = {
       id: "ceci",
       name: "Joe Ceci",
       type: "Opposition",
-      role: "Opposition MLA named in the public letter and relevant to legislative scrutiny.",
+      role: "Opposition MLA named in the public letter and now on the legislative record questioning music tourism, touring mobility, and broader political risk to the sector.",
       accountability: "Press for funding breakdowns, governance safeguards, and clear outcomes in public forums.",
       links: ["fir", "ministry"]
     },
@@ -568,9 +590,9 @@ window.AMW_DATA = {
     },
     {
       label: "Opposition scrutiny",
-      title: "Venue protection, independent commission, and grant rules are on the record",
-      summary: "The March 11 estimates exchange put venue displacement, agent-of-change policy, grant-rule barriers, the timing of a commissioner, and annual music investment into the legislative record.",
-      sourceIds: ["estimates-march11"]
+      title: "Venue protection, tourism risk, independent commission, and grant rules are on the record",
+      summary: "The legislative record now includes March estimates questions about venue displacement, agent-of-change policy, grant-rule barriers, commissioner timing, and annual music investment, plus May 5 question period scrutiny of tourism and touring risk.",
+      sourceIds: ["estimates-march11", "assembly-may5-hansard"]
     },
     {
       label: "Founding critique",
