@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A source-backed public tracker for Alberta's Music Action Plan, Alberta Music Commission, funding, governance, and industry impact.">
+    <title>Alberta Music Watch</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Alberta Music Watch home">
+        <span class="brand-mark" aria-hidden="true">AMW</span>
+        <span>
+          <strong>Alberta Music Watch</strong>
+          <small>Action Plan Audit</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#brief">Brief</a>
+        <a href="#tracker">Tracker</a>
+        <a href="#funding">Funding</a>
+        <a href="#commission">Commission</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Public-interest evidence portal</p>
+          <h1>Tracking whether Alberta's music strategy becomes an industry-building plan.</h1>
+          <p class="lede">
+            A reality-based audit of the Alberta Music Action Plan, Alberta Music Commission,
+            public funding, governance, and measurable outcomes for artists, music businesses,
+            venues, rights holders, and communities.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#tracker">View Promise Tracker</a>
+            <a class="button secondary" href="#sources">Open Source Library</a>
+          </div>
+        </div>
+
+        <aside class="hero-status" aria-label="Current status">
+          <div class="status-header">
+            <span class="status-dot"></span>
+            <span>Commission hiring active</span>
+          </div>
+          <div class="deadline" data-deadline="2026-06-08T23:59:59-06:00">
+            <span class="deadline-number" id="deadlineNumber">--</span>
+            <span class="deadline-label" id="deadlineLabel">days until posting closes</span>
+          </div>
+          <dl class="status-list">
+            <div>
+              <dt>Posting date</dt>
+              <dd>May 19, 2026</dd>
+            </div>
+            <div>
+              <dt>Closing date</dt>
+              <dd>June 8, 2026</dd>
+            </div>
+            <div>
+              <dt>Role level</dt>
+              <dd>Senior Manager Zone 1</dd>
+            </div>
+            <div>
+              <dt>Annual salary</dt>
+              <dd>$111,373 to $151,960</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="snapshot" aria-label="Audit snapshot">
+        <article>
+          <span class="metric-label">Overall status</span>
+          <strong>Partial implementation</strong>
+          <p>Commission structure is moving, but funding transparency and governance safeguards remain unresolved.</p>
+        </article>
+        <article>
+          <span class="metric-label">Transparency rating</span>
+          <strong>Weak</strong>
+          <p>The public plan cites major investment figures without a recipient-level funding schedule.</p>
+        </article>
+        <article>
+          <span class="metric-label">Control risk</span>
+          <strong>Elevated</strong>
+          <p>The Commissioner appears housed inside the ministry, reporting through government.</p>
+        </article>
+        <article>
+          <span class="metric-label">Evidence base</span>
+          <strong>12 sources</strong>
+          <p>Government pages, PDFs, legislative records, grant data, and public letters anchor version 1.</p>
+        </article>
+      </section>
+
+      <section class="section-shell" id="brief">
+        <div class="section-heading">
+          <p class="eyebrow">Daily brief</p>
+          <h2>What changed, what matters, what remains unanswered</h2>
+          <p>Last editorial update: <strong id="lastUpdated">May 20, 2026</strong></p>
+        </div>
+        <div class="brief-grid" id="briefGrid"></div>
+      </section>
+
+      <section class="section-shell rating-band" id="reality">
+        <div class="section-heading">
+          <p class="eyebrow">Reality check</p>
+          <h2>Implementation signals</h2>
+        </div>
+        <div class="ratings" id="ratings"></div>
+      </section>
+
+      <section class="section-shell" id="tracker">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Promise tracker</p>
+            <h2>Every Action Plan commitment needs a public evidence trail</h2>
+          </div>
+          <div class="controls" aria-label="Promise tracker filters">
+            <input id="promiseSearch" type="search" placeholder="Search actions">
+            <div class="segmented" id="promiseFilters" role="group" aria-label="Filter by status"></div>
+          </div>
+        </div>
+        <div class="promise-grid" id="promiseGrid"></div>
+      </section>
+
+      <section class="section-shell funding-section" id="funding">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Funding ledger</p>
+            <h2>Claimed investment must become auditable investment</h2>
+          </div>
+          <button class="button secondary" id="downloadData" type="button">Download Data</button>
+        </div>
+        <div class="funding-layout">
+          <div class="funding-bars" id="fundingBars"></div>
+          <div class="question-list">
+            <h3>Open funding questions</h3>
+            <ul id="fundingQuestions"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell commission-section" id="commission">
+        <div class="section-heading">
+          <p class="eyebrow">Commission watch</p>
+          <h2>Hiring, mandate, authority, and accountability</h2>
+        </div>
+        <div class="commission-layout">
+          <div class="timeline" id="commissionTimeline"></div>
+          <div class="mandate-box">
+            <h3>Current audit finding</h3>
+            <p>
+              The Commissioner role creates a real point of implementation inside government.
+              It does not, by itself, create arm's-length industry governance, dedicated new money,
+              or a rights-based music business strategy.
+            </p>
+            <div class="callout">
+              <strong>Key phrase to watch</strong>
+              <span>"Redistributing existing funding" appears in the internal job profile as a typical problem to solve.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="power-map">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Power map</p>
+            <h2>Institutions, elected officials, funders, and sector bodies</h2>
+          </div>
+          <div class="segmented" id="entityFilters" role="group" aria-label="Filter entities"></div>
+        </div>
+        <div class="entity-layout">
+          <div class="relationship-board" id="relationshipBoard" aria-label="Relationship map"></div>
+          <aside class="entity-detail" id="entityDetail" aria-live="polite">
+            <h3>Select an entity</h3>
+            <p>Relationship notes and sourced accountability questions will appear here.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-shell" id="reactions">
+        <div class="section-heading">
+          <p class="eyebrow">Industry signals</p>
+          <h2>Public reactions and missing voices</h2>
+        </div>
+        <div class="reaction-grid" id="reactionGrid"></div>
+      </section>
+
+      <section class="section-shell source-section" id="sources">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Source library</p>
+            <h2>Receipts before conclusions</h2>
+          </div>
+          <div class="controls">
+            <input id="sourceSearch" type="search" placeholder="Search sources">
+            <div class="segmented" id="sourceFilters" role="group" aria-label="Filter sources"></div>
+          </div>
+        </div>
+        <div class="source-grid" id="sourceGrid"></div>
+      </section>
+
+      <section class="methodology">
+        <div>
+          <p class="eyebrow">Method</p>
+          <h2>Editorial standard</h2>
+        </div>
+        <ol>
+          <li>Facts are sourced to public documents, direct records, or archived files.</li>
+          <li>Analysis is separated from evidence and updated when new records appear.</li>
+          <li>Unknowns are labelled as unknowns until documentation supports a finding.</li>
+          <li>Government and sector organizations should be able to answer open questions on the record.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Alberta Music Watch v1</span>
+      <span>Built for daily evidence updates and public accountability.</span>
+      <a href="mailto:team@hurryhardmusic.com?subject=Alberta%20Music%20Watch%20evidence">Submit evidence</a>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
