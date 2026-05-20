@@ -32,9 +32,12 @@ http://localhost:4173
 
 ## Deploy
 
-This is a static site. Deploy the text/site files in `alberta-music-watch` to Netlify, Vercel, Cloudflare Pages, GitHub Pages, or any static host.
+This is a static GitHub Pages site deployed from:
 
-For GitHub Pages, push this folder to a repo and publish from the root or from `/docs` after renaming or moving the folder.
+- Repository: https://github.com/DJNxDx/alberta-music-watch
+- Live domain: http://watch.albertamusic.live/
+
+The custom domain is set by `CNAME`, and Hostinger DNS points `watch.albertamusic.live` to `djnxdx.github.io`.
 
 ## Update workflow
 
