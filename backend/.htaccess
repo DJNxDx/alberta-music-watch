@@ -1,1 +1,9 @@
 Options -Indexes
+
+<Files "config.local.php">
+    Require all denied
+</Files>
+
+<FilesMatch "\.(zip|tar|gz|sql)$">
+    Require all denied
+</FilesMatch>
