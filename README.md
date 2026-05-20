@@ -35,7 +35,7 @@ http://localhost:4173
 This is a static GitHub Pages site deployed from:
 
 - Repository: https://github.com/DJNxDx/alberta-music-watch
-- Live domain: http://watch.albertamusic.live/
+- Live domain: https://watch.albertamusic.live/
 
 The custom domain is set by `CNAME`, and Hostinger DNS points `watch.albertamusic.live` to `djnxdx.github.io`.
 
