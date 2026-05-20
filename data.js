@@ -28,9 +28,9 @@ window.AMW_DATA = {
       id: "job-profile",
       title: "Music Commissioner job description, requisition 83893",
       publisher: "Government of Alberta",
-      type: "Local PDF",
+      type: "Local source",
       date: "Downloaded May 2026",
-      url: "sources/83893-music-commissioner-job-description.pdf",
+      url: "sources/83893-music-commissioner-job-description.html",
       note: "Internal position profile with duties, problem-solving expectations, and accountability language."
     },
     {
@@ -39,16 +39,16 @@ window.AMW_DATA = {
       publisher: "Government of Alberta",
       type: "PDF",
       date: "April 2026",
-      url: "sources/alberta-music-action-plan.pdf",
+      url: "https://open.alberta.ca/publications/alberta-music-action-plan",
       note: "Official plan, priorities, actions, Commission objectives, and monitoring language."
     },
     {
       id: "open-letter",
       title: "Open Letter: Alberta's Music Action Plan",
       publisher: "Nich Davies / hhmusic",
-      type: "Public letter",
+      type: "Local source",
       date: "May 1, 2026",
-      url: "sources/open-letter-alberta-music-action-plan-nich-davies.pdf",
+      url: "sources/open-letter-alberta-music-action-plan-nich-davies.html",
       note: "Public critique focused on fiscal transparency, governance, investment architecture, and IP strategy."
     },
     {

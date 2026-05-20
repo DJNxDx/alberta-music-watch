@@ -11,6 +11,7 @@ Version 1 of a source-backed public audit portal for Alberta's Music Action Plan
 - Relationship map for key institutions and public actors
 - Industry reaction structure
 - Source library with bundled PDFs
+- Lightweight local source pages for documents that are not stable public web pages
 - Downloadable JSON data from the browser
 
 ## Run locally
@@ -31,7 +32,7 @@ http://localhost:4173
 
 ## Deploy
 
-This is a static site. Deploy the `alberta-music-watch` folder to Netlify, Vercel, Cloudflare Pages, GitHub Pages, or any static host.
+This is a static site. Deploy the text/site files in `alberta-music-watch` to Netlify, Vercel, Cloudflare Pages, GitHub Pages, or any static host.
 
 For GitHub Pages, push this folder to a repo and publish from the root or from `/docs` after renaming or moving the folder.
 
