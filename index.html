@@ -22,6 +22,7 @@
         <a href="#funding">Funding</a>
         <a href="#commission">Commission</a>
         <a href="#sources">Sources</a>
+        <a href="#submit">Submit</a>
       </nav>
     </header>
 
@@ -203,6 +204,74 @@
         <div class="source-grid" id="sourceGrid"></div>
       </section>
 
+      <section class="section-shell intake-section" id="submit">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Evidence intake</p>
+            <h2>Put a source into the audit queue</h2>
+            <p>Submit public links, source documents, organization pages, statements, datasets, or records for review.</p>
+          </div>
+          <a class="button secondary" href="https://github.com/DJNxDx/alberta-music-watch/issues" target="_blank" rel="noreferrer">View Queue</a>
+        </div>
+        <div class="intake-layout">
+          <form class="evidence-form" id="evidenceForm">
+            <label>
+              Source or organization name
+              <input id="evidenceTitle" name="title" type="text" placeholder="Organization, person, program, or source title" required>
+            </label>
+            <label>
+              Source links
+              <textarea id="evidenceLinks" name="links" rows="5" placeholder="One public URL per line, including PDFs or documents" required></textarea>
+            </label>
+            <label>
+              What should the audit understand?
+              <textarea id="evidenceClaim" name="claim" rows="5" placeholder="Describe the evidence, context, claim, or missing public record" required></textarea>
+            </label>
+            <div class="form-grid">
+              <label>
+                Relevance
+                <select id="evidenceRelevance" name="relevance">
+                  <option>Music Action Plan promise</option>
+                  <option>Music Commission governance</option>
+                  <option>Funding or grant record</option>
+                  <option>Industry reaction</option>
+                  <option>Organization profile</option>
+                  <option>Conflict, access, or transparency concern</option>
+                </select>
+              </label>
+              <label>
+                Suggested weight
+                <select id="evidenceWeight" name="weight">
+                  <option>Primary record</option>
+                  <option>Direct stakeholder evidence</option>
+                  <option>Contextual background</option>
+                  <option>Claim needing verification</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Submitter context
+              <input id="evidenceSubmitter" name="submitter" type="text" placeholder="Optional name, organization, or role">
+            </label>
+            <label class="checkbox-label">
+              <input id="evidencePublic" name="publicRecord" type="checkbox" required>
+              <span>This submission uses public or shareable source material.</span>
+            </label>
+            <button class="button primary" type="submit">Submit Evidence</button>
+            <p class="form-note" id="evidenceFormNote" aria-live="polite"></p>
+          </form>
+          <aside class="intake-standard">
+            <h3>Review standard</h3>
+            <ul>
+              <li>Public records and original documents carry the most weight.</li>
+              <li>Stakeholder claims are logged, then verified against public evidence.</li>
+              <li>Submissions can inform sources, entity profiles, funding questions, and daily findings.</li>
+              <li>Private, confidential, or personal records should not be submitted through this public queue.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
       <section class="methodology">
         <div>
           <p class="eyebrow">Method</p>
@@ -220,7 +289,7 @@
     <footer class="site-footer">
       <span>Alberta Music Watch v1</span>
       <span>Built for daily evidence updates and public accountability.</span>
-      <a href="mailto:team@hurryhardmusic.com?subject=Alberta%20Music%20Watch%20evidence">Submit evidence</a>
+      <a href="#submit">Submit evidence</a>
     </footer>
 
     <script src="data.js"></script>

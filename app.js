@@ -359,6 +359,53 @@
       anchor.remove();
       URL.revokeObjectURL(url);
     });
+
+    document.getElementById("evidenceForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const title = document.getElementById("evidenceTitle").value.trim();
+      const links = document.getElementById("evidenceLinks").value.trim();
+      const claim = document.getElementById("evidenceClaim").value.trim();
+      const relevance = document.getElementById("evidenceRelevance").value;
+      const weight = document.getElementById("evidenceWeight").value;
+      const submitter = document.getElementById("evidenceSubmitter").value.trim() || "Not provided";
+      const publicRecord = document.getElementById("evidencePublic").checked ? "Yes" : "No";
+      const note = document.getElementById("evidenceFormNote");
+
+      const issueTitle = `[Evidence] ${title}`;
+      const body = [
+        "## Evidence submission",
+        "",
+        `**Source or organization:** ${title}`,
+        `**Relevance:** ${relevance}`,
+        `**Suggested weight:** ${weight}`,
+        `**Submitter context:** ${submitter}`,
+        `**Public/shareable material:** ${publicRecord}`,
+        "",
+        "## Source links",
+        links
+          .split(/\n+/)
+          .map((link) => `- ${link.trim()}`)
+          .join("\n"),
+        "",
+        "## What the audit should understand",
+        claim,
+        "",
+        "## Daily audit handling",
+        "- Verify source authenticity and publication date.",
+        "- Decide whether the source should be added to data.js, a local source archive, an entity profile, a funding question, or the daily brief.",
+        "- Keep claims separate from verified evidence.",
+        "",
+        `Submitted from Alberta Music Watch on ${new Date().toISOString()}`
+      ].join("\n");
+
+      const issueUrl = new URL("https://github.com/DJNxDx/alberta-music-watch/issues/new");
+      issueUrl.searchParams.set("title", issueTitle);
+      issueUrl.searchParams.set("body", body);
+
+      note.textContent = "Opening the evidence queue for review and submission.";
+      window.open(issueUrl.toString(), "_blank", "noopener,noreferrer");
+    });
   }
 
   function init() {

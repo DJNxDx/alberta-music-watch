@@ -42,7 +42,9 @@ a {
 }
 
 button,
-input {
+input,
+select,
+textarea {
   font: inherit;
 }
 
@@ -811,6 +813,106 @@ summary {
   text-decoration: none;
 }
 
+.intake-section {
+  max-width: none;
+  background: var(--paper);
+}
+
+.intake-section .section-heading,
+.intake-layout {
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intake-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 18px;
+  align-items: start;
+}
+
+.evidence-form,
+.intake-standard {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.evidence-form {
+  display: grid;
+  gap: 16px;
+}
+
+.evidence-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.evidence-form input,
+.evidence-form select,
+.evidence-form textarea {
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.evidence-form textarea {
+  resize: vertical;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.checkbox-label {
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+}
+
+.checkbox-label input {
+  min-height: auto;
+  margin: 3px 0 0;
+  padding: 0;
+}
+
+.checkbox-label span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.form-note {
+  min-height: 24px;
+  margin: 0;
+  color: var(--green);
+  font-weight: 800;
+}
+
+.intake-standard {
+  border-left: 4px solid var(--teal);
+}
+
+.intake-standard ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.intake-standard li {
+  margin-bottom: 12px;
+  color: var(--muted);
+}
+
 .empty-state {
   grid-column: 1 / -1;
   padding: 24px;
@@ -851,7 +953,8 @@ summary {
 
   .funding-layout,
   .commission-layout,
-  .entity-layout {
+  .entity-layout,
+  .intake-layout {
     grid-template-columns: 1fr;
   }
 
@@ -902,7 +1005,8 @@ summary {
   .source-grid,
   .relationship-board,
   .funding-row,
-  .methodology {
+  .methodology,
+  .form-grid {
     grid-template-columns: 1fr;
   }
 

@@ -1,0 +1,67 @@
+name: Evidence submission
+description: Submit public source material for the Alberta Music Action Plan audit queue.
+title: "[Evidence] "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source or organization
+      description: Name the organization, person, program, document, dataset, or public source.
+      placeholder: Alberta organization, public record, program, or source title
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Source links
+      description: Add one public URL per line, including PDFs or source documents.
+      placeholder: https://example.ca/source.pdf
+    validations:
+      required: true
+  - type: dropdown
+    id: relevance
+    attributes:
+      label: Relevance
+      options:
+        - Music Action Plan promise
+        - Music Commission governance
+        - Funding or grant record
+        - Industry reaction
+        - Organization profile
+        - Conflict, access, or transparency concern
+    validations:
+      required: true
+  - type: dropdown
+    id: weight
+    attributes:
+      label: Suggested weight
+      options:
+        - Primary record
+        - Direct stakeholder evidence
+        - Contextual background
+        - Claim needing verification
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What should the audit understand?
+      description: Keep claims separate from records. Note dates, people, programs, amounts, and affected communities where relevant.
+      placeholder: This source matters because...
+    validations:
+      required: true
+  - type: input
+    id: submitter
+    attributes:
+      label: Submitter context
+      description: Optional name, organization, or role.
+      placeholder: Optional
+    validations:
+      required: false
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public or shareable material
+      options:
+        - label: This submission uses public or shareable source material.
+          required: true

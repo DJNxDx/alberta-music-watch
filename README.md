@@ -11,6 +11,7 @@ Version 1 of a source-backed public audit portal for Alberta's Music Action Plan
 - Relationship map for key institutions and public actors
 - Industry reaction structure
 - Source library with bundled PDFs
+- Public evidence intake form backed by GitHub Issues
 - Lightweight local source pages for documents that are not stable public web pages
 - Downloadable JSON data from the browser
 
@@ -53,6 +54,9 @@ Recommended daily review list:
 - Legislative Assembly transcripts and committee records
 - West Anthem, Alberta Music, and National Music Centre updates
 - Public statements from elected officials and sector organizations
+- Open GitHub Issues with titles beginning `[Evidence]`
+
+Daily automation should work on a branch, verify every factual change against sources, commit updates, push the branch, and open a pull request for human review. Merging the PR deploys the update to GitHub Pages.
 
 ## Editorial standard
 
