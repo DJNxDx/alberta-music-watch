@@ -25,16 +25,23 @@
 }
 
 html {
+  scroll-padding-top: 96px;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  scroll-padding-top: 96px;
   background: var(--surface);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+}
+
+section[id],
+main[id] {
+  scroll-margin-top: 96px;
 }
 
 a {
@@ -316,8 +323,6 @@ dd {
 .snapshot article,
 .context-cards article,
 .brief-card,
-.brief-summary,
-.brief-history-panel,
 .rating-card,
 .promise-card,
 .funding-row,
@@ -402,6 +407,7 @@ dd {
   max-width: var(--max);
   margin: 0 auto;
   padding: 58px 28px;
+  scroll-margin-top: 96px;
 }
 
 .section-heading {
@@ -457,72 +463,6 @@ input[type="search"] {
   gap: 16px;
 }
 
-.brief-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
-  gap: 18px;
-  align-items: start;
-}
-
-.brief-main {
-  display: grid;
-  gap: 16px;
-}
-
-.brief-main .brief-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.brief-summary,
-.brief-history-panel {
-  padding: 20px;
-}
-
-.brief-summary p,
-.brief-history-panel p {
-  color: var(--muted);
-}
-
-.brief-history-panel {
-  position: sticky;
-  top: 88px;
-}
-
-.brief-history-list {
-  display: grid;
-  gap: 8px;
-  margin-top: 16px;
-}
-
-.brief-history-list button {
-  display: grid;
-  gap: 4px;
-  width: 100%;
-  padding: 12px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper);
-  color: var(--ink);
-  text-align: left;
-  cursor: pointer;
-}
-
-.brief-history-list button.active {
-  border-color: var(--blue);
-  background: var(--blue-2);
-}
-
-.brief-history-list span {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.brief-history-list strong {
-  font-size: 14px;
-}
-
 .brief-card,
 .rating-card,
 .promise-card,
@@ -534,6 +474,62 @@ input[type="search"] {
 .brief-card strong {
   display: block;
   margin: 14px 0;
+}
+
+.brief-ledger-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.brief-ledger-bar p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.brief-ledger-bar span {
+  flex: 0 0 auto;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.brief-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.brief-pagination button {
+  min-height: 38px;
+  min-width: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.brief-pagination button.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.brief-pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
 }
 
 .card-topline,
@@ -1057,7 +1053,6 @@ summary {
 
   .snapshot,
   .brief-grid,
-  .brief-main .brief-grid,
   .ratings,
   .promise-grid,
   .reaction-grid,
@@ -1068,14 +1063,12 @@ summary {
   .funding-layout,
   .commission-layout,
   .entity-layout,
-  .brief-layout,
   .context-layout,
   .intake-layout {
     grid-template-columns: 1fr;
   }
 
   .entity-detail,
-  .brief-history-panel,
   .context-copy {
     position: static;
   }
@@ -1086,6 +1079,19 @@ summary {
 }
 
 @media (max-width: 680px) {
+  html {
+    scroll-padding-top: 132px;
+  }
+
+  body {
+    scroll-padding-top: 132px;
+  }
+
+  section[id],
+  main[id] {
+    scroll-margin-top: 132px;
+  }
+
   .site-header {
     padding: 12px 16px;
     gap: 10px;
@@ -1136,7 +1142,6 @@ summary {
   .snapshot,
   .context-cards,
   .brief-grid,
-  .brief-main .brief-grid,
   .ratings,
   .promise-grid,
   .reaction-grid,
@@ -1160,6 +1165,7 @@ summary {
   .section-shell {
     padding-top: 42px;
     padding-bottom: 42px;
+    scroll-margin-top: 132px;
   }
 
   .hero-actions .button,
@@ -1168,8 +1174,6 @@ summary {
   }
 
   .hero-status,
-  .brief-summary,
-  .brief-history-panel,
   .brief-card,
   .rating-card,
   .promise-card,
@@ -1190,36 +1194,13 @@ summary {
     font-size: 56px;
   }
 
-  .brief-history-list {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    padding-bottom: 2px;
-    scrollbar-width: none;
+  .brief-ledger-bar {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
-  .brief-history-list::-webkit-scrollbar {
-    display: none;
-  }
-
-  .brief-history-list button {
-    min-width: 220px;
-  }
-
-  .brief-main {
-    display: contents;
-  }
-
-  .brief-summary {
-    order: 2;
-  }
-
-  .brief-history-panel {
-    order: 1;
-  }
-
-  .brief-main .brief-grid {
-    order: 3;
+  .brief-ledger-bar span {
+    width: 100%;
   }
 
   .controls,

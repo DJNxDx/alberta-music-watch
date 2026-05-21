@@ -8,11 +8,12 @@
     entityType: "All",
     sourceType: "All",
     sourceSearch: "",
-    activeBriefId: ""
+    briefPage: 0
   };
 
   const statusClass = (status) => status.toLowerCase().replace(/[^a-z0-9]+/g, "-");
   const moneyMax = Math.max(...data.funding.map((item) => item.amount));
+  const briefPageSize = 6;
 
   function sourceLinks(ids) {
     if (!ids || ids.length === 0) {
@@ -30,56 +31,21 @@
 
   function renderBrief() {
     const briefGrid = document.getElementById("briefGrid");
-    const briefSummary = document.getElementById("briefSummary");
-    const briefHistory = document.getElementById("briefHistory");
+    const briefCount = document.getElementById("briefCount");
+    const briefPagination = document.getElementById("briefPagination");
     const lastUpdated = document.getElementById("lastUpdated");
     lastUpdated.textContent = data.meta.lastUpdated;
 
-    const archive =
-      Array.isArray(data.briefArchive) && data.briefArchive.length > 0
-        ? data.briefArchive
-        : [
-            {
-              id: "latest",
-              date: data.meta.lastUpdated,
-              title: "Latest brief",
-              summary: data.meta.currentFinding,
-              items: data.briefItems || []
-            }
-          ];
+    const items = data.briefItems || [];
+    const totalPages = Math.max(1, Math.ceil(items.length / briefPageSize));
+    state.briefPage = Math.min(state.briefPage, totalPages - 1);
 
-    if (!state.activeBriefId) {
-      state.activeBriefId = archive[0].id;
-    }
+    const start = state.briefPage * briefPageSize;
+    const pageItems = items.slice(start, start + briefPageSize);
+    const end = start + pageItems.length;
+    briefCount.textContent = items.length === 0 ? "No brief records yet" : `Showing ${start + 1}-${end} of ${items.length}`;
 
-    const activeBrief = archive.find((brief) => brief.id === state.activeBriefId) || archive[0];
-    const activeItems = activeBrief.items || [];
-
-    briefSummary.innerHTML = `
-      <span class="metric-label">${activeBrief.date}</span>
-      <h3>${activeBrief.title}</h3>
-      <p>${activeBrief.summary}</p>
-    `;
-
-    briefHistory.innerHTML = archive
-      .map(
-        (brief) => `
-          <button type="button" class="${brief.id === activeBrief.id ? "active" : ""}" data-brief-id="${brief.id}">
-            <span>${brief.date}</span>
-            <strong>${brief.title}</strong>
-          </button>
-        `
-      )
-      .join("");
-
-    briefHistory.querySelectorAll("button").forEach((button) => {
-      button.addEventListener("click", () => {
-        state.activeBriefId = button.dataset.briefId;
-        renderBrief();
-      });
-    });
-
-    briefGrid.innerHTML = activeItems
+    briefGrid.innerHTML = pageItems
       .map(
         (item) => `
           <article class="brief-card">
@@ -96,9 +62,33 @@
       )
       .join("");
 
-    if (activeItems.length === 0) {
-      briefGrid.innerHTML = '<p class="empty-state">No brief items are archived for this date yet.</p>';
+    if (pageItems.length === 0) {
+      briefGrid.innerHTML = '<p class="empty-state">No brief records are available yet.</p>';
     }
+
+    if (totalPages <= 1) {
+      briefPagination.innerHTML = "";
+      return;
+    }
+
+    const pageButtons = Array.from({ length: totalPages }, (_, index) => {
+      const label = index + 1;
+      return `<button type="button" class="${index === state.briefPage ? "active" : ""}" data-page="${index}" aria-label="Brief page ${label}">${label}</button>`;
+    }).join("");
+
+    briefPagination.innerHTML = `
+      <button type="button" data-page="${state.briefPage - 1}" ${state.briefPage === 0 ? "disabled" : ""}>Newer</button>
+      ${pageButtons}
+      <button type="button" data-page="${state.briefPage + 1}" ${state.briefPage >= totalPages - 1 ? "disabled" : ""}>Older</button>
+    `;
+
+    briefPagination.querySelectorAll("button:not([disabled])").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.briefPage = Number(button.dataset.page);
+        renderBrief();
+        document.getElementById("brief").scrollIntoView({ block: "start" });
+      });
+    });
   }
 
   function renderRatings() {
