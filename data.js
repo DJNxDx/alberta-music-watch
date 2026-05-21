@@ -1,7 +1,7 @@
 window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
-    version: "1.1.0",
+    version: "1.2.0",
     lastUpdated: "May 20, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
     currentFinding: "Alberta has moved from announcement to hiring, but key funding, governance, and rights-economy questions remain unanswered."
@@ -183,6 +183,56 @@ window.AMW_DATA = {
       summary: "The internal profile includes identifying options for redistributing existing funding toward new Action Plan actions.",
       finding: "A no-net-loss commitment is needed before Commission administration or new programs draw from existing artist and sector supports.",
       sourceIds: ["job-profile", "action-plan", "open-letter"]
+    }
+  ],
+  briefArchive: [
+    {
+      id: "2026-05-20",
+      date: "May 20, 2026",
+      title: "Commission hiring, funding scrutiny, and touring risk",
+      summary: "The launch baseline captures the public Commissioner posting, early legislative scrutiny, and the core transparency questions the audit will track as implementation proceeds.",
+      items: [
+        {
+          date: "May 20, 2026",
+          label: "Question period",
+          title: "Opposition scrutiny now includes touring and tourism risk",
+          summary: "A May 5 exchange shows Joe Ceci pressing the minister on how broader political uncertainty could affect touring musicians, music tourism, and Alberta artists' ability to build careers across Canada.",
+          finding: "Priority 6.5 should be audited as more than tourism promotion: the province will need to show that music-sector strategy protects touring routes, reputation, and artist mobility.",
+          sourceIds: ["assembly-may5-hansard", "action-plan"]
+        },
+        {
+          date: "May 20, 2026",
+          label: "Legislative record",
+          title: "Committee transcript sharpens the funding test",
+          summary: "In March estimates, the minister said the Action Plan focus is not new spending, but optimizing and modernizing existing programs. Opposition questions also pressed on an independent commissioner, venue pressures, agent-of-change policy, and grant-rule barriers.",
+          finding: "The core audit question is now clearer: implementation may be real while still depending on reallocation rather than additive investment.",
+          sourceIds: ["estimates-march11", "action-plan", "open-letter"]
+        },
+        {
+          date: "May 20, 2026",
+          label: "Hiring",
+          title: "Music Commissioner competition is now public",
+          summary: "The province posted the Music Commissioner role on May 19, 2026. The posting closes June 8, 2026 and places the role inside the Ministry of Arts, Culture and Status of Women.",
+          finding: "This is real implementation capacity, but it is not independent governance.",
+          sourceIds: ["job-posting", "job-profile"]
+        },
+        {
+          date: "May 20, 2026",
+          label: "Governance",
+          title: "The role reports through government",
+          summary: "The job profile says the Commissioner reports to the Executive Director, Cultural Industries and supports the Minister's mandate.",
+          finding: "Industry advocacy will likely be mediated through government authority unless a public advisory structure is created.",
+          sourceIds: ["job-profile", "commission-page"]
+        },
+        {
+          date: "May 20, 2026",
+          label: "Funding",
+          title: "Funding source remains the central accountability question",
+          summary: "The internal profile includes identifying options for redistributing existing funding toward new Action Plan actions.",
+          finding: "A no-net-loss commitment is needed before Commission administration or new programs draw from existing artist and sector supports.",
+          sourceIds: ["job-profile", "action-plan", "open-letter"]
+        }
+      ]
     }
   ],
   ratings: [

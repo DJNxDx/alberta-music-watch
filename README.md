@@ -52,7 +52,7 @@ Backend code lives in `backend/`. Deploy it to a Hostinger PHP/HTML subdomain, c
 
 ## Update workflow
 
-Edit `data.js` to add daily updates, new sources, new funding records, promise status changes, and public reactions.
+Edit `data.js` to add daily updates, new sources, new funding records, promise status changes, and public reactions. Keep `briefItems` as the latest brief and add a matching entry to `briefArchive` so previous daily briefs remain available on the site instead of being overwritten.
 
 Recommended daily review list:
 
