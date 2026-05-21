@@ -19,7 +19,7 @@ $config = [
 
 $localConfig = __DIR__ . '/config.local.php';
 if (is_readable($localConfig)) {
-    $config = array_replace($config, require $localConfig);
+    $config = merge_config($config, require $localConfig);
 }
 
 apply_cors($config);
@@ -100,6 +100,17 @@ function apply_cors(array $config): void
     header('Access-Control-Allow-Methods: POST, OPTIONS');
     header('Access-Control-Allow-Headers: Content-Type');
     header('Content-Type: application/json; charset=utf-8');
+}
+
+function merge_config(array $base, array $override): array
+{
+    foreach ($override as $key => $value) {
+        if (in_array($key, ['github_token'], true) && trim((string)$value) === '') {
+            continue;
+        }
+        $base[$key] = $value;
+    }
+    return $base;
 }
 
 function origin_allowed(array $config): bool
