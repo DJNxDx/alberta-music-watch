@@ -26,18 +26,30 @@ if (duplicateSourceIds.length > 0) {
   throw new Error(`Duplicate source ids: ${duplicateSourceIds.join(", ")}`);
 }
 
+let previousBriefTime = Infinity;
+for (const [index, item] of (data.briefItems || []).entries()) {
+  for (const field of ["date", "label", "title", "summary", "finding"]) {
+    if (!item[field]) throw new Error(`briefItems[${index}] is missing ${field}.`);
+  }
+  if (!Array.isArray(item.sourceIds) || item.sourceIds.length === 0) {
+    throw new Error(`briefItems[${index}] must include at least one source id.`);
+  }
+
+  const currentBriefTime = Date.parse(item.date);
+  if (Number.isNaN(currentBriefTime)) {
+    throw new Error(`briefItems[${index}] has an unparseable date: ${item.date}`);
+  }
+  if (currentBriefTime > previousBriefTime) {
+    throw new Error("briefItems must be ordered newest first.");
+  }
+  previousBriefTime = currentBriefTime;
+}
+
 const missing = [];
 for (const section of ["briefItems", "promises", "funding", "reactions"]) {
   for (const [index, item] of (data[section] || []).entries()) {
     for (const id of item.sourceIds || []) {
       if (!sourceIds.has(id)) missing.push(`${section}[${index}] -> ${id}`);
-    }
-  }
-}
-for (const [briefIndex, brief] of (data.briefArchive || []).entries()) {
-  for (const [itemIndex, item] of (brief.items || []).entries()) {
-    for (const id of item.sourceIds || []) {
-      if (!sourceIds.has(id)) missing.push(`briefArchive[${briefIndex}].items[${itemIndex}] -> ${id}`);
     }
   }
 }
