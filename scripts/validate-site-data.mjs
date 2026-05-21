@@ -34,6 +34,13 @@ for (const section of ["briefItems", "promises", "funding", "reactions"]) {
     }
   }
 }
+for (const [briefIndex, brief] of (data.briefArchive || []).entries()) {
+  for (const [itemIndex, item] of (brief.items || []).entries()) {
+    for (const id of item.sourceIds || []) {
+      if (!sourceIds.has(id)) missing.push(`briefArchive[${briefIndex}].items[${itemIndex}] -> ${id}`);
+    }
+  }
+}
 if (missing.length > 0) {
   throw new Error(`Missing source references:\n${missing.join("\n")}`);
 }

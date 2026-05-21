@@ -7,7 +7,8 @@
     promiseSearch: "",
     entityType: "All",
     sourceType: "All",
-    sourceSearch: ""
+    sourceSearch: "",
+    activeBriefId: ""
   };
 
   const statusClass = (status) => status.toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -29,10 +30,56 @@
 
   function renderBrief() {
     const briefGrid = document.getElementById("briefGrid");
+    const briefSummary = document.getElementById("briefSummary");
+    const briefHistory = document.getElementById("briefHistory");
     const lastUpdated = document.getElementById("lastUpdated");
     lastUpdated.textContent = data.meta.lastUpdated;
 
-    briefGrid.innerHTML = data.briefItems
+    const archive =
+      Array.isArray(data.briefArchive) && data.briefArchive.length > 0
+        ? data.briefArchive
+        : [
+            {
+              id: "latest",
+              date: data.meta.lastUpdated,
+              title: "Latest brief",
+              summary: data.meta.currentFinding,
+              items: data.briefItems || []
+            }
+          ];
+
+    if (!state.activeBriefId) {
+      state.activeBriefId = archive[0].id;
+    }
+
+    const activeBrief = archive.find((brief) => brief.id === state.activeBriefId) || archive[0];
+    const activeItems = activeBrief.items || [];
+
+    briefSummary.innerHTML = `
+      <span class="metric-label">${activeBrief.date}</span>
+      <h3>${activeBrief.title}</h3>
+      <p>${activeBrief.summary}</p>
+    `;
+
+    briefHistory.innerHTML = archive
+      .map(
+        (brief) => `
+          <button type="button" class="${brief.id === activeBrief.id ? "active" : ""}" data-brief-id="${brief.id}">
+            <span>${brief.date}</span>
+            <strong>${brief.title}</strong>
+          </button>
+        `
+      )
+      .join("");
+
+    briefHistory.querySelectorAll("button").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.activeBriefId = button.dataset.briefId;
+        renderBrief();
+      });
+    });
+
+    briefGrid.innerHTML = activeItems
       .map(
         (item) => `
           <article class="brief-card">
@@ -48,6 +95,10 @@
         `
       )
       .join("");
+
+    if (activeItems.length === 0) {
+      briefGrid.innerHTML = '<p class="empty-state">No brief items are archived for this date yet.</p>';
+    }
   }
 
   function renderRatings() {

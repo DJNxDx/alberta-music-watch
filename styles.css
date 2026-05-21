@@ -314,7 +314,10 @@ dd {
 }
 
 .snapshot article,
+.context-cards article,
 .brief-card,
+.brief-summary,
+.brief-history-panel,
 .rating-card,
 .promise-card,
 .funding-row,
@@ -330,6 +333,42 @@ dd {
 
 .snapshot article {
   padding: 18px;
+}
+
+.context-section {
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.context-layout {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 28px;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 46px 28px;
+  align-items: start;
+}
+
+.context-copy {
+  position: sticky;
+  top: 92px;
+}
+
+.context-copy p {
+  color: var(--muted);
+}
+
+.context-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.context-cards article {
+  padding: 18px;
+  box-shadow: none;
 }
 
 .metric-label {
@@ -416,6 +455,72 @@ input[type="search"] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.brief-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 18px;
+  align-items: start;
+}
+
+.brief-main {
+  display: grid;
+  gap: 16px;
+}
+
+.brief-main .brief-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.brief-summary,
+.brief-history-panel {
+  padding: 20px;
+}
+
+.brief-summary p,
+.brief-history-panel p {
+  color: var(--muted);
+}
+
+.brief-history-panel {
+  position: sticky;
+  top: 88px;
+}
+
+.brief-history-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.brief-history-list button {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.brief-history-list button.active {
+  border-color: var(--blue);
+  background: var(--blue-2);
+}
+
+.brief-history-list span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.brief-history-list strong {
+  font-size: 14px;
 }
 
 .brief-card,
@@ -952,6 +1057,7 @@ summary {
 
   .snapshot,
   .brief-grid,
+  .brief-main .brief-grid,
   .ratings,
   .promise-grid,
   .reaction-grid,
@@ -962,25 +1068,40 @@ summary {
   .funding-layout,
   .commission-layout,
   .entity-layout,
+  .brief-layout,
+  .context-layout,
   .intake-layout {
     grid-template-columns: 1fr;
   }
 
-  .entity-detail {
+  .entity-detail,
+  .brief-history-panel,
+  .context-copy {
     position: static;
+  }
+
+  .context-cards {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 680px) {
   .site-header {
     padding: 12px 16px;
+    gap: 10px;
   }
 
   .site-nav {
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 4px;
-    overflow-x: visible;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .site-nav a {
@@ -992,13 +1113,20 @@ summary {
   .hero,
   .section-shell,
   .snapshot,
+  .context-layout,
   .methodology {
     padding-left: 16px;
     padding-right: 16px;
   }
 
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 28px;
+  }
+
   h1 {
-    font-size: 36px;
+    font-size: 34px;
+    line-height: 1.08;
   }
 
   .lede {
@@ -1006,7 +1134,9 @@ summary {
   }
 
   .snapshot,
+  .context-cards,
   .brief-grid,
+  .brief-main .brief-grid,
   .ratings,
   .promise-grid,
   .reaction-grid,
@@ -1016,6 +1146,80 @@ summary {
   .methodology,
   .form-grid {
     grid-template-columns: 1fr;
+  }
+
+  .snapshot {
+    margin: 0 auto 18px;
+  }
+
+  .context-layout {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .section-shell {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .hero-actions .button,
+  .split-heading .button {
+    width: 100%;
+  }
+
+  .hero-status,
+  .brief-summary,
+  .brief-history-panel,
+  .brief-card,
+  .rating-card,
+  .promise-card,
+  .funding-row,
+  .mandate-box,
+  .reaction-card,
+  .source-card,
+  .entity-detail {
+    padding: 16px;
+  }
+
+  .deadline {
+    margin: 18px 0;
+    padding: 18px;
+  }
+
+  .deadline-number {
+    font-size: 56px;
+  }
+
+  .brief-history-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .brief-history-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .brief-history-list button {
+    min-width: 220px;
+  }
+
+  .brief-main {
+    display: contents;
+  }
+
+  .brief-summary {
+    order: 2;
+  }
+
+  .brief-history-panel {
+    order: 1;
+  }
+
+  .brief-main .brief-grid {
+    order: 3;
   }
 
   .controls,

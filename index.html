@@ -18,6 +18,7 @@
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#brief">Brief</a>
+        <a href="#background">Background</a>
         <a href="#tracker">Tracker</a>
         <a href="#funding">Funding</a>
         <a href="#commission">Commission</a>
@@ -95,13 +96,58 @@
         </article>
       </section>
 
-      <section class="section-shell" id="brief">
-        <div class="section-heading">
-          <p class="eyebrow">Daily brief</p>
-          <h2>What changed, what matters, what remains unanswered</h2>
-          <p>Last editorial update: <strong id="lastUpdated">May 20, 2026</strong></p>
+      <section class="context-section" id="background">
+        <div class="context-layout">
+          <div class="context-copy">
+            <p class="eyebrow">Background</p>
+            <h2>Why this watch exists</h2>
+            <p>
+              Alberta announced a Music Action Plan in April 2026 and began staffing the
+              Alberta Music Commission in May. The plan could become useful industry
+              infrastructure, but only if public claims about investment, governance,
+              access, and outcomes can be checked against evidence.
+            </p>
+          </div>
+          <div class="context-cards" aria-label="Background summary">
+            <article>
+              <span class="metric-label">What changed</span>
+              <h3>The plan moved from announcement to hiring</h3>
+              <p>The Commissioner posting is public, with the role housed inside the ministry.</p>
+            </article>
+            <article>
+              <span class="metric-label">What is unresolved</span>
+              <h3>Budget, authority, and independence remain unclear</h3>
+              <p>The audit tracks whether implementation creates new capacity or redirects existing support.</p>
+            </article>
+            <article>
+              <span class="metric-label">How to read this site</span>
+              <h3>Evidence first, conclusions second</h3>
+              <p>Each update should point back to public records, source documents, or named stakeholder evidence.</p>
+            </article>
+          </div>
         </div>
-        <div class="brief-grid" id="briefGrid"></div>
+      </section>
+
+      <section class="section-shell" id="brief">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Daily brief</p>
+            <h2>What changed, what matters, what remains unanswered</h2>
+            <p>Last editorial update: <strong id="lastUpdated">May 20, 2026</strong></p>
+          </div>
+          <a class="button secondary" href="#sources">Audit Sources</a>
+        </div>
+        <div class="brief-layout">
+          <div class="brief-main">
+            <div class="brief-summary" id="briefSummary"></div>
+            <div class="brief-grid" id="briefGrid"></div>
+          </div>
+          <aside class="brief-history-panel" aria-label="Daily brief history">
+            <h3>Brief history</h3>
+            <p>Daily updates are archived so new findings add context instead of replacing it.</p>
+            <div class="brief-history-list" id="briefHistory"></div>
+          </aside>
+        </div>
       </section>
 
       <section class="section-shell rating-band" id="reality">
