@@ -25,6 +25,7 @@ https://api.albertamusic.live/submit-evidence.php
    - `github_token`: a fine-grained GitHub token with Issues read/write access to `DJNxDx/alberta-music-watch`.
    - `admin_token`: a long random secret for reading the private queue.
    - `allowed_origins`: keep `https://watch.albertamusic.live`.
+   - If using Hostinger environment variables instead of a literal token, set `AMW_GITHUB_TOKEN`; `submit-evidence.php` ignores a blank local `github_token` so the environment token can still be used.
 5. Confirm the `private/` folder is not web-readable. The included `.htaccess` denies direct access on Apache-compatible hosting.
 
 ## API
