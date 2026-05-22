@@ -10,5 +10,6 @@ return [
     'github_token' => getenv('AMW_GITHUB_TOKEN') ?: 'github_pat_or_fine_grained_token_with_issues_write',
     'admin_token' => 'replace_with_a_long_random_secret',
     'queue_path' => __DIR__ . '/private/evidence-submissions.jsonl',
+    'review_path' => __DIR__ . '/private/evidence-reviews.jsonl',
     'upload_dir' => __DIR__ . '/private/uploads',
 ];

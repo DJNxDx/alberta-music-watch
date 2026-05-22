@@ -71,6 +71,7 @@ $submission = [
     'suggestedWeight' => $weight,
     'submitterContext' => $submitter,
     'publicShareableMaterial' => $publicRecord,
+    'reviewStatus' => 'pending',
     'files' => $files,
     'request' => [
         'origin' => (string)($_SERVER['HTTP_ORIGIN'] ?? ''),
@@ -80,13 +81,12 @@ $submission = [
 ];
 
 write_queue($submission, $config);
-$issueUrl = create_github_issue($submission, $config);
 
 json_response([
     'ok' => true,
     'submissionId' => $submissionId,
-    'issueUrl' => $issueUrl,
     'queued' => true,
+    'reviewStatus' => 'pending',
     'fileCount' => count($files),
 ]);
 
@@ -253,85 +253,4 @@ function write_queue(array $submission, array $config): void
     if (file_put_contents($queuePath, $line, FILE_APPEND | LOCK_EX) === false) {
         json_response(['ok' => false, 'error' => 'Unable to write evidence queue.'], 500);
     }
-}
-
-function create_github_issue(array $submission, array $config): ?string
-{
-    $token = trim((string)$config['github_token']);
-    if ($token === '' || !function_exists('curl_init')) {
-        return null;
-    }
-
-    $repo = (string)$config['github_repo'];
-    $url = 'https://api.github.com/repos/' . $repo . '/issues';
-    $body = github_issue_body($submission);
-    $payload = json_encode([
-        'title' => '[Evidence] ' . $submission['sourceOrOrganization'],
-        'body' => $body,
-    ], JSON_UNESCAPED_SLASHES);
-
-    $ch = curl_init($url);
-    curl_setopt_array($ch, [
-        CURLOPT_POST => true,
-        CURLOPT_POSTFIELDS => $payload,
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_HTTPHEADER => [
-            'Accept: application/vnd.github+json',
-            'Authorization: Bearer ' . $token,
-            'Content-Type: application/json',
-            'User-Agent: Alberta-Music-Watch-Evidence-Intake',
-            'X-GitHub-Api-Version: 2022-11-28',
-        ],
-        CURLOPT_TIMEOUT => 12,
-    ]);
-
-    $response = curl_exec($ch);
-    $status = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
-
-    if ($response === false || $status < 200 || $status >= 300) {
-        return null;
-    }
-
-    $decoded = json_decode((string)$response, true);
-    return is_array($decoded) ? ($decoded['html_url'] ?? null) : null;
-}
-
-function github_issue_body(array $submission): string
-{
-    $links = count($submission['links']) === 0
-        ? '- No source links'
-        : implode("\n", array_map(fn ($link) => '- ' . $link, $submission['links']));
-    $files = count($submission['files']) === 0
-        ? '- No uploaded documents'
-        : implode("\n", array_map(
-            fn ($file) => '- ' . $file['originalName'] . ' (' . $file['size'] . ' bytes, sha256 ' . $file['sha256'] . ')',
-            $submission['files']
-        ));
-
-    return implode("\n", [
-        '## Evidence submission',
-        '',
-        '**Submission ID:** ' . $submission['id'],
-        '**Received:** ' . $submission['receivedAt'],
-        '**Source or organization:** ' . $submission['sourceOrOrganization'],
-        '**Relevance:** ' . $submission['relevance'],
-        '**Suggested weight:** ' . $submission['suggestedWeight'],
-        '**Submitter context:** ' . $submission['submitterContext'],
-        '**Public/shareable material:** ' . $submission['publicShareableMaterial'],
-        '',
-        '## Source links',
-        $links,
-        '',
-        '## Uploaded documents',
-        $files,
-        '',
-        '## What the audit should understand',
-        $submission['claim'],
-        '',
-        '## Daily audit handling',
-        '- Verify source authenticity and publication date.',
-        '- Decide whether the source should be added to data.js, a local source archive, an entity profile, a funding question, or the daily brief.',
-        '- Keep claims separate from verified evidence.',
-    ]);
 }
