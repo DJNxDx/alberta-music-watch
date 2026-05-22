@@ -2,7 +2,7 @@ window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
     version: "1.3.0",
-    lastUpdated: "May 20, 2026",
+    lastUpdated: "May 22, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
     currentFinding: "Alberta has moved from announcement to hiring, but key funding, governance, and rights-economy questions remain unanswered."
   },
@@ -98,6 +98,15 @@ window.AMW_DATA = {
       note: "Launch announcement and early-action grant framing."
     },
     {
+      id: "communitypress-may20",
+      title: "Opposition MLA questions Province’s new music plan",
+      publisher: "The Community Press (Local Journalism Initiative)",
+      type: "Media report",
+      date: "May 20, 2026",
+      url: "https://thecommunitypress.com/2026/05/20/opposition-mla-questions-provinces-new-music-plan/",
+      note: "LJI report quoting Minister Fir and NDP MLA Joe Ceci; reports four organizations sharing the $800K early-action grants (including Women in Music Canada), which are not fully enumerated in the AFA launch release."
+    },
+    {
       id: "afa-impact",
       title: "Impact of Funding",
       publisher: "Alberta Foundation for the Arts",
@@ -144,6 +153,14 @@ window.AMW_DATA = {
     }
   ],
   briefItems: [
+    {
+      date: "May 22, 2026",
+      label: "Reporting",
+      title: "A media report names four $800K early-action recipients",
+      summary: "A Local Journalism Initiative report says the province’s $800,000 in early-action grants is being shared by National Music Centre, Alberta Music, West Anthem and Women in Music Canada, while the government’s own public release has not published a complete recipient schedule.",
+      finding: "To make the Action Plan implementation auditable, the province should publish recipient-by-recipient amounts, terms, and deliverables for the early-action grants.",
+      sourceIds: ["communitypress-may20", "afa-launch", "action-plan"]
+    },
     {
       date: "May 20, 2026",
       label: "Question period",
