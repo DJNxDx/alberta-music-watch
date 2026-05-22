@@ -406,13 +406,7 @@
 
       const form = event.currentTarget;
       const formData = new FormData(form);
-      const title = document.getElementById("evidenceTitle").value.trim();
       const links = document.getElementById("evidenceLinks").value.trim();
-      const claim = document.getElementById("evidenceClaim").value.trim();
-      const relevance = document.getElementById("evidenceRelevance").value;
-      const weight = document.getElementById("evidenceWeight").value;
-      const submitter = document.getElementById("evidenceSubmitter").value.trim() || "Not provided";
-      const publicRecord = document.getElementById("evidencePublic").checked ? "Yes" : "No";
       const note = document.getElementById("evidenceFormNote");
       const endpoint = data.meta.evidenceEndpoint;
       const files = Array.from(document.getElementById("evidenceDocuments").files || []);
@@ -422,39 +416,8 @@
         return;
       }
 
-      const issueTitle = `[Evidence] ${title}`;
-      const body = [
-        "## Evidence submission",
-        "",
-        `**Source or organization:** ${title}`,
-        `**Relevance:** ${relevance}`,
-        `**Suggested weight:** ${weight}`,
-        `**Submitter context:** ${submitter}`,
-        `**Public/shareable material:** ${publicRecord}`,
-        "",
-        "## Source links",
-        links
-          .split(/\n+/)
-          .map((link) => `- ${link.trim()}`)
-          .join("\n"),
-        "",
-        "## What the audit should understand",
-        claim,
-        "",
-        "## Daily audit handling",
-        "- Verify source authenticity and publication date.",
-        "- Decide whether the source should be added to data.js, a local source archive, an entity profile, a funding question, or the daily brief.",
-        "- Keep claims separate from verified evidence.",
-        "",
-        `Submitted from Alberta Music Watch on ${new Date().toISOString()}`
-      ].join("\n");
-
-      const issueUrl = new URL("https://github.com/DJNxDx/alberta-music-watch/issues/new");
-      issueUrl.searchParams.set("title", issueTitle);
-      issueUrl.searchParams.set("body", body);
-
       if (endpoint) {
-        note.textContent = "Submitting evidence to the intake queue.";
+        note.textContent = "Submitting evidence to the review queue.";
         try {
           const response = await fetch(endpoint, {
             method: "POST",
@@ -466,22 +429,17 @@
             throw new Error(result.error || "Submission failed.");
           }
 
-          const issueText = result.issueUrl ? ` GitHub queue item: ${result.issueUrl}` : "";
-          note.textContent = `Evidence received. Reference: ${result.submissionId}.${issueText}`;
+          note.textContent = `Evidence received for review. Reference: ${result.submissionId}. Relevant public evidence may be posted after verification.`;
           form.reset();
           return;
         } catch (error) {
-          if (files.length > 0) {
-            note.textContent = "The upload endpoint is not available yet. Submit public document links for now, or try again after the backend is deployed.";
-            return;
-          }
-          note.textContent = "The intake endpoint is not available yet. Opening the GitHub evidence queue instead.";
+          note.textContent = "The review intake endpoint is not available right now. Please try again shortly.";
+          return;
         }
       } else {
-        note.textContent = "Opening the GitHub evidence queue for review and submission.";
+        note.textContent = "The review intake endpoint is not configured yet.";
+        return;
       }
-
-      window.open(issueUrl.toString(), "_blank", "noopener,noreferrer");
     });
   }
 

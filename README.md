@@ -11,7 +11,7 @@ Version 1 of a source-backed public audit portal for Alberta's Music Action Plan
 - Relationship map for key institutions and public actors
 - Industry reaction structure
 - Source library with bundled PDFs
-- Public evidence intake form with a Hostinger-friendly PHP backend and GitHub Issues fallback
+- Public evidence intake form with a Hostinger-friendly PHP backend and append-only review flow
 - Lightweight local source pages for documents that are not stable public web pages
 - Downloadable JSON data from the browser
 
@@ -48,7 +48,7 @@ The site is static on GitHub Pages, so the evidence form posts to a separate PHP
 https://api.albertamusic.live/submit-evidence.php
 ```
 
-Backend code lives in `backend/`. Deploy it to a Hostinger PHP/HTML subdomain, copy `backend/config.example.php` to `backend/config.local.php`, and add a fine-grained GitHub token with Issues read/write access so public submissions become `[Evidence]` GitHub issues without requiring submitters to have GitHub accounts. See `backend/README.md`.
+Backend code lives in `backend/`. Deploy it to a Hostinger PHP/HTML subdomain, copy `backend/config.example.php` to `backend/config.local.php`, and add a fine-grained GitHub token with Issues read/write access. Public submissions are stored first; the nightly audit reviews them and only relevant submissions become `[Evidence]` GitHub issues. See `backend/README.md`.
 
 ## Update workflow
 
@@ -64,9 +64,9 @@ Recommended daily review list:
 - Legislative Assembly transcripts and committee records
 - West Anthem, Alberta Music, and National Music Centre updates
 - Public statements from elected officials and sector organizations
-- Open GitHub Issues with titles beginning `[Evidence]`
+- Pending private evidence submissions and reviewed GitHub Issues with titles beginning `[Evidence]`
 
-Daily automation should work on a branch, verify every factual change against sources, commit updates, push the branch, self-review and fix its own PR branch, then open a normal pull request for review or auto-merge if repository settings allow it. Merging the PR deploys the update to GitHub Pages.
+Daily automation should work on a branch, verify every factual change against sources, classify pending private evidence submissions as `relevant`, `not_relevant`, or `needs_context`, publish only relevant submissions to GitHub Issues, commit updates, push the branch, self-review and fix its own PR branch, then open a normal pull request for review or auto-merge if repository settings allow it. Merging the PR deploys the update to GitHub Pages.
 
 ## Editorial standard
 

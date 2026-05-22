@@ -25,5 +25,8 @@ const payload = JSON.parse(fs.readFileSync(path, "utf8"));
 if (!payload.ok || !Array.isArray(payload.submissions)) {
   throw new Error("Evidence queue response was not in the expected format.");
 }
-console.log(`Evidence queue fetched: ${payload.submissions.length} submissions.`);
+const pending = Number.isFinite(payload.pendingCount) ? payload.pendingCount : payload.submissions.filter((submission) => {
+  return !submission.review || submission.reviewStatus === "pending";
+}).length;
+console.log(`Evidence queue fetched: ${payload.submissions.length} submissions, ${pending} pending review.`);
 NODE
