@@ -2,7 +2,7 @@ window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
     version: "1.3.0",
-    lastUpdated: "May 22, 2026",
+    lastUpdated: "May 23, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
     currentFinding: "Alberta has moved from announcement to hiring, but key funding, governance, and rights-economy questions remain unanswered."
   },
@@ -89,6 +89,15 @@ window.AMW_DATA = {
       note: "Question period exchange where Joe Ceci raised touring, tourism, and separatism risks, and Minister Fir restated the Commission, Commissioner, nearly $15M annual support, and $800K early-action grants."
     },
     {
+      id: "assembly-may7-hansard",
+      title: "Alberta Hansard: Alberta Music Action Plan member statement",
+      publisher: "Legislative Assembly of Alberta",
+      type: "Legislative record",
+      date: "May 7, 2026",
+      url: "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20260507_1000_01_han.pdf",
+      note: "Member statement where Joe Ceci cited consultation gaps (including choral groups), questioned whether working artists and venues would benefit, and argued the Commissioner needs authority, independence, resources, and measurable targets."
+    },
+    {
       id: "afa-launch",
       title: "The Alberta Music Action Plan debuts at Number 1",
       publisher: "Alberta Foundation for the Arts",
@@ -153,6 +162,14 @@ window.AMW_DATA = {
     }
   ],
   briefItems: [
+    {
+      date: "May 23, 2026",
+      label: "Member statement",
+      title: "Opposition adds consultation and independence tests",
+      summary: "A May 7 member statement by Joe Ceci said the Action Plan consultation left out choral groups, raised doubts about whether supports will reach working artists and venue operators, and warned the Music Commissioner role risks being symbolic without authority, independence, and resources.",
+      finding: "If the province wants the Commission to earn trust, it needs measurable targets and a public governance structure that can survive beyond a single ministerial mandate.",
+      sourceIds: ["assembly-may7-hansard", "action-plan"]
+    },
     {
       date: "May 22, 2026",
       label: "Reporting",
