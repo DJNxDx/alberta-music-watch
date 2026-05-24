@@ -2,7 +2,7 @@ window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
     version: "1.3.0",
-    lastUpdated: "May 23, 2026",
+    lastUpdated: "May 24, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
     currentFinding: "Alberta has moved from announcement to hiring, but key funding, governance, and rights-economy questions remain unanswered."
   },
@@ -42,6 +42,24 @@ window.AMW_DATA = {
       date: "April 2026",
       url: "https://open.alberta.ca/publications/alberta-music-action-plan",
       note: "Official plan, priorities, actions, Commission objectives, and monitoring language."
+    },
+    {
+      id: "action-plan-page",
+      title: "Alberta Music Action Plan landing page",
+      publisher: "Government of Alberta",
+      type: "Government page",
+      date: "Accessed May 24, 2026",
+      url: "https://www.alberta.ca/alberta-music-action-plan",
+      note: "Official landing page tying the Action Plan to the Commission, West Anthem ecosystem-study input, October 2024 sector engagement, and the opportunities resource page."
+    },
+    {
+      id: "amplifying-opportunities",
+      title: "Amplifying opportunities",
+      publisher: "Government of Alberta",
+      type: "Government page",
+      date: "Accessed May 24, 2026",
+      url: "https://www.alberta.ca/amplifying-opportunities",
+      note: "Official resource page under the Alberta Music Commission listing provincial funding programs, municipal arts bodies, national opportunities, industry associations, and West Anthem reports and toolkits."
     },
     {
       id: "open-letter",
@@ -163,6 +181,14 @@ window.AMW_DATA = {
   ],
   briefItems: [
     {
+      date: "May 24, 2026",
+      label: "Resource map",
+      title: "Official opportunities page widens the partner map",
+      summary: "The Alberta.ca Action Plan landing page now points to an Amplifying opportunities page that lists provincial funding programs, Calgary Arts Development, Edmonton Arts Council, Alberta Music, Women in Music Canada, West Anthem, and West Anthem reports and toolkits.",
+      finding: "The resource map is useful evidence of who the province is pointing artists toward, but it still needs to be matched with measurable programs, partner deliverables, funding amounts, and municipality-by-municipality support.",
+      sourceIds: ["action-plan-page", "amplifying-opportunities"]
+    },
+    {
       date: "May 23, 2026",
       label: "Member statement",
       title: "Opposition adds consultation and independence tests",
@@ -265,10 +291,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "In motion",
       officialAction: "Establish an Alberta Music Commission with a mandate to lead implementation of the provincial music action plan and function as a liaison between industry and government.",
-      evidence: "Commission page and Commissioner job posting are live. A May 4 government statement frames the Commission as a clear unified voice for industry, but appointment and budget are not yet public.",
+      evidence: "Commission page, Action Plan landing page, and Commissioner job posting are live. A May 4 government statement frames the Commission as a clear unified voice for industry, but appointment and budget are not yet public.",
       auditQuestion: "Will the Commission publish its budget, work plan, advisory structure, and annual outcomes?",
       risk: "A government-housed Commission could centralize sector advocacy unless safeguards exist.",
-      sourceIds: ["action-plan", "commission-page", "job-posting", "job-profile", "assembly-may4-hansard"]
+      sourceIds: ["action-plan", "action-plan-page", "commission-page", "job-posting", "job-profile", "assembly-may4-hansard"]
     },
     {
       id: "1.2",
@@ -277,10 +303,10 @@ window.AMW_DATA = {
       timing: "Medium term, 2026-27",
       status: "Announced",
       officialAction: "Create a Music Friendly program to assist Alberta municipalities in creating policies that encourage successful local music scenes.",
-      evidence: "The job profile assigns program development with department grant teams, including the Music Friendly Program.",
+      evidence: "The job profile assigns program development with department grant teams, including the Music Friendly Program. Alberta.ca's opportunities page points to Calgary Arts Development and Edmonton Arts Council as existing arts support routes, but no Music Friendly program terms are posted.",
       auditQuestion: "Will municipalities receive implementation grants, model bylaws, venue tools, and permitting guidance?",
       risk: "A recognition-only program would not solve venue, rehearsal, all-ages, licensing, or bylaw barriers.",
-      sourceIds: ["action-plan", "job-profile"]
+      sourceIds: ["action-plan", "job-profile", "amplifying-opportunities"]
     },
     {
       id: "2.1",
@@ -373,10 +399,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "Announced",
       officialAction: "Create awareness of collaborative opportunities to advance women's participation in Alberta's music industry.",
-      evidence: "No public implementation evidence found in version 1.",
+      evidence: "Alberta.ca's opportunities page lists Women in Music Canada - Alberta among music-industry associations. No public implementation outputs, funding terms, or deliverables have been found.",
       auditQuestion: "Will partnership outputs include mentorship, paid showcases, board representation, and company development?",
       risk: "Awareness activity alone may not address economic barriers.",
-      sourceIds: ["action-plan"]
+      sourceIds: ["action-plan", "amplifying-opportunities"]
     },
     {
       id: "6.1",
@@ -501,6 +527,7 @@ window.AMW_DATA = {
     "Does the March 11 estimates statement that the Action Plan is not focused on new spending mean implementation will rely primarily on reallocation and optimization?",
     "Is Commission funding new money or reallocated from existing arts and music supports?",
     "Will the province publish the full nearly $15M annual funding schedule by recipient, program, source, deliverable, and selection process?",
+    "Which resources listed on Alberta.ca's Amplifying opportunities page are formal Action Plan implementation partners, and which are referral links only?",
     "What portion of early-action funding directly reaches artists, music businesses, venues, or rights holders?",
     "Will Alberta commit that no existing direct music funding is reduced to fund Commission administration, research, websites, or reporting?"
   ],
@@ -548,7 +575,7 @@ window.AMW_DATA = {
       type: "Government",
       role: "Home ministry for the Commission and Action Plan implementation.",
       accountability: "Publish Commission budget, staffing, deliverables, funding sources, and reporting structure.",
-      links: ["commissioner", "afa", "media-fund-entity"]
+      links: ["commissioner", "afa", "media-fund-entity", "municipal-partners"]
     },
     {
       id: "fir",
@@ -564,7 +591,7 @@ window.AMW_DATA = {
       type: "Government role",
       role: "First Commissioner role intended to implement the Action Plan and liaise between government and industry.",
       accountability: "Report progress, publish metrics, disclose advisory processes, and clarify funding influence.",
-      links: ["ministry", "west-anthem", "alberta-music", "nmc"]
+      links: ["ministry", "west-anthem", "alberta-music", "nmc", "municipal-partners"]
     },
     {
       id: "ceci",
@@ -588,6 +615,14 @@ window.AMW_DATA = {
       type: "Institution",
       role: "Named Action Plan partner for increasing access to existing practice and performance spaces.",
       accountability: "Publish artist access metrics, pricing, eligibility, and provincial reach.",
+      links: ["commissioner", "ministry"]
+    },
+    {
+      id: "municipal-partners",
+      name: "Municipal arts partners",
+      type: "Municipal",
+      role: "Calgary Arts Development and Edmonton Arts Council are listed by Alberta.ca as arts funding and support routes relevant to the Action Plan ecosystem.",
+      accountability: "Clarify whether Music Friendly Program implementation will use municipal delivery agreements, model bylaws, grants, venue tools, or only referrals.",
       links: ["commissioner", "ministry"]
     },
     {
@@ -616,6 +651,12 @@ window.AMW_DATA = {
     }
   ],
   reactions: [
+    {
+      label: "Official resource map",
+      title: "Support routes are listed, but implementation agreements are not",
+      summary: "Alberta.ca links provincial funding programs, municipal arts councils, industry associations, and West Anthem reports through the Amplifying opportunities page. The page helps map stakeholders but does not answer partner deliverables or funding amounts.",
+      sourceIds: ["action-plan-page", "amplifying-opportunities"]
+    },
     {
       label: "Government caucus signal",
       title: "Industry-driven and government-supported is now the official frame",
