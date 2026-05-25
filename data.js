@@ -1,8 +1,8 @@
 window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
-    version: "1.3.0",
-    lastUpdated: "May 24, 2026",
+    version: "1.4.0",
+    lastUpdated: "May 25, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
     currentFinding: "Alberta has moved from announcement to hiring, but key funding, governance, and rights-economy questions remain unanswered."
   },
@@ -62,6 +62,24 @@ window.AMW_DATA = {
       note: "Official resource page under the Alberta Music Commission listing provincial funding programs, municipal arts bodies, national opportunities, industry associations, and West Anthem reports and toolkits."
     },
     {
+      id: "west-anthem-reports",
+      title: "Reports",
+      publisher: "West Anthem",
+      type: "Sector source",
+      date: "Accessed May 25, 2026",
+      url: "https://www.westanthem.com/reports/",
+      note: "West Anthem page grouping the Alberta Music Action Plan with prior ecosystem, Calgary, Edmonton, rural, and Alberta Music Cities Initiative strategy reports."
+    },
+    {
+      id: "music-cities-convention",
+      title: "Alberta Music Cities Convention 2026",
+      publisher: "Music Cities Events / Ticket Tailor",
+      type: "Event listing",
+      date: "Accessed May 25, 2026",
+      url: "https://www.tickettailor.com/events/musiccitiesevents/1961861",
+      note: "Public event listing naming West Anthem, Alberta Music, Studio Bell National Music Centre, Alberta government, Calgary government, and Scotlyn Foundation around the 2026 convention."
+    },
+    {
       id: "open-letter",
       title: "Open Letter: Alberta's Music Action Plan",
       publisher: "Nich Davies / hhmusic",
@@ -114,6 +132,15 @@ window.AMW_DATA = {
       date: "May 7, 2026",
       url: "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20260507_1000_01_han.pdf",
       note: "Member statement where Joe Ceci cited consultation gaps (including choral groups), questioned whether working artists and venues would benefit, and argued the Commissioner needs authority, independence, resources, and measurable targets."
+    },
+    {
+      id: "assembly-may7-votes",
+      title: "Alberta Votes and Proceedings: Alberta Music Action Plan tabled",
+      publisher: "Legislative Assembly of Alberta",
+      type: "Legislative record",
+      date: "May 7, 2026",
+      url: "https://docs.assembly.ab.ca/LADDAR_files/docs/houserecords/vp/legislature_31/session_2/20260507_1200_01_vp.pdf",
+      note: "Votes and Proceedings entry recording Minister Tanya Fir tabling the undated Alberta Music Action Plan as Sessional Paper 530/2025-26 with an attached French version."
     },
     {
       id: "afa-launch",
@@ -180,6 +207,14 @@ window.AMW_DATA = {
     }
   ],
   briefItems: [
+    {
+      date: "May 25, 2026",
+      label: "Provenance",
+      title: "The strategy trail is clearer than the delivery terms",
+      summary: "A May 7 Votes and Proceedings entry records Minister Fir tabling the undated Action Plan as Sessional Paper 530 with an attached French version, while West Anthem and Music Cities Convention pages map the sector, municipal, NMC and Alberta Music links around the strategy.",
+      finding: "This strengthens the evidence trail for provenance and partner lineage, but it is not proof of Commission independence, early-action grant deliverables, or Music Friendly Program terms.",
+      sourceIds: ["assembly-may7-votes", "west-anthem-reports", "music-cities-convention"]
+    },
     {
       date: "May 24, 2026",
       label: "Resource map",
@@ -291,10 +326,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "In motion",
       officialAction: "Establish an Alberta Music Commission with a mandate to lead implementation of the provincial music action plan and function as a liaison between industry and government.",
-      evidence: "Commission page, Action Plan landing page, and Commissioner job posting are live. A May 4 government statement frames the Commission as a clear unified voice for industry, but appointment and budget are not yet public.",
+      evidence: "Commission page, Action Plan landing page, Commissioner job posting, and the May 7 Votes and Proceedings record are live. The Assembly record describes the tabled Action Plan as prepared by the Alberta Music Commission with an attached French version; appointment and budget remain not public.",
       auditQuestion: "Will the Commission publish its budget, work plan, advisory structure, and annual outcomes?",
       risk: "A government-housed Commission could centralize sector advocacy unless safeguards exist.",
-      sourceIds: ["action-plan", "action-plan-page", "commission-page", "job-posting", "job-profile", "assembly-may4-hansard"]
+      sourceIds: ["action-plan", "action-plan-page", "commission-page", "job-posting", "job-profile", "assembly-may4-hansard", "assembly-may7-votes"]
     },
     {
       id: "1.2",
@@ -303,10 +338,10 @@ window.AMW_DATA = {
       timing: "Medium term, 2026-27",
       status: "Announced",
       officialAction: "Create a Music Friendly program to assist Alberta municipalities in creating policies that encourage successful local music scenes.",
-      evidence: "The job profile assigns program development with department grant teams, including the Music Friendly Program. Alberta.ca's opportunities page points to Calgary Arts Development and Edmonton Arts Council as existing arts support routes, but no Music Friendly program terms are posted.",
+      evidence: "The job profile assigns program development with department grant teams, including the Music Friendly Program. Alberta.ca's opportunities page points to Calgary Arts Development and Edmonton Arts Council as existing arts support routes, and West Anthem's reports page preserves the regional strategy lineage for Calgary, Edmonton and Alberta, but no Music Friendly program terms are posted.",
       auditQuestion: "Will municipalities receive implementation grants, model bylaws, venue tools, and permitting guidance?",
       risk: "A recognition-only program would not solve venue, rehearsal, all-ages, licensing, or bylaw barriers.",
-      sourceIds: ["action-plan", "job-profile", "amplifying-opportunities"]
+      sourceIds: ["action-plan", "job-profile", "amplifying-opportunities", "west-anthem-reports"]
     },
     {
       id: "2.1",
@@ -459,10 +494,10 @@ window.AMW_DATA = {
       timing: "Medium term, 2026-27",
       status: "Announced",
       officialAction: "Create and promote travel experiences driven by music events.",
-      evidence: "The job profile includes tourism and cultural engagement as growth channels. A May 5 question period exchange put touring mobility, reputation, and music tourism risk into the legislative record.",
+      evidence: "The job profile includes tourism and cultural engagement as growth channels. A May 5 question period exchange put touring mobility, reputation, and music tourism risk into the legislative record. A 2026 Music Cities Convention listing identifies West Anthem, Alberta Music, Studio Bell/NMC, Alberta government and Calgary government as partners/supporters around a global music-city event, but no Action Plan travel-experience program terms are posted.",
       auditQuestion: "Will tourism promotion revenue reach local artists, venues, festivals, and communities?",
       risk: "Tourism branding may extract cultural value without strengthening the music base or protecting artist mobility.",
-      sourceIds: ["action-plan", "job-profile", "assembly-may5-hansard"]
+      sourceIds: ["action-plan", "job-profile", "assembly-may5-hansard", "music-cities-convention"]
     },
     {
       id: "7.1",
@@ -558,6 +593,11 @@ window.AMW_DATA = {
       summary: "Joe Ceci raises touring, tourism, and separatism concerns; Minister Fir responds by pointing to the Action Plan, Commission, Commissioner, nearly $15M annual support, and $800K early-action grants."
     },
     {
+      date: "May 7, 2026",
+      title: "Action Plan tabled",
+      summary: "Votes and Proceedings records Minister Fir tabling the undated Action Plan as Sessional Paper 530 with an attached French version."
+    },
+    {
       date: "May 19, 2026",
       title: "Commissioner posting opens",
       summary: "Government posts the Music Commissioner role as an open competition."
@@ -605,7 +645,7 @@ window.AMW_DATA = {
       id: "west-anthem",
       name: "West Anthem",
       type: "Sector body",
-      role: "Music sector organization involved in ecosystem studies and strategy development.",
+      role: "Music sector organization involved in ecosystem studies and strategy development; its reports page groups the Action Plan with earlier ecosystem and regional music-city strategy reports.",
       accountability: "Clarify funding received, deliverables, role in implementation, and relationship to Commission decisions.",
       links: ["commissioner", "ministry"]
     },
@@ -613,7 +653,7 @@ window.AMW_DATA = {
       id: "nmc",
       name: "National Music Centre",
       type: "Institution",
-      role: "Named Action Plan partner for increasing access to existing practice and performance spaces.",
+      role: "Named Action Plan partner for increasing access to existing practice and performance spaces, and Studio Bell/NMC is named as a 2026 Music Cities Convention collaborator.",
       accountability: "Publish artist access metrics, pricing, eligibility, and provincial reach.",
       links: ["commissioner", "ministry"]
     },
@@ -621,7 +661,7 @@ window.AMW_DATA = {
       id: "municipal-partners",
       name: "Municipal arts partners",
       type: "Municipal",
-      role: "Calgary Arts Development and Edmonton Arts Council are listed by Alberta.ca as arts funding and support routes relevant to the Action Plan ecosystem.",
+      role: "Calgary Arts Development and Edmonton Arts Council are listed by Alberta.ca as arts funding and support routes relevant to the Action Plan ecosystem; Calgary government is named as a supporting partner for the 2026 Music Cities Convention.",
       accountability: "Clarify whether Music Friendly Program implementation will use municipal delivery agreements, model bylaws, grants, venue tools, or only referrals.",
       links: ["commissioner", "ministry"]
     },
@@ -629,7 +669,7 @@ window.AMW_DATA = {
       id: "alberta-music",
       name: "Alberta Music",
       type: "Sector body",
-      role: "Existing music industry association and early-action grant recipient named in launch context.",
+      role: "Existing music industry association, early-action grant recipient named in launch context, and 2026 Music Cities Convention collaborator.",
       accountability: "Clarify how Commission work complements existing association mandates and member services.",
       links: ["commissioner", "west-anthem"]
     },
@@ -651,6 +691,12 @@ window.AMW_DATA = {
     }
   ],
   reactions: [
+    {
+      label: "Partner lineage",
+      title: "Strategy trail is clearer than delivery terms",
+      summary: "Assembly records now show the Action Plan tabled with a French version, while West Anthem and Music Cities Convention pages map the strategy, report and event partners. These sources clarify provenance and relationships, not funding terms.",
+      sourceIds: ["assembly-may7-votes", "west-anthem-reports", "music-cities-convention"]
+    },
     {
       label: "Official resource map",
       title: "Support routes are listed, but implementation agreements are not",
