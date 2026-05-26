@@ -1,10 +1,10 @@
 window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
-    version: "1.4.0",
-    lastUpdated: "May 25, 2026",
+    version: "1.5.0",
+    lastUpdated: "May 26, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
-    currentFinding: "Alberta has moved from announcement to hiring, but key funding, governance, and rights-economy questions remain unanswered."
+    currentFinding: "Alberta has moved from announcement to hiring, but existing funding rules still leave creator-led music companies exposed."
   },
   sources: [
     {
@@ -188,6 +188,15 @@ window.AMW_DATA = {
       note: "Cultural Industry Grants and sound recording organization support context."
     },
     {
+      id: "music-org-operating",
+      title: "Music Organization Operating Grant",
+      publisher: "Government of Alberta",
+      type: "Program page",
+      date: "Accessed May 26, 2026",
+      url: "https://www.alberta.ca/music-organization-operating-grant",
+      note: "Official Alberta Media Fund sound-recording organization grant page listing the April 1 to June 1 annual intake, $5,000 to $125,000 grant range, formula basis, and eligibility language excluding artist-run labels and artist-entrepreneurs."
+    },
+    {
       id: "bc-amplify",
       title: "Amplify BC",
       publisher: "Province of British Columbia",
@@ -207,6 +216,14 @@ window.AMW_DATA = {
     }
   ],
   briefItems: [
+    {
+      date: "May 26, 2026",
+      label: "Media Fund",
+      title: "Existing sound-recording support excludes artist-run labels",
+      summary: "The official Music Organization Operating Grant page says Alberta Media Fund support for sound-recording organizations has an April 1 to June 1 annual intake and $5,000 to $125,000 grants, but eligible organizations must release recordings by people other than their principals, board members or stakeholders; artist-run labels and artist-entrepreneurs are explicitly ineligible.",
+      finding: "That sharpens the Action Plan funding-modernization test: Alberta may support sound-recording organizations while still lacking a public pathway for creator-led labels, rights holders, and artist entrepreneurs.",
+      sourceIds: ["music-org-operating", "media-fund", "action-plan"]
+    },
     {
       date: "May 25, 2026",
       label: "Provenance",
@@ -301,9 +318,9 @@ window.AMW_DATA = {
     },
     {
       label: "Direct creator impact",
-      score: 34,
+      score: 32,
       status: "Unproven",
-      rationale: "The plan includes useful coordination actions but few direct investment mechanisms for artists, rights holders, and music companies."
+      rationale: "The plan includes useful coordination actions, but existing sound-recording operating support excludes artist-run labels and artist-entrepreneurs."
     },
     {
       label: "Rights and IP strategy",
@@ -362,10 +379,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "High scrutiny",
       officialAction: "Explore options to modernize how Alberta provides funding to ensure existing allocations have the most impact.",
-      evidence: "The job profile references options for redistributing existing funding toward new actions. In estimates, the minister said the plan is not focused on new spending and is about optimizing and modernizing existing programs.",
-      auditQuestion: "Is any Commission activity funded by reducing direct artist, music-business, venue, or sector-development supports?",
-      risk: "Modernization could become reallocation without new investment.",
-      sourceIds: ["action-plan", "job-profile", "estimates-march11", "open-letter"]
+      evidence: "The job profile references options for redistributing existing funding toward new actions. In estimates, the minister said the plan is not focused on new spending and is about optimizing and modernizing existing programs. The existing Music Organization Operating Grant is tied to sound-recording organizations and excludes artist-run labels and artist-entrepreneurs.",
+      auditQuestion: "Is modernization creating new accountable routes for creator-led music companies, or only reworking existing organization-focused streams?",
+      risk: "Modernization could become reallocation without new investment, and could preserve eligibility gaps for artist-entrepreneurs.",
+      sourceIds: ["action-plan", "job-profile", "estimates-march11", "music-org-operating", "open-letter"]
     },
     {
       id: "4.1",
@@ -506,10 +523,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "High scrutiny",
       officialAction: "Working within existing budget allocations, research funding opportunities for artists, producers, and technical professions.",
-      evidence: "The plan explicitly limits this research to existing budget allocations, and estimates testimony framed the plan as optimization rather than new spending.",
-      auditQuestion: "Will this lead to direct, multi-year artist and music business investment?",
-      risk: "Research within existing budgets may not add capacity to an undercapitalized sector.",
-      sourceIds: ["action-plan", "estimates-march11", "open-letter"]
+      evidence: "The plan explicitly limits this research to existing budget allocations, and estimates testimony framed the plan as optimization rather than new spending. The current Music Organization Operating Grant supports eligible sound-recording organizations, but artist-run labels and artist-entrepreneurs are not eligible.",
+      auditQuestion: "Will this lead to direct, multi-year artist and music-business investment, including a public route for creator-led companies?",
+      risk: "Research within existing budgets may not add capacity to an undercapitalized sector or solve eligibility barriers for working artist-entrepreneurs.",
+      sourceIds: ["action-plan", "estimates-march11", "music-org-operating", "open-letter"]
     },
     {
       id: "7.2",
@@ -556,6 +573,14 @@ window.AMW_DATA = {
       status: "Unknown",
       detail: "No public annual operating budget for the Alberta Music Commission was identified in version 1.",
       sourceIds: ["commission-page", "job-profile"]
+    },
+    {
+      label: "Music Organization Operating Grant",
+      amount: 125000,
+      display: "$5K-$125K per eligible organization",
+      status: "Eligibility gap",
+      detail: "This Alberta Media Fund stream has an April 1 to June 1 annual intake and formula-based grants for eligible sound-recording organizations; the page says artist-run labels and artist-entrepreneurs are not eligible. The total program budget is not stated on the page.",
+      sourceIds: ["music-org-operating", "media-fund"]
     }
   ],
   fundingQuestions: [
@@ -564,6 +589,7 @@ window.AMW_DATA = {
     "Will the province publish the full nearly $15M annual funding schedule by recipient, program, source, deliverable, and selection process?",
     "Which resources listed on Alberta.ca's Amplifying opportunities page are formal Action Plan implementation partners, and which are referral links only?",
     "What portion of early-action funding directly reaches artists, music businesses, venues, or rights holders?",
+    "Will the Music Organization Operating Grant be modernized so artist-run labels and artist-entrepreneurs have an accountable public funding route?",
     "Will Alberta commit that no existing direct music funding is reduced to fund Commission administration, research, websites, or reporting?"
   ],
   timeline: [
@@ -685,12 +711,18 @@ window.AMW_DATA = {
       id: "media-fund-entity",
       name: "Alberta Media Fund",
       type: "Funder",
-      role: "Cultural industries funding context for sound recording organizations and possible music-video policy.",
-      accountability: "Clarify eligibility for labels, artist-owned companies, publishers, and music-video supports.",
+      role: "Cultural industries funding context for sound recording organizations and possible music-video policy; the Music Organization Operating Grant is the visible sound-recording organization operating stream.",
+      accountability: "Clarify whether modernization will add eligible routes for artist-run labels, creator-led music companies, publishers, and music-video supports.",
       links: ["ministry", "commissioner"]
     }
   ],
   reactions: [
+    {
+      label: "Eligibility gap",
+      title: "Creator-led companies still need a public route",
+      summary: "The official Music Organization Operating Grant supports eligible sound-recording organizations, but its eligibility rules exclude artist-run labels and artist-entrepreneurs. That makes funding modernization a practical test, not only a planning exercise.",
+      sourceIds: ["music-org-operating", "action-plan"]
+    },
     {
       label: "Partner lineage",
       title: "Strategy trail is clearer than delivery terms",
