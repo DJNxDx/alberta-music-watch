@@ -1,10 +1,10 @@
 window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
-    version: "1.5.0",
-    lastUpdated: "May 26, 2026",
+    version: "1.6.0",
+    lastUpdated: "May 27, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
-    currentFinding: "Alberta has moved from announcement to hiring, but existing funding rules still leave creator-led music companies exposed."
+    currentFinding: "Alberta has moved from announcement to hiring, but partner deliverables and existing funding rules remain exposed."
   },
   sources: [
     {
@@ -78,6 +78,15 @@ window.AMW_DATA = {
       date: "Accessed May 25, 2026",
       url: "https://www.tickettailor.com/events/musiccitiesevents/1961861",
       note: "Public event listing naming West Anthem, Alberta Music, Studio Bell National Music Centre, Alberta government, Calgary government, and Scotlyn Foundation around the 2026 convention."
+    },
+    {
+      id: "nmc-board-updates",
+      title: "National Music Centre Names Steve Kane as Chair of NMC Board of Directors and Announces Board Updates",
+      publisher: "National Music Centre / Studio Bell",
+      type: "Institution release",
+      date: "May 26, 2026",
+      url: "https://www.studiobell.ca/national-music-centre-names-steve-kane-as-chair-of-nmc-board-of-directors-and-announces-board-updates",
+      note: "Official NMC release naming Steve Kane as board chair, new directors, current board membership, Studio Bell's 10th-anniversary context, and NMC focus areas including artist and professional development plus performance and recording."
     },
     {
       id: "open-letter",
@@ -216,6 +225,14 @@ window.AMW_DATA = {
     }
   ],
   briefItems: [
+    {
+      date: "May 27, 2026",
+      label: "NMC governance",
+      title: "NMC board changes add partner-governance context",
+      summary: "A May 26 National Music Centre release names Steve Kane as board chair and adds Robert Frances, Patti-Anne Tarlton, and Ruth Spetz as directors, while describing NMC's focus areas as artist and professional development, performance and recording, education, exhibits, and music wellness.",
+      finding: "This is direct evidence of current NMC governance and capacity context, not evidence that Action Plan space-access commitments, early-action grant deliverables, or provincial funding terms have been published.",
+      sourceIds: ["nmc-board-updates", "action-plan", "afa-launch"]
+    },
     {
       date: "May 26, 2026",
       label: "Media Fund",
@@ -415,10 +432,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "Announced",
       officialAction: "Work with NMC to refine programming and increase access to practice and performance spaces.",
-      evidence: "NMC is named in the Action Plan and launch funding context.",
+      evidence: "NMC is named in the Action Plan and launch funding context. A May 26 NMC release documents current board leadership, new directors, and institutional focus areas including artist and professional development plus performance and recording, but it does not publish Action Plan space-access terms.",
       auditQuestion: "How much public money goes to NMC, and how many Alberta artists receive affordable access?",
       risk: "Institutional support may not equal broad provincial access.",
-      sourceIds: ["action-plan", "afa-launch"]
+      sourceIds: ["action-plan", "afa-launch", "nmc-board-updates"]
     },
     {
       id: "5.1",
@@ -679,7 +696,7 @@ window.AMW_DATA = {
       id: "nmc",
       name: "National Music Centre",
       type: "Institution",
-      role: "Named Action Plan partner for increasing access to existing practice and performance spaces, and Studio Bell/NMC is named as a 2026 Music Cities Convention collaborator.",
+      role: "Named Action Plan partner for increasing access to existing practice and performance spaces, Studio Bell/NMC is named as a 2026 Music Cities Convention collaborator, and NMC's May 26 release identifies current board leadership and institutional focus areas.",
       accountability: "Publish artist access metrics, pricing, eligibility, and provincial reach.",
       links: ["commissioner", "ministry"]
     },
@@ -717,6 +734,12 @@ window.AMW_DATA = {
     }
   ],
   reactions: [
+    {
+      label: "Partner governance",
+      title: "NMC leadership is public, deliverables are not",
+      summary: "NMC's May 26 board update is useful governance context for a named Action Plan partner, but it does not answer how provincial early-action funding or practice and performance-space access will be measured for Alberta artists.",
+      sourceIds: ["nmc-board-updates", "action-plan", "afa-launch"]
+    },
     {
       label: "Eligibility gap",
       title: "Creator-led companies still need a public route",
