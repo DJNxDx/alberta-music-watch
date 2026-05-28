@@ -2,9 +2,9 @@ window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
     version: "1.6.0",
-    lastUpdated: "May 27, 2026",
+    lastUpdated: "May 28, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
-    currentFinding: "Alberta has moved from announcement to hiring, but partner deliverables and existing funding rules remain exposed."
+    currentFinding: "Alberta has moved from announcement to hiring, and ministry-leadership context is clearer, but partner deliverables and existing funding rules remain exposed."
   },
   sources: [
     {
@@ -60,6 +60,15 @@ window.AMW_DATA = {
       date: "Accessed May 24, 2026",
       url: "https://www.alberta.ca/amplifying-opportunities",
       note: "Official resource page under the Alberta Music Commission listing provincial funding programs, municipal arts bodies, national opportunities, industry associations, and West Anthem reports and toolkits."
+    },
+    {
+      id: "deputy-ministers-council",
+      title: "Deputy Ministers' Council",
+      publisher: "Government of Alberta",
+      type: "Government page",
+      date: "Accessed May 28, 2026",
+      url: "https://www.alberta.ca/deputy-ministers-council",
+      note: "Official senior public service roster naming Kindy Joseph as Acting Deputy Minister for Arts, Culture and Status of Women and Kim Capstick as Deputy Minister for Indigenous Relations, Indigenous Pipeline Engagement, with Capstick's prior ACSW role tied to drafting the Music Action Plan."
     },
     {
       id: "west-anthem-reports",
@@ -225,6 +234,14 @@ window.AMW_DATA = {
     }
   ],
   briefItems: [
+    {
+      date: "May 28, 2026",
+      label: "Ministry leadership",
+      title: "Deputy-minister record clarifies implementation context",
+      summary: "Alberta.ca's Deputy Ministers' Council page lists Kindy Joseph as Acting Deputy Minister for Arts, Culture and Status of Women and Kim Capstick as Deputy Minister for Indigenous Relations, Indigenous Pipeline Engagement after serving as ACSW deputy and leading drafting of the Music Action Plan.",
+      finding: "This is direct evidence of ministry-leadership and provenance context. It does not show Commission independence, Indigenous-partner co-design terms, early-action grant deliverables, or new funding commitments.",
+      sourceIds: ["deputy-ministers-council", "action-plan", "job-posting"]
+    },
     {
       date: "May 27, 2026",
       label: "NMC governance",
@@ -456,10 +473,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "Announced",
       officialAction: "Work with Indigenous Relations and the federal Indigenous Music Office to discuss collaboration and barriers.",
-      evidence: "The plan names these relationship-building actions.",
+      evidence: "The plan names these relationship-building actions and its cross-government section names Indigenous Relations as a collaborator. The Deputy Ministers' Council page now gives public leadership context for Indigenous Relations and ACSW, but no public collaboration terms, Indigenous partner table, or dedicated resource commitment have been found.",
       auditQuestion: "Will Indigenous creators have direct program design authority and dedicated resources?",
       risk: "Relationship language can remain symbolic without budget and decision power.",
-      sourceIds: ["action-plan"]
+      sourceIds: ["action-plan", "deputy-ministers-council"]
     },
     {
       id: "5.3",
@@ -656,9 +673,9 @@ window.AMW_DATA = {
       id: "ministry",
       name: "Ministry of Arts, Culture and Status of Women",
       type: "Government",
-      role: "Home ministry for the Commission and Action Plan implementation.",
-      accountability: "Publish Commission budget, staffing, deliverables, funding sources, and reporting structure.",
-      links: ["commissioner", "afa", "media-fund-entity", "municipal-partners"]
+      role: "Home ministry for the Commission and Action Plan implementation; the Deputy Ministers' Council identifies Kindy Joseph as Acting Deputy Minister for ACSW.",
+      accountability: "Publish Commission budget, staffing, deliverables, funding sources, reporting structure, and how deputy-minister-level oversight connects to implementation decisions.",
+      links: ["commissioner", "afa", "media-fund-entity", "municipal-partners", "indigenous-relations"]
     },
     {
       id: "fir",
@@ -706,6 +723,14 @@ window.AMW_DATA = {
       type: "Municipal",
       role: "Calgary Arts Development and Edmonton Arts Council are listed by Alberta.ca as arts funding and support routes relevant to the Action Plan ecosystem; Calgary government is named as a supporting partner for the 2026 Music Cities Convention.",
       accountability: "Clarify whether Music Friendly Program implementation will use municipal delivery agreements, model bylaws, grants, venue tools, or only referrals.",
+      links: ["commissioner", "ministry"]
+    },
+    {
+      id: "indigenous-relations",
+      name: "Indigenous Relations",
+      type: "Government partner",
+      role: "Named in the Action Plan's cross-government collaboration section for Indigenous-creator considerations; the Deputy Ministers' Council lists Kim Capstick as Deputy Minister for Indigenous Relations, Indigenous Pipeline Engagement after serving as ACSW deputy.",
+      accountability: "Clarify whether Indigenous music partners will receive co-design authority, dedicated funding, public engagement records, and barriers reporting.",
       links: ["commissioner", "ministry"]
     },
     {
