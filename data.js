@@ -1,10 +1,10 @@
 window.AMW_DATA = {
   meta: {
     title: "Alberta Music Watch",
-    version: "1.6.0",
-    lastUpdated: "May 28, 2026",
+    version: "1.6.1",
+    lastUpdated: "May 29, 2026",
     evidenceEndpoint: "https://api.albertamusic.live/submit-evidence.php",
-    currentFinding: "Alberta has moved from announcement to hiring, and ministry-leadership context is clearer, but partner deliverables and existing funding rules remain exposed."
+    currentFinding: "Alberta has moved from announcement to hiring, and scholarship and ministry-leadership baselines are clearer, but partner deliverables and existing funding rules remain exposed."
   },
   sources: [
     {
@@ -215,6 +215,15 @@ window.AMW_DATA = {
       note: "Official Alberta Media Fund sound-recording organization grant page listing the April 1 to June 1 annual intake, $5,000 to $125,000 grant range, formula basis, and eligibility language excluding artist-run labels and artist-entrepreneurs."
     },
     {
+      id: "women-tech-arts-scholarship",
+      title: "Women in Technical and Applied Arts Scholarship",
+      publisher: "Government of Alberta",
+      type: "Scholarship program",
+      date: "Accessed May 29, 2026",
+      url: "https://www.alberta.ca/women-in-technical-and-applied-arts-scholarship",
+      note: "Official scholarship page stating the current application intake is closed, the program is expected to reopen in September 2026, and up to 20 recipients receive $2,500 each."
+    },
+    {
       id: "bc-amplify",
       title: "Amplify BC",
       publisher: "Province of British Columbia",
@@ -234,6 +243,14 @@ window.AMW_DATA = {
     }
   ],
   briefItems: [
+    {
+      date: "May 29, 2026",
+      label: "Scholarship baseline",
+      title: "Technical-arts scholarship baseline is now visible",
+      summary: "The official Women in Technical and Applied Arts Scholarship page says the current intake is closed, is expected to reopen in September 2026, and offers up to 20 awards of $2,500 from a $50,000 program total.",
+      finding: "That gives the Action Plan promise a measurable baseline, but it is not yet evidence of expanded music-sector access, music-specific outreach, added awards, or a changed eligibility model.",
+      sourceIds: ["women-tech-arts-scholarship", "action-plan"]
+    },
     {
       date: "May 28, 2026",
       label: "Ministry leadership",
@@ -461,10 +478,10 @@ window.AMW_DATA = {
       timing: "Short term, 2026",
       status: "Announced",
       officialAction: "Work with ministry partners to explore increased access to the scholarship program.",
-      evidence: "No public implementation evidence found in version 1.",
+      evidence: "The official scholarship page says the current intake is closed, is expected to reopen in September 2026, and offers up to 20 awards of $2,500 each. No Action Plan-specific expansion terms, music-sector outreach plan, or changed eligibility model have been found.",
       auditQuestion: "Will eligibility, outreach, award numbers, and music-specific technical roles be reported?",
       risk: "Exploration without expansion may not change access.",
-      sourceIds: ["action-plan"]
+      sourceIds: ["action-plan", "women-tech-arts-scholarship"]
     },
     {
       id: "5.2",
@@ -615,6 +632,14 @@ window.AMW_DATA = {
       status: "Eligibility gap",
       detail: "This Alberta Media Fund stream has an April 1 to June 1 annual intake and formula-based grants for eligible sound-recording organizations; the page says artist-run labels and artist-entrepreneurs are not eligible. The total program budget is not stated on the page.",
       sourceIds: ["music-org-operating", "media-fund"]
+    },
+    {
+      label: "Women in Technical and Applied Arts Scholarship",
+      amount: 50000,
+      display: "$50K program total",
+      status: "Current intake closed",
+      detail: "The official page says up to 20 recipients receive $2,500 each and the scholarship is expected to reopen in September 2026. No Action Plan-specific access expansion is posted.",
+      sourceIds: ["women-tech-arts-scholarship", "action-plan"]
     }
   ],
   fundingQuestions: [
@@ -759,6 +784,12 @@ window.AMW_DATA = {
     }
   ],
   reactions: [
+    {
+      label: "Scholarship baseline",
+      title: "A named access promise still needs expansion terms",
+      summary: "The scholarship page now provides a $50,000, 20-award baseline and a September 2026 reopening expectation. The Action Plan still needs to show whether music-sector access will actually expand.",
+      sourceIds: ["women-tech-arts-scholarship", "action-plan"]
+    },
     {
       label: "Partner governance",
       title: "NMC leadership is public, deliverables are not",
