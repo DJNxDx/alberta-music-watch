@@ -4,11 +4,15 @@ import vm from "node:vm";
 
 const root = new URL("../", import.meta.url);
 const dataPath = new URL("data.js", root);
+const dataUpdatesPath = new URL("data-updates.js", root);
 const indexPath = new URL("index.html", root);
-const filesToScan = ["index.html", "data.js", "README.md", "app.js"];
+const filesToScan = ["index.html", "data.js", "data-updates.js", "README.md", "app.js"];
 
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(dataPath, "utf8"), sandbox, { filename: "data.js" });
+if (fs.existsSync(dataUpdatesPath)) {
+  vm.runInNewContext(fs.readFileSync(dataUpdatesPath, "utf8"), sandbox, { filename: "data-updates.js" });
+}
 
 const data = sandbox.window.AMW_DATA;
 if (!data || !Array.isArray(data.sources)) {

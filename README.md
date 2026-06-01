@@ -50,9 +50,13 @@ https://api.albertamusic.live/submit-evidence.php
 
 Backend code lives in `backend/`. Deploy it to a Hostinger PHP/HTML subdomain, copy `backend/config.example.php` to `backend/config.local.php`, and add a fine-grained GitHub token with Issues read/write access. Public submissions are stored first; the nightly audit reviews them and only relevant submissions become `[Evidence]` GitHub issues. See `backend/README.md`.
 
+## Nightly automation runbook
+
+The durable operating memory for the daily audit lives in `docs/nightly-audit-runbook.md`. The Codex automation should run from `/Users/hhmusicnichdavies/Documents/Alberta Music Watch`, read the runbook at the start of each run, review private submissions, inspect reviewed `[Evidence]` issues, add source-backed brief records, validate the site, and publish through a normal PR.
+
 ## Update workflow
 
-Edit `data.js` to add daily updates, new sources, new funding records, promise status changes, and public reactions. Add new daily brief findings as new mini-records at the top of `briefItems`; do not delete older brief records unless they are factually wrong and the PR explains why.
+Use `data.js` as the baseline dataset and `data-updates.js` for small reviewed daily additions. Add new daily brief findings as new mini-records at the top of `briefItems`; do not delete older brief records unless they are factually wrong and the PR explains why. For larger restructuring, fold the update layer back into `data.js` in a dedicated cleanup PR.
 
 Recommended daily review list:
 
