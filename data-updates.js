@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.3",
-    lastUpdated: "June 2, 2026",
-    currentFinding: "Alberta has moved from announcement to hiring, reviewed public submissions and named stakeholder reactions are sharpening the policy tests, and partner deliverables plus existing funding rules remain exposed."
+    version: "1.6.4",
+    lastUpdated: "June 3, 2026",
+    currentFinding: "Alberta's Commissioner competition remains open until June 8, and public recruitment and stakeholder signals are framing the role around policy, investment, partnerships, and measurable implementation capacity while funding and governance details remain exposed."
   },
   sources: [
+    {
+      id: "sound-diplomacy-linkedin-june3",
+      title: "Sound Diplomacy public LinkedIn activity on Alberta Music Commissioner recruitment",
+      publisher: "Sound Diplomacy / LinkedIn",
+      type: "Public recruitment signal",
+      date: "Accessed June 3, 2026",
+      url: "https://www.linkedin.com/company/sound-diplomacy/",
+      note: "Public company activity describes Alberta's Music Commissioner hiring as a permanent senior role inside Arts, Culture and Status of Women focused on Action Plan implementation, policy, investment, industry partnership, senior advice, multi-stakeholder initiatives, and external representation. Treat as stakeholder and public recruitment framing, not official Government of Alberta terms beyond the cited job posting."
+    },
     {
       id: "jinting-zhao-linkedin-may26",
       title: "The Alberta Music Action Plan is an Invitation, Not a Solution",
@@ -26,6 +35,14 @@ window.AMW_DATA_UPDATES = {
   ],
   briefItems: [
     {
+      date: "June 3, 2026",
+      label: "Recruitment signal",
+      title: "Commissioner hiring is being framed as policy capacity",
+      summary: "Sound Diplomacy's public LinkedIn activity is now amplifying the Alberta Music Commissioner competition and frames the role around Action Plan implementation, policy, investment, industry partnership, senior advice, multi-stakeholder work, and external representation; the official posting still closes June 8, 2026.",
+      finding: "This broader sector-facing recruitment signal reinforces that the first appointment should be audited against practical policy and investment capacity, not only public promotion. It does not show who will be appointed, whether the Commission will be independent, or whether new funding will be additive.",
+      sourceIds: ["sound-diplomacy-linkedin-june3", "job-posting", "commission-page"]
+    },
+    {
       date: "June 2, 2026",
       label: "Stakeholder reaction",
       title: "Commissioner role is being judged as policy capacity",
@@ -43,6 +60,12 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   reactions: [
+    {
+      label: "Recruitment signal",
+      title: "External music-policy actors are watching the appointment",
+      summary: "Sound Diplomacy's public recruitment signal treats the Alberta role as policy, investment, industry-partnership, and external-representation capacity. That is useful expectations evidence, not proof of implementation outcomes.",
+      sourceIds: ["sound-diplomacy-linkedin-june3", "job-posting", "commission-page"]
+    },
     {
       label: "Stakeholder framing",
       title: "The Commissioner is being judged as policy capacity",
