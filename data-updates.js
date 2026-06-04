@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.4",
-    lastUpdated: "June 3, 2026",
-    currentFinding: "Alberta's Commissioner competition remains open until June 8, and public recruitment and stakeholder signals are framing the role around policy, investment, partnerships, and measurable implementation capacity while funding and governance details remain exposed."
+    version: "1.6.5",
+    lastUpdated: "June 4, 2026",
+    currentFinding: "Alberta's Commissioner competition remains open until June 8, and the emerging public implementation environment now includes a Calgary Music Cities Convention agenda that foregrounds municipal policy, Indigenous music economies, tourism, workforce, and community-empowerment themes while Commission authority, budget, and partner deliverables remain undocumented."
   },
   sources: [
+    {
+      id: "music-cities-events-alberta-2026",
+      title: "Alberta Music Cities Convention 2026",
+      publisher: "Music Cities Events / Sound Diplomacy",
+      type: "Event and policy-program page",
+      date: "Accessed June 4, 2026",
+      url: "https://www.musiccitiesevents.com/alberta",
+      note: "Public page for the Sept. 29-Oct. 1, 2026 Calgary convention, describing a policy-focused program around city planning, economic development, jobs, tourism, skills, venues, Indigenous music economies, climate, land use, community empowerment, city-level policy advocacy, and DEI. Treat as forum and agenda context, not evidence of delivered Action Plan outcomes."
+    },
     {
       id: "sound-diplomacy-linkedin-june3",
       title: "Sound Diplomacy public LinkedIn activity on Alberta Music Commissioner recruitment",
@@ -34,6 +43,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "June 4, 2026",
+      label: "Policy forum",
+      title: "Music Cities Convention agenda widens the implementation test",
+      summary: "The public Alberta Music Cities Convention page frames the September 29-October 1 Calgary event around policymakers, industry leaders, city planning, jobs, tourism, talent pipelines, Indigenous music economies, climate, land use, community empowerment, city-level policy advocacy, and DEI.",
+      finding: "This is useful context for municipal and Indigenous-partner accountability because it shows where Action Plan-adjacent policy conversations are being convened. It does not show that the Music Commission has a workplan, budget, partner deliverables, or formal authority over municipal programs.",
+      sourceIds: ["music-cities-events-alberta-2026", "music-cities-convention", "action-plan", "commission-page"]
+    },
     {
       date: "June 3, 2026",
       label: "Recruitment signal",
