@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.5",
-    lastUpdated: "June 4, 2026",
-    currentFinding: "Alberta's Commissioner competition remains open until June 8, and the emerging public implementation environment now includes a Calgary Music Cities Convention agenda that foregrounds municipal policy, Indigenous music economies, tourism, workforce, and community-empowerment themes while Commission authority, budget, and partner deliverables remain undocumented."
+    version: "1.6.6",
+    lastUpdated: "June 5, 2026",
+    currentFinding: "Alberta's Commissioner competition remains open until June 8, and partner-facing public records now sharpen the West Anthem and NMC deliverables test: West Anthem describes itself as a non-funding collaborator with a cross-sector steering committee, while NMC publishes scale and access baselines. Commission authority, early-action grant agreements, and partner deliverables remain undocumented."
   },
   sources: [
+    {
+      id: "west-anthem-homepage-june5",
+      title: "West Anthem",
+      publisher: "West Anthem",
+      type: "Sector organization page",
+      date: "Accessed June 5, 2026",
+      url: "https://www.westanthem.com/",
+      note: "Public page describing West Anthem's origin, objectives, non-funding role, steering committee, and selected 2026 event listings. Useful for relationship mapping and partner-accountability context, not proof of official Commission decision-making or funding deliverables."
+    },
+    {
+      id: "nmc-10-year-impact-2026",
+      title: "10 Years of Impacts Through Music",
+      publisher: "National Music Centre / Studio Bell",
+      type: "Institution impact page",
+      date: "Accessed June 5, 2026",
+      url: "https://www.studiobell.ca/10",
+      note: "Public 10-year impact page giving Studio Bell/NMC scale, public-private construction support, non-governmental nonprofit funding context, living collection and studio-use metrics, and program areas. Useful for partner-capacity and access baselines, not proof of Action Plan deliverables."
+    },
     {
       id: "music-cities-events-alberta-2026",
       title: "Alberta Music Cities Convention 2026",
@@ -43,6 +61,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "June 5, 2026",
+      label: "Partner capacity",
+      title: "West Anthem and NMC records sharpen the deliverables test",
+      summary: "West Anthem's public page says it is not a funding organization and names a steering committee spanning NMC, Alberta Music, Tourism Calgary, Government of Alberta, NMC programs, and SHE-Q Audio; NMC's 10-year impact page gives capacity baselines for Studio Bell, collection access, studio use, artist residencies, jobs, visitors, and its limited annual government-support model.",
+      finding: "These sources help distinguish implementation partners from funders and give baseline capacity markers for the Action Plan's NMC/access promises. They still do not disclose early-action grant agreements, Commission authority, NMC artist-access terms, or West Anthem deliverables.",
+      sourceIds: ["west-anthem-homepage-june5", "nmc-10-year-impact-2026", "west-anthem-reports", "nmc-board-updates", "action-plan"]
+    },
     {
       date: "June 4, 2026",
       label: "Policy forum",
