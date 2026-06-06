@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.6",
+    version: "1.6.7",
     lastUpdated: "June 5, 2026",
-    currentFinding: "Alberta's Commissioner competition remains open until June 8, and partner-facing public records now sharpen the West Anthem and NMC deliverables test: West Anthem describes itself as a non-funding collaborator with a cross-sector steering committee, while NMC publishes scale and access baselines. Commission authority, early-action grant agreements, and partner deliverables remain undocumented."
+    currentFinding: "Alberta's Commissioner competition remains open until June 8, and public records now separate NMC pre-launch funding from later early-action grants: a Public Accounts written response lists a 2023-24 $1.25M NMC grant for Music Action Plan development and sector-growth programming, while NMC's 2026-27 program guide gives public program windows. Commission authority, 2026 grant agreements, and access targets remain undocumented."
   },
   sources: [
+    {
+      id: "acsw-public-accounts-written-response-june2025",
+      title: "Arts, Culture and Status of Women Written Responses",
+      publisher: "Legislative Assembly of Alberta / Ministry of Arts, Culture and Status of Women",
+      type: "Public Accounts written response",
+      date: "Submitted June 5, 2025",
+      url: "https://www.assembly.ab.ca/docs/default-source/committees/pa/0506-acsw7a911635-6f20-4312-b1d4-08241ec846e9.pdf?sfvrsn=68e368ee_4",
+      note: "Written response to the May 6, 2025 Standing Committee on Public Accounts listing 2023-24 Other Initiatives Program spending, including a $1.25M grant to National Music Centre to support Music Action Plan development and programming for music-sector growth. Useful as a pre-launch funding baseline, not evidence of 2026 early-action grant terms."
+    },
+    {
+      id: "nmc-program-guide-2026",
+      title: "What's On at Studio Bell 2026-27",
+      publisher: "National Music Centre / Studio Bell",
+      type: "Program guide",
+      date: "Accessed June 5, 2026",
+      url: "https://www.studiobell.ca/assets/documents/NMC_ProgramGuide_2026-APR-8_Web.pdf",
+      note: "Official 2026-27 program guide listing NMC programming, Music Cities Convention dates, Indigenous and artist-development programs, tours, access days, AE West application timing, and a Dec. 2 AE West showcase. Useful for public program and access baselines, not proof of Action Plan grant agreements."
+    },
     {
       id: "west-anthem-homepage-june5",
       title: "West Anthem",
@@ -63,6 +81,14 @@ window.AMW_DATA_UPDATES = {
   briefItems: [
     {
       date: "June 5, 2026",
+      label: "Funding record",
+      title: "Public Accounts record adds an NMC pre-launch funding baseline",
+      summary: "A ministry written response to Public Accounts lists a 2023-24 Other Initiatives Program grant of $1.25M to National Music Centre for Music Action Plan development and programming for music-sector growth; NMC's 2026-27 program guide also gives public dates for the Alberta Music Cities Convention and AE West.",
+      finding: "This separates a documented pre-launch NMC grant and current public NMC programming from the later $800K early-action grant announcement. It still does not disclose 2026 grant agreements, recipient allocations, Commission budget, or measurable access targets for Alberta artists.",
+      sourceIds: ["acsw-public-accounts-written-response-june2025", "nmc-program-guide-2026", "nmc-10-year-impact-2026", "music-cities-events-alberta-2026", "action-plan"]
+    },
+    {
+      date: "June 5, 2026",
       label: "Partner capacity",
       title: "West Anthem and NMC records sharpen the deliverables test",
       summary: "West Anthem's public page says it is not a funding organization and names a steering committee spanning NMC, Alberta Music, Tourism Calgary, Government of Alberta, NMC programs, and SHE-Q Audio; NMC's 10-year impact page gives capacity baselines for Studio Bell, collection access, studio use, artist residencies, jobs, visitors, and its limited annual government-support model.",
@@ -100,6 +126,16 @@ window.AMW_DATA_UPDATES = {
       summary: "A public evidence submission pointed to a CBC Edmonton AM segment from May 1, 2026 titled \"Alberta's new Music Action Plan aims to supercharge the local industry.\" The review verified the CBC title, date, show, and link, but not the submitted characterization of who was interviewed or what was said.",
       finding: "This is useful contextual evidence of public rollout framing. It should not be used to prove ministerial statements, funding details, partner deliverables, or industry outcomes unless the audio or a transcript is reviewed.",
       sourceIds: ["cbc-edmonton-am-may1", "action-plan"]
+    }
+  ],
+  funding: [
+    {
+      label: "NMC 2023-24 Music Action Plan grant",
+      amount: 1250000,
+      display: "$1.25M in 2023-24",
+      status: "Pre-launch funding visible",
+      detail: "A Public Accounts written response says the 2023-24 Other Initiatives Program included a $1.25M grant to National Music Centre to support Music Action Plan development and programming for music-sector growth; this is separate from the later 2026 early-action grant announcement.",
+      sourceIds: ["acsw-public-accounts-written-response-june2025"]
     }
   ],
   reactions: [
