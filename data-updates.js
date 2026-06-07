@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.7",
-    lastUpdated: "June 5, 2026",
-    currentFinding: "Alberta's Commissioner competition remains open until June 8, and public records now separate NMC pre-launch funding from later early-action grants: a Public Accounts written response lists a 2023-24 $1.25M NMC grant for Music Action Plan development and sector-growth programming, while NMC's 2026-27 program guide gives public program windows. Commission authority, 2026 grant agreements, and access targets remain undocumented."
+    version: "1.6.8",
+    lastUpdated: "June 6, 2026",
+    currentFinding: "Alberta's Commissioner competition remains open until June 8, and the public deputy-minister roster now places Heather Caltagirone as ACSW Deputy Minister and Public Service Commissioner while preserving Kim Capstick's role in drafting the Music Action Plan. That updates oversight context; Commission authority, appointment outcome, 2026 grant agreements, and access targets remain undocumented."
   },
   sources: [
+    {
+      id: "deputy-ministers-council-june6",
+      title: "Deputy Ministers' Council",
+      publisher: "Government of Alberta",
+      type: "Government page",
+      date: "Accessed June 6, 2026",
+      url: "https://www.alberta.ca/deputy-ministers-council",
+      note: "Official senior public service roster naming Heather Caltagirone as Deputy Minister and Public Service Commissioner for Arts, Culture and Status of Women, appointed June 2026, and Kim Capstick as Deputy Minister for Indigenous Relations, Indigenous Pipeline Engagement, with Capstick's prior ACSW role tied to drafting the Music Action Plan."
+    },
     {
       id: "acsw-public-accounts-written-response-june2025",
       title: "Arts, Culture and Status of Women Written Responses",
@@ -80,6 +89,14 @@ window.AMW_DATA_UPDATES = {
   ],
   briefItems: [
     {
+      date: "June 6, 2026",
+      label: "Ministry leadership",
+      title: "Deputy-minister roster resets the oversight baseline",
+      summary: "Alberta.ca's Deputy Ministers' Council page now lists Heather Caltagirone as Deputy Minister and Public Service Commissioner for Arts, Culture and Status of Women, appointed June 2026, while Kim Capstick's prior ACSW role remains tied to drafting the Music Action Plan.",
+      finding: "This updates the implementation chain the Commissioner will enter as the competition approaches its June 8 close. It does not show changed Commission authority, appointment outcome, budget, early-action grant terms, or Indigenous-partner co-design commitments.",
+      sourceIds: ["deputy-ministers-council-june6", "job-posting", "action-plan"]
+    },
+    {
       date: "June 5, 2026",
       label: "Funding record",
       title: "Public Accounts record adds an NMC pre-launch funding baseline",
@@ -151,6 +168,16 @@ window.AMW_DATA_UPDATES = {
       summary: "Jinting Zhao's public LinkedIn activity frames the Music Commissioner role around policy translation, investment, touring, recording infrastructure, IP/export, workforce pipelines, and sustained sector engagement. That is stakeholder expectation, not government delivery evidence.",
       sourceIds: ["jinting-zhao-linkedin-may26", "job-posting", "action-plan"]
     }
+  ],
+  entities: [
+    {
+      id: "ministry",
+      name: "Ministry of Arts, Culture and Status of Women",
+      type: "Government",
+      role: "Home ministry for the Commission and Action Plan implementation; the Deputy Ministers' Council identifies Heather Caltagirone as Deputy Minister and Public Service Commissioner for ACSW.",
+      accountability: "Publish Commission budget, staffing, deliverables, funding sources, reporting structure, and how deputy-minister-level oversight connects to implementation decisions.",
+      links: ["commissioner", "afa", "media-fund-entity", "municipal-partners", "indigenous-relations"]
+    }
   ]
 };
 
@@ -169,7 +196,7 @@ window.AMW_DATA_UPDATES = {
   appendUnique(data.funding, updates.funding, (item) => item.label);
   appendUnique(data.promises, updates.promises, (item) => item.id);
   appendUnique(data.timeline, updates.timeline, (item) => `${item.date}|${item.title}`);
-  appendUnique(data.entities, updates.entities, (item) => item.id);
+  upsertByKey(data.entities, updates.entities, (item) => item.id);
 })();
 
 function appendUnique(target = [], additions = [], keyFor) {
@@ -192,6 +219,22 @@ function prependUnique(target = [], additions = [], keyFor) {
     if (key && !existing.has(key)) {
       target.unshift(item);
       existing.add(key);
+    }
+  }
+}
+
+function upsertByKey(target = [], additions = [], keyFor) {
+  if (!Array.isArray(additions) || additions.length === 0) return;
+  const indexes = new Map(target.map((item, index) => [keyFor(item), index]).filter(([key]) => Boolean(key)));
+  for (const item of additions) {
+    const key = keyFor(item);
+    if (!key) continue;
+    const index = indexes.get(key);
+    if (index === undefined) {
+      target.push(item);
+      indexes.set(key, target.length - 1);
+    } else {
+      target[index] = { ...target[index], ...item };
     }
   }
 }
