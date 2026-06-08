@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.8",
-    lastUpdated: "June 6, 2026",
-    currentFinding: "Alberta's Commissioner competition remains open until June 8, and the public deputy-minister roster now places Heather Caltagirone as ACSW Deputy Minister and Public Service Commissioner while preserving Kim Capstick's role in drafting the Music Action Plan. That updates oversight context; Commission authority, appointment outcome, 2026 grant agreements, and access targets remain undocumented."
+    version: "1.6.9",
+    lastUpdated: "June 7, 2026",
+    currentFinding: "Alberta's Commissioner competition remains open until June 8, and the June 2 Orders in Council now gives the direct appointment record for Heather Caltagirone as ACSW Deputy Minister and Public Service Commissioner and Kimberley Capstick as Deputy Minister of Indigenous Pipeline Engagement. That strengthens oversight context; Commission authority, appointment outcome, 2026 grant agreements, and access targets remain undocumented."
   },
   sources: [
+    {
+      id: "orders-in-council-june2-dm-appointments",
+      title: "Orders Approved - June 2, 2026",
+      publisher: "Government of Alberta",
+      type: "Orders in Council",
+      date: "June 2, 2026",
+      url: "https://www.alberta.ca/release.cfm?xID=962766395C9B0-FEBE-4208-6C4E5CC7266E080B",
+      note: "Official Orders in Council record continuing Heather Caltagirone as Public Service Commissioner, appointing her as Deputy Minister of Arts, Culture and Status of Women, and appointing Kimberley Capstick as Deputy Minister of Indigenous Pipeline Engagement. Useful as the direct legal record behind the June deputy-minister oversight baseline."
+    },
     {
       id: "deputy-ministers-council-june6",
       title: "Deputy Ministers' Council",
@@ -88,6 +97,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "June 7, 2026",
+      label: "Oversight record",
+      title: "Orders in Council confirm the deputy-minister handoff",
+      summary: "The June 2 Orders in Council continues Heather Caltagirone as Public Service Commissioner, appoints her as Deputy Minister of Arts, Culture and Status of Women, and appoints Kimberley Capstick as Deputy Minister of Indigenous Pipeline Engagement.",
+      finding: "This gives the direct appointment record behind the June 6 ministry-oversight update. It does not show a Music Commissioner appointment, changed Commission authority, budget, 2026 early-action grant agreements, or Indigenous-partner implementation commitments.",
+      sourceIds: ["orders-in-council-june2-dm-appointments", "deputy-ministers-council-june6", "job-posting", "action-plan"]
+    },
     {
       date: "June 6, 2026",
       label: "Ministry leadership",
