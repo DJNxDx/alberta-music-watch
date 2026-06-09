@@ -1,8 +1,8 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.9",
-    lastUpdated: "June 7, 2026",
-    currentFinding: "Alberta's Commissioner competition remains open until June 8, and the June 2 Orders in Council now gives the direct appointment record for Heather Caltagirone as ACSW Deputy Minister and Public Service Commissioner and Kimberley Capstick as Deputy Minister of Indigenous Pipeline Engagement. That strengthens oversight context; Commission authority, appointment outcome, 2026 grant agreements, and access targets remain undocumented."
+    version: "1.6.10",
+    lastUpdated: "June 8, 2026",
+    currentFinding: "Alberta's Commissioner competition has reached its June 8 closing date, but the public record still shows recruitment and mandate pages rather than an appointment, workplan, budget, grant agreements, or access targets. The Music Cities Convention page now gives concrete partner and session-format context for the municipal-policy forum."
   },
   sources: [
     {
@@ -64,9 +64,9 @@ window.AMW_DATA_UPDATES = {
       title: "Alberta Music Cities Convention 2026",
       publisher: "Music Cities Events / Sound Diplomacy",
       type: "Event and policy-program page",
-      date: "Accessed June 4, 2026",
+      date: "Accessed June 8, 2026",
       url: "https://www.musiccitiesevents.com/alberta",
-      note: "Public page for the Sept. 29-Oct. 1, 2026 Calgary convention, describing a policy-focused program around city planning, economic development, jobs, tourism, skills, venues, Indigenous music economies, climate, land use, community empowerment, city-level policy advocacy, and DEI. Treat as forum and agenda context, not evidence of delivered Action Plan outcomes."
+      note: "Public page for the Sept. 29-Oct. 1, 2026 Calgary convention, describing a policy-focused program around city planning, economic development, jobs, tourism, skills, venues, Indigenous music economies, climate, land use, community empowerment, city-level policy advocacy, and DEI. The page now lists a private invite-only session for Canadian music cities on Sept. 29, open conference days on Sept. 30 and Oct. 1, host partners including West Anthem, Sound Diplomacy Events and Education, Alberta Music, National Music Centre, and Calgary Arts Development, and supporting partners including the Government of Alberta, City of Calgary, and Scotlyn Foundation. Treat as forum and agenda context, not evidence of delivered Action Plan outcomes."
     },
     {
       id: "sound-diplomacy-linkedin-june3",
@@ -97,6 +97,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "June 8, 2026",
+      label: "Deadline watch",
+      title: "Commissioner competition reaches its closing date",
+      summary: "The official Music Commissioner posting lists June 8, 2026 as the closing date, while the Commission page still presents the mandate and contact record rather than a named appointment or workplan.",
+      finding: "The next audit test moves from recruitment openness to appointment transparency: who is selected, what authority the role has, whether selection or reporting rules are public, and how the Commissioner will connect to municipal, Indigenous, and partner-led implementation. The Music Cities Convention page adds public forum context by listing a Sept. 29 private Canadian music-cities session, Sept. 30-Oct. 1 open conference days, and host/supporting partners across West Anthem, Sound Diplomacy, Alberta Music, National Music Centre, Calgary Arts Development, the Government of Alberta, the City of Calgary, and Scotlyn Foundation.",
+      sourceIds: ["job-posting", "commission-page", "music-cities-events-alberta-2026", "action-plan"]
+    },
     {
       date: "June 7, 2026",
       label: "Oversight record",
