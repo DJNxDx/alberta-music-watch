@@ -117,7 +117,7 @@ window.AMW_DATA_UPDATES = {
       date: "June 6, 2026",
       label: "Ministry leadership",
       title: "Deputy-minister roster resets the oversight baseline",
-      summary: "Alberta.ca's Deputy Ministers' Council page now lists Heather Caltagirone as Deputy-Minister and Public Service Commissioner for Arts, Culture and Status of Women, appointed June 2026, while Kim Capstick's prior ACSW role remains tied to drafting the Music Action Plan.",
+      summary: "Alberta.ca's Deputy Ministers' Council page now lists Heather Caltagirone as Deputy Minister and Public Service Commissioner for Arts, Culture and Status of Women, appointed June 2026, while Kim Capstick's prior ACSW role remains tied to drafting the Music Action Plan.",
       finding: "This updates the implementation chain the Commissioner will enter as the competition approaches its June 8 close. It does not show changed Commission authority, appointment outcome, budget, early-action grant terms, or Indigenous-partner co-design commitments.",
       sourceIds: ["deputy-ministers-council-june6", "job-posting", "action-plan"]
     },
