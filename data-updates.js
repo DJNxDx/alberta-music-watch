@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.10",
-    lastUpdated: "June 8, 2026",
-    currentFinding: "Alberta's Commissioner competition has reached its June 8 closing date, but the public record still shows recruitment and mandate pages rather than an appointment, workplan, budget, grant agreements, or access targets. The Music Cities Convention page now gives concrete partner and session-format context for the municipal-policy forum."
+    version: "1.6.11",
+    lastUpdated: "June 10, 2026",
+    currentFinding: "The official Music Commissioner posting now says the application period has closed, moving the audit from open recruitment to appointment transparency. The public Commission page still shows mandate and contact information rather than a named Commissioner, workplan, budget, grant agreements, or access targets."
   },
   sources: [
+    {
+      id: "job-posting-closed-june10",
+      title: "Music Commissioner job posting closed application state",
+      publisher: "Government of Alberta",
+      type: "Job posting",
+      date: "Accessed June 10, 2026",
+      url: "https://jobpostings.alberta.ca/job/Edmonton-Music-Commissioner/602641017/",
+      note: "Official job posting page now states the application period for the Music Commissioner position has closed. Useful for marking the shift from open recruitment to post-deadline appointment transparency; not evidence of a named appointment, selection process, reporting terms, budget, or implementation workplan."
+    },
     {
       id: "orders-in-council-june2-dm-appointments",
       title: "Orders Approved - June 2, 2026",
@@ -97,6 +106,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "June 10, 2026",
+      label: "Recruitment status",
+      title: "Commissioner posting now shows the competition is closed",
+      summary: "The official job posting now says the application period for Music Commissioner has closed, while the Commission page still lists mandate and contact details rather than a named appointee or implementation workplan.",
+      finding: "The next public accountability test is selection transparency: who is appointed, what process or criteria are disclosed, what authority and reporting line the Commissioner receives, and how the closed competition becomes measurable implementation. The closed posting alone does not verify an appointment, budget, grant agreements, partner deliverables, or new program delivery.",
+      sourceIds: ["job-posting-closed-june10", "commission-page", "action-plan"]
+    },
     {
       date: "June 8, 2026",
       label: "Deadline watch",
