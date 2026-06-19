@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.11",
-    lastUpdated: "June 10, 2026",
-    currentFinding: "The official Music Commissioner posting now says the application period has closed, moving the audit from open recruitment to appointment transparency. The public Commission page still shows mandate and contact information rather than a named Commissioner, workplan, budget, grant agreements, or access targets."
+    version: "1.6.12",
+    lastUpdated: "June 19, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. The newest funding evidence is an updated AFA impact table showing 2025-26 Music Individual Project Grant totals and a June 17 Alberta Media Fund release that gives broader cultural-industry budget context."
   },
   sources: [
+    {
+      id: "afa-impact-2025-26-june19",
+      title: "Impact of Funding - AFA expenditures 2025-26",
+      publisher: "Alberta Foundation for the Arts",
+      type: "Grant data",
+      date: "Accessed June 19, 2026",
+      url: "https://www.affta.ab.ca/funding/impact-funding",
+      note: "AFA impact page now lists 2025-26 expenditures, including Music Individual Project Grants at $1,346,671.76 across 115 funded grants out of 425 eligible applications. Useful for updating the direct-music funding baseline; not evidence of Music Commission operating budget, early-action grant agreements, or Action Plan-specific new money."
+    },
+    {
+      id: "alberta-media-fund-release-june17",
+      title: "Alberta plays a starring role",
+      publisher: "Government of Alberta",
+      type: "News release",
+      date: "June 17, 2026",
+      url: "https://www.alberta.ca/release.cfm?xID=963495D28263D-B413-1C88-963FBD52E9ECACD2",
+      note: "ACSW release focused on the screen sector says Budget 2026 invests $60 million in the Film and Television Tax Credit and that the Alberta Media Fund provides $8 million for locally produced books, magazines, music, film and television, including $5.4 million through Alberta Made Screen Industries Program. Useful as broad Alberta Media Fund budget context, not a music-only allocation."
+    },
     {
       id: "job-posting-closed-june10",
       title: "Music Commissioner job posting closed application state",
@@ -107,6 +125,14 @@ window.AMW_DATA_UPDATES = {
   ],
   briefItems: [
     {
+      date: "June 19, 2026",
+      label: "Funding baseline",
+      title: "AFA table updates direct-music funding baseline",
+      summary: "AFA's impact page now lists 2025-26 Music Individual Project Grants at $1,346,671.76 across 115 funded grants out of 425 eligible applications; a June 17 ACSW release also gives $8 million as the broader Alberta Media Fund total across books, magazines, music, film and television.",
+      finding: "This is a funding-ledger update, not proof of Action Plan implementation. The AFA number is direct individual-project support, while the Alberta Media Fund release is broader cultural-industry budget context and mainly screen-sector framing. Neither source discloses a Music Commission operating budget, early-action grant agreements, partner allocations, or a named Music Commissioner.",
+      sourceIds: ["afa-impact-2025-26-june19", "alberta-media-fund-release-june17", "afa-impact", "media-fund", "commission-page"]
+    },
+    {
       date: "June 10, 2026",
       label: "Recruitment status",
       title: "Commissioner posting now shows the competition is closed",
@@ -188,6 +214,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   funding: [
+    {
+      label: "AFA Music Individual Project Funding 2025-26",
+      amount: 1346671.76,
+      display: "$1.35M in 2025-26",
+      status: "Direct support visible",
+      detail: "AFA's current impact table lists Music Individual Project Grants at $1,346,671.76 across 115 funded grants out of 425 eligible applications.",
+      sourceIds: ["afa-impact-2025-26-june19", "music-individual"]
+    },
     {
       label: "NMC 2023-24 Music Action Plan grant",
       amount: 1250000,
