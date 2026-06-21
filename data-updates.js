@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.12",
-    lastUpdated: "June 19, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. The newest funding evidence is an updated AFA impact table showing 2025-26 Music Individual Project Grant totals and a June 17 Alberta Media Fund release that gives broader cultural-industry budget context."
+    version: "1.6.13",
+    lastUpdated: "June 21, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. The newest sector evidence is Alberta Music's June 19 Come Together showcase call, which verifies a partner-led export opportunity but not new public funding or Commission delivery."
   },
   sources: [
+    {
+      id: "alberta-music-come-together-june19",
+      title: "Showcase Opportunity: Come Together (Toronto)",
+      publisher: "Alberta Music",
+      type: "Sector opportunity",
+      date: "June 19, 2026",
+      url: "https://www.albertamusic.org/2026/06/showcase-opportunity-come-together-toronto/",
+      note: "Alberta Music posted an artist application call for the Come Together Toronto showcase, with a July 16 deadline, Nov. 24-25, 2026 Toronto programming and showcasing, Alberta Music member/resident/export-ready eligibility, jury criteria, and an explicit statement that travel and accommodation funding may be available but will not cover full costs. Useful as partner-led export opportunity evidence; not proof of government funding, Commissioner action, selected artists, or Action Plan deliverables."
+    },
     {
       id: "afa-impact-2025-26-june19",
       title: "Impact of Funding - AFA expenditures 2025-26",
@@ -124,6 +133,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "June 21, 2026",
+      label: "Sector opportunity",
+      title: "Alberta Music posts an export showcase call",
+      summary: "Alberta Music opened applications for Come Together, a Toronto showcase on Nov. 24-25, 2026, for export-ready Alberta Music members; applicants must have travel and accommodation capacity, with only partial funding potentially available.",
+      finding: "This is concrete partner-led export infrastructure and a useful accountability test for accessibility and business-development outcomes. It does not identify new public money, grant terms, a Commissioner decision, or a selected artist list, and should not be counted as Action Plan implementation unless a public source connects it to the plan or early-action grants.",
+      sourceIds: ["alberta-music-come-together-june19", "alberta-media-fund-release-june17", "action-plan", "commission-page"]
+    },
     {
       date: "June 19, 2026",
       label: "Funding baseline",
