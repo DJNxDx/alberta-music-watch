@@ -133,7 +133,7 @@ window.AMW_DATA_UPDATES = {
     },
     {
       id: "cbc-edmonton-am-may1",
-      title: "Alberta's new Music Action Plan aims to supercharge local industry",
+      title: "Alberta's new Music Action Plan aims to supercharge the local industry",
       publisher: "CBC Edmonton AM",
       type: "Radio segment",
       date: "May 1, 2026",
