@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.13",
-    lastUpdated: "June 21, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. The newest sector evidence is Alberta Music's June 19 Come Together showcase call, which verifies a partner-led export opportunity but not new public funding or Commission delivery."
+    version: "1.6.14",
+    lastUpdated: "June 26, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. The newest public update is the Alberta Music Cities Convention speaker page, which sharpens the policy-forum context but does not verify new public funding, Commission delivery, or Action Plan grant terms."
   },
   sources: [
+    {
+      id: "music-cities-speakers-june23",
+      title: "Alberta Music Cities Convention 2026 speakers",
+      publisher: "Music Cities Events / Sound Diplomacy",
+      type: "Event speaker page",
+      date: "Accessed June 26, 2026",
+      url: "https://www.musiccitiesevents.com/speakers-alberta-mcc-2026",
+      note: "Public speaker-page metadata lists eight speaker profiles created June 23-24, 2026: Joy Allen, Elizabeth Cawein, David McLeod, Corey Poole, Daryl Raven, Claire Rice, Steve Sleswick, and Reid Wick, spanning music-and-health, export, Indigenous media, municipal music-sector development, festivals/trails, arts advocacy, venue, and recording-sector perspectives. Useful for convention policy-forum context; not evidence of a Music Commissioner appointment, Commission workplan, public funding, grant agreements, or delivered Action Plan outcomes."
+    },
     {
       id: "alberta-music-come-together-june19",
       title: "Showcase Opportunity: Come Together (Toronto)",
@@ -133,6 +142,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "June 26, 2026",
+      label: "Policy forum",
+      title: "Music Cities page exposes first speaker slate",
+      summary: "Music Cities Events now publishes eight Alberta convention speaker profiles spanning music-and-health, export, Indigenous media, municipal music-sector development, festivals/trails, arts advocacy, venue, and recording-sector perspectives.",
+      finding: "This sharpens the September convention's policy-forum baseline and gives the audit named public speakers to compare against later agenda, access, and outcome claims. It does not verify a Music Commissioner appointment, Commission authority, public funding, grant agreements, or delivered Action Plan results.",
+      sourceIds: ["music-cities-speakers-june23", "music-cities-events-alberta-2026", "action-plan", "commission-page"]
+    },
     {
       date: "June 21, 2026",
       label: "Sector opportunity",
