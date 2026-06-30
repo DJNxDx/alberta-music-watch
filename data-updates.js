@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.14",
-    lastUpdated: "June 26, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. The newest public update is the Alberta Music Cities Convention speaker page, which sharpens the policy-forum context but does not verify new public funding, Commission delivery, or Action Plan grant terms."
+    version: "1.6.15",
+    lastUpdated: "June 30, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. A newly incorporated West Anthem 2025 grant-program wrap-up adds pre-Action Plan partner-funding benchmarks and transparency recommendations, but it does not verify new Commission delivery, 2026 early-action grant terms, or a Commissioner appointment."
   },
   sources: [
+    {
+      id: "west-anthem-grant-wrapup-2026",
+      title: "West Anthem Alberta Music Cities Grant Program: 2025 Wrap-Up Report",
+      publisher: "West Anthem",
+      type: "Program wrap-up report",
+      date: "Correction made February 2026; accessed June 30, 2026",
+      url: "https://www.westanthem.com/wp-content/uploads/2026/03/West-Anthem-Alberta-Music-Cities-Grant-Program_-2025-Wrap-Up-Report-correction.pdf",
+      note: "West Anthem's corrected 2025 wrap-up says the pilot Alberta Music Cities Grant Program received 94 applications, funded 9 projects, disbursed $76,350, and was funded by Alberta Music and Calgary Arts Development. It also records applicant feedback and recommendations on transparency, conflict-of-interest policy, evaluation criteria, rural and equity representation, and post-intake communication. Useful as pre-Action Plan partner-funding and grant-design baseline; not evidence of 2026 early-action grant agreements, Commission delivery, a Music Commissioner appointment, or Government of Alberta program funding."
+    },
     {
       id: "music-cities-speakers-june23",
       title: "Alberta Music Cities Convention 2026 speakers",
@@ -143,6 +152,14 @@ window.AMW_DATA_UPDATES = {
   ],
   briefItems: [
     {
+      date: "June 30, 2026",
+      label: "Partner funding",
+      title: "West Anthem wrap-up gives pre-launch grant benchmarks",
+      summary: "A corrected West Anthem wrap-up says the 2025 Alberta Music Cities Grant Program received 94 applications, funded 9 projects, and disbursed $76,350 through Alberta Music and Calgary Arts Development support.",
+      finding: "This gives the audit a concrete pre-Action Plan benchmark for partner-led music funding demand, adjudication transparency, regional reach, and eligible-cost design. It should not be treated as proof of 2026 Action Plan early-action grants, a Commission budget, Government of Alberta funding terms, or Music Commissioner delivery.",
+      sourceIds: ["west-anthem-grant-wrapup-2026", "west-anthem-reports", "west-anthem-homepage-june5", "action-plan", "commission-page"]
+    },
+    {
       date: "June 26, 2026",
       label: "Policy forum",
       title: "Music Cities page exposes first speaker slate",
@@ -248,6 +265,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   funding: [
+    {
+      label: "West Anthem Alberta Music Cities Grant Program 2025",
+      amount: 76350,
+      display: "$76.35K in 2025",
+      status: "Partner pilot visible",
+      detail: "West Anthem's corrected wrap-up says the 2025 pilot received 94 applications, funded 9 projects, and disbursed $76,350 with Alberta Music and Calgary Arts Development as funding partners.",
+      sourceIds: ["west-anthem-grant-wrapup-2026"]
+    },
     {
       label: "AFA Music Individual Project Funding 2025-26",
       amount: 1346671.76,
