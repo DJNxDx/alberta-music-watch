@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.15",
-    lastUpdated: "June 30, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. A newly incorporated West Anthem 2025 grant-program wrap-up adds pre-Action Plan partner-funding benchmarks and transparency recommendations, but it does not verify new Commission delivery, 2026 early-action grant terms, or a Commissioner appointment."
+    version: "1.6.16",
+    lastUpdated: "July 4, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. A July 3 Music Cities Convention speaker-profile update adds an Inter-American Development Bank creative-economy voice, broadening policy-forum context, but it does not verify Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
   },
   sources: [
+    {
+      id: "music-cities-speaker-prada-july3",
+      title: "Alberta Music Cities Convention 2026 speakers: Eliana Prada profile",
+      publisher: "Music Cities Events / Sound Diplomacy",
+      type: "Event speaker metadata",
+      date: "Profile created July 3, 2026; accessed July 4, 2026",
+      url: "https://www.musiccitiesevents.com/speakers-alberta-mcc-2026",
+      note: "Wix warmup metadata for the speaker gallery lists nine speaker profiles, including a July 3 profile for Eliana Prada, Specialist in Creative Economy with the Inter-American Development Bank, describing creative-economy design and implementation experience in Latin America and the Caribbean. Useful as expanded policy-forum speaker context; not evidence of a Music Commissioner appointment, Commission workplan, grant agreements, public funding terms, or delivered Action Plan outcomes."
+    },
     {
       id: "west-anthem-grant-wrapup-2026",
       title: "West Anthem Alberta Music Cities Grant Program: 2025 Wrap-Up Report",
@@ -151,6 +160,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 4, 2026",
+      label: "Policy forum",
+      title: "Music Cities slate adds creative-economy policy voice",
+      summary: "Music Cities Events speaker metadata now lists nine Alberta convention speaker profiles, adding a July 3 Eliana Prada profile tied to Inter-American Development Bank creative-economy work.",
+      finding: "This broadens the convention's public policy-forum baseline and gives the audit another named perspective to compare against later agenda, access, and outcome claims. It does not verify a Music Commissioner appointment, Commission authority, public funding, grant agreements, or delivered Action Plan results.",
+      sourceIds: ["music-cities-speaker-prada-july3", "music-cities-speakers-june23", "music-cities-events-alberta-2026", "action-plan", "commission-page"]
+    },
     {
       date: "June 30, 2026",
       label: "Partner funding",
