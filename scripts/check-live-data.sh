@@ -3,10 +3,12 @@ set -euo pipefail
 
 output_file="${1:-/private/tmp/amw-live-data.js}"
 url="https://watch.albertamusic.live/data.js"
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "$repo_root/scripts/lib/node-runtime.sh"
 
 curl -fsS -L --max-time 20 "$url" -o "$output_file"
 
-node - "$output_file" <<'NODE'
+"$NODE_BIN" - "$output_file" <<'NODE'
 const fs = require("fs");
 const vm = require("vm");
 const path = process.argv[2];

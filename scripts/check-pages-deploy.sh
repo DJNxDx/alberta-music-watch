@@ -6,6 +6,8 @@ attempts="${2:-20}"
 interval_seconds="${3:-15}"
 output_file="/private/tmp/amw-actions-runs.json"
 url="https://api.github.com/repos/DJNxDx/alberta-music-watch/actions/runs?per_page=10"
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "$repo_root/scripts/lib/node-runtime.sh"
 
 if [[ -z "$expected_sha" ]]; then
   echo "Usage: scripts/check-pages-deploy.sh <expected-merge-sha> [attempts] [interval-seconds]" >&2
@@ -16,7 +18,7 @@ for ((attempt = 1; attempt <= attempts; attempt += 1)); do
   curl -fsS -L --max-time 20 "$url" -o "$output_file"
 
   set +e
-  node - "$output_file" "$expected_sha" <<'NODE'
+  "$NODE_BIN" - "$output_file" "$expected_sha" <<'NODE'
 const fs = require("fs");
 const path = process.argv[2];
 const expectedSha = process.argv[3];

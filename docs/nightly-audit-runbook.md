@@ -26,14 +26,14 @@ At the start of each run, read this runbook and the repository `README.md`.
 
 ## Nightly Workflow
 
-1. Sync `main` from GitHub. If shell Git is blocked by DNS or local Git metadata issues, use the GitHub connector compare fallback when available.
+1. Sync `main` from GitHub. If shell Git is blocked by DNS or local Git metadata issues, use the GitHub connector compare fallback when available. If `git fetch origin main` fails with a bad `Icon\r` ref, inspect and remove only zero-byte `Icon\r` artifacts under `.git/refs` with `bash scripts/clean-git-icon-refs.sh`, then retry the fetch.
 2. Review the private Hostinger evidence queue with `scripts/fetch-evidence-queue.sh /private/tmp/amw-admin-submissions.json`.
 3. Review each pending private submission with `scripts/review-evidence-submission.sh`.
 4. Inspect open GitHub issues whose title begins exactly with `[Evidence]`.
 5. Research new public information about the Action Plan, Commission, Commissioner hiring or appointment, Ministry of Arts, Culture and Status of Women, Tanya Fir, Joe Ceci, West Anthem, National Music Centre, Alberta Music, Alberta Foundation for the Arts, Alberta Media Fund, municipal partners, Indigenous partners, funding records, and public industry reaction.
 6. Update `data-updates.js` for small reviewed daily source and brief additions. Update `data.js`, `index.html`, bundled `sources/`, and docs only when source-backed changes are warranted or when a larger cleanup is intentional.
 7. Add daily brief changes as new records at the top of `briefItems` in the update layer. Do not delete older brief records unless they are factually wrong and the PR explains why.
-8. Run `node scripts/validate-site-data.mjs` and `git diff --check`.
+8. Run `bash scripts/validate-site-data.sh` and `git diff --check`. The wrapper uses system `node` when available and falls back to the bundled Codex runtime used by local automations.
 9. Confirm the runtime `window.AMW_DATA.meta.lastUpdated` produced by `data.js` plus `data-updates.js` matches the static fallback date in `index.html`.
 10. Publish a normal non-draft PR, inspect the diff, merge when safe, then verify GitHub Pages and the live site.
 

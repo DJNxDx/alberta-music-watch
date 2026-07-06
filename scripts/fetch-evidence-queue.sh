@@ -2,6 +2,7 @@
 set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+source "$repo_root/scripts/lib/node-runtime.sh"
 token_file="$repo_root/.deploy/amw-evidence-admin-token"
 output_file="${1:-/private/tmp/amw-admin-submissions.json}"
 endpoint="https://api.albertamusic.live/admin-submissions.php"
@@ -18,7 +19,7 @@ curl -fsS --max-time 20 \
   "$endpoint" \
   -o "$output_file"
 
-node - "$output_file" <<'NODE'
+"$NODE_BIN" - "$output_file" <<'NODE'
 const fs = require("fs");
 const path = process.argv[2];
 const payload = JSON.parse(fs.readFileSync(path, "utf8"));
