@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.16",
-    lastUpdated: "July 4, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. A July 3 Music Cities Convention speaker-profile update adds an Inter-American Development Bank creative-economy voice, broadening policy-forum context, but it does not verify Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
+    version: "1.6.17",
+    lastUpdated: "July 7, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. The Alberta Music Cities Convention page now exposes a broader public partner and sponsor roster around the September policy forum, but it still does not verify Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
   },
   sources: [
+    {
+      id: "music-cities-partners-july7",
+      title: "Alberta Music Cities Convention 2026 partner and sponsor roster",
+      publisher: "Music Cities Events / Sound Diplomacy",
+      type: "Event and partner page",
+      date: "Accessed July 7, 2026",
+      url: "https://www.musiccitiesevents.com/alberta",
+      note: "Public convention page now labels the September 2026 Calgary event as having 30+ executive speakers and shows an expanded partner/sponsor roster through accessible image metadata: CIMA, IMS Summit, Music Yukon, Music New Brunswick, SaskMusic, IEDC, Music NWT, Sound Diplomacy, West Anthem, National Music Centre, Alberta Music, Calgary Arts Development, City of Calgary, Government of Alberta, and Scotlyn Foundation. Useful as interprovincial and municipal policy-forum context; not evidence of a Music Commissioner appointment, Commission workplan, public funding terms, grant agreements, or delivered Action Plan outcomes."
+    },
     {
       id: "music-cities-speaker-prada-july3",
       title: "Alberta Music Cities Convention 2026 speakers: Eliana Prada profile",
@@ -160,6 +169,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 7, 2026",
+      label: "Policy forum",
+      title: "Music Cities page widens the partner roster",
+      summary: "The Alberta Music Cities Convention page now labels the Calgary event as having 30+ executive speakers and shows a broader public partner/sponsor roster spanning provincial music associations, economic-development, municipal, government, and foundation names.",
+      finding: "This strengthens the audit trail for who is publicly clustered around the September policy forum and sets up a later accountability test for access, agenda, and outcomes. It does not verify a Music Commissioner appointment, Commission authority, Action Plan grant terms, public funding, or delivered implementation.",
+      sourceIds: ["music-cities-partners-july7", "music-cities-events-alberta-2026", "music-cities-speakers-june23", "music-cities-speaker-prada-july3", "commission-page"]
+    },
     {
       date: "July 4, 2026",
       label: "Policy forum",
