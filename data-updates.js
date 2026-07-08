@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.17",
-    lastUpdated: "July 7, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. The Alberta Music Cities Convention page now exposes a broader public partner and sponsor roster around the September policy forum, but it still does not verify Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
+    version: "1.6.18",
+    lastUpdated: "July 8, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. Alberta Music now records an Explore Edmonton/KDays showcase partnership for Alberta artists, adding municipal live-performance context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
   },
   sources: [
+    {
+      id: "alberta-music-kdays-july6",
+      title: "Alberta Artists at KDays Music Fest",
+      publisher: "Alberta Music",
+      type: "Sector partnership update",
+      date: "July 6, 2026; accessed July 8, 2026",
+      url: "https://www.albertamusic.org/2026/07/alberta-artists-at-kdays-music-fest/",
+      note: "Alberta Music says it teamed up with Explore Edmonton to showcase Alberta artists at KDays Music Fest from July 17-26, with named Alberta acts opening on the Main Stage and additional artists connected to CKUA Stage performance opportunities. Useful as municipal live-performance and partner-program context; not evidence of provincial funding, Music Commission delivery, 2026 early-action grant terms, a Music Commissioner appointment, or selected Action Plan outcomes."
+    },
     {
       id: "music-cities-partners-july7",
       title: "Alberta Music Cities Convention 2026 partner and sponsor roster",
@@ -169,6 +178,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 8, 2026",
+      label: "Municipal showcase",
+      title: "Alberta Music logs KDays showcase partnership",
+      summary: "Alberta Music says it teamed with Explore Edmonton to place Alberta artists on KDays Music Fest stages, including Main Stage opening slots and CKUA Stage performance opportunities during the July 17-26 Edmonton festival.",
+      finding: "This is useful evidence of partner-led municipal live-performance infrastructure and a later accountability test for access, artist selection, compensation, and audience outcomes. It does not verify a Music Commissioner appointment, Commission authority, public funding, early-action grant agreements, or Action Plan delivery.",
+      sourceIds: ["alberta-music-kdays-july6", "alberta-music-come-together-june19", "action-plan", "commission-page"]
+    },
     {
       date: "July 7, 2026",
       label: "Policy forum",
