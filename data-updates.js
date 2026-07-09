@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.18",
-    lastUpdated: "July 8, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. Alberta Music now records an Explore Edmonton/KDays showcase partnership for Alberta artists, adding municipal live-performance context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
+    version: "1.6.19",
+    lastUpdated: "July 9, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. Alberta Music now records both an Explore Edmonton/KDays showcase partnership and an Edmonton Public Library musician-in-residence posting, adding municipal performance and mentorship context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
   },
   sources: [
+    {
+      id: "alberta-music-epl-residence-july8",
+      title: "EPL: Musician in Residence Job Posting",
+      publisher: "Alberta Music",
+      type: "Sector opportunity",
+      date: "July 8, 2026; accessed July 9, 2026",
+      url: "https://www.albertamusic.org/2026/07/epl-musician-in-residence-job-posting/",
+      note: "Alberta Music posted Edmonton Public Library's call for a Musician in Residence, describing a 9-month non-renewable September 1, 2026-May 31, 2027 contract with $20,000 total remuneration, office hours at the Stanley A. Milner branch, mentorship, classes and workshops, showcases and panels, community representation, partnership-seeking, and Capital City Records curation/jury duties. Useful as municipal artist-development and mentorship infrastructure; not evidence of provincial funding, Music Commission delivery, Action Plan grant terms, or a Music Commissioner appointment."
+    },
     {
       id: "alberta-music-kdays-july6",
       title: "Alberta Artists at KDays Music Fest",
@@ -178,6 +187,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 9, 2026",
+      label: "Municipal mentorship",
+      title: "Alberta Music posts EPL residency call",
+      summary: "Alberta Music now points artists to Edmonton Public Library's 2026-27 Musician in Residence call, a 9-month Stanley A. Milner branch contract with mentorship, workshops, showcases, panels, community representation, and Capital City Records curation duties.",
+      finding: "This is useful municipal artist-development infrastructure and creates later accountability tests for selection, access, mentorship reach, library-sector partnerships, and pay. It does not verify a Music Commissioner appointment, Commission authority, provincial funding, early-action grant agreements, or Action Plan delivery.",
+      sourceIds: ["alberta-music-epl-residence-july8", "alberta-music-kdays-july6", "action-plan", "commission-page"]
+    },
     {
       date: "July 8, 2026",
       label: "Municipal showcase",
