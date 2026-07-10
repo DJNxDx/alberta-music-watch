@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.19",
-    lastUpdated: "July 9, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. Alberta Music now records both an Explore Edmonton/KDays showcase partnership and an Edmonton Public Library musician-in-residence posting, adding municipal performance and mentorship context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
+    version: "1.6.20",
+    lastUpdated: "July 10, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. Alberta Music records Explore Edmonton/KDays and Edmonton Public Library opportunities, while AFA now lists an Edmonton music-and-sports event tied to the CPKC Women's Open. These add municipal and cross-sector programming context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
   },
   sources: [
+    {
+      id: "afa-par-tee-july9",
+      title: "Par-Tee at Victoria Golf Course Driving Range",
+      publisher: "Alberta Foundation for the Arts",
+      type: "Music event listing",
+      date: "July 9, 2026; accessed July 10, 2026",
+      url: "https://www.affta.ab.ca/news/par-tee-victoria-golf-course-driving-range",
+      note: "AFA's music-filtered news feed lists a free Aug. 14, 2026 all-ages Edmonton event at Victoria Golf Course Driving Range tied to the CPKC Women's Open, described as celebrating women in sports and music with free driving range access, live music by Mox Jet, Panic Pixie, and Sister Suzie, and food and drink available on site. Useful as local cross-sector music-and-sports programming context; not evidence of provincial funding, Music Commission delivery, Action Plan grant terms, or a Music Commissioner appointment."
+    },
     {
       id: "alberta-music-epl-residence-july8",
       title: "EPL: Musician in Residence Job Posting",
@@ -187,6 +196,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 10, 2026",
+      label: "Cross-sector event",
+      title: "AFA posts Par-Tee music listing",
+      summary: "AFA now lists a free Aug. 14 Edmonton Par-Tee event tied to the CPKC Women's Open, with live music by Mox Jet, Panic Pixie, and Sister Suzie at Victoria Golf Course Driving Range.",
+      finding: "This is useful public context for local music-and-sports programming and a later accountability test for artist booking, access, audience reach, and whether cross-sector events create durable music-sector benefit. It does not verify a Music Commissioner appointment, Commission authority, provincial funding, early-action grant agreements, or Action Plan delivery.",
+      sourceIds: ["afa-par-tee-july9", "alberta-music-kdays-july6", "action-plan", "commission-page"]
+    },
     {
       date: "July 9, 2026",
       label: "Municipal mentorship",
