@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.19",
-    lastUpdated: "July 9, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. Alberta Music now records both an Explore Edmonton/KDays showcase partnership and an Edmonton Public Library musician-in-residence posting, adding municipal performance and mentorship context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
+    version: "1.6.20",
+    lastUpdated: "July 11, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. Alberta Music records Explore Edmonton/KDays and Edmonton Public Library opportunities, while AFA's music-filtered news feed now lists three July Edmonton music opportunities and events. These add municipal, venue, artist-call, and cross-sector programming context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
   },
   sources: [
+    {
+      id: "afa-music-listings-july9",
+      title: "AFA music-filtered news listings",
+      publisher: "Alberta Foundation for the Arts",
+      type: "Music opportunity and event listings",
+      date: "July 7-9, 2026; accessed July 11, 2026",
+      url: "https://www.affta.ab.ca/news?discipline=6",
+      note: "AFA's music-filtered news feed lists three July 2026 Edmonton music items: an Edmonton Folks Vol. 2 open call for musicians posted July 7 with an August 1 deadline, a Yardbird Suite General Manager opportunity posted July 8 with a July 22 deadline, and a Par-Tee event listing posted July 9 for an August 14 event tied to the CPKC Women's Open. Useful as public music-sector opportunity, venue-capacity, and cross-sector event context; not evidence of provincial funding, Music Commission delivery, Action Plan grant terms, or a Music Commissioner appointment."
+    },
     {
       id: "alberta-music-epl-residence-july8",
       title: "EPL: Musician in Residence Job Posting",
@@ -187,6 +196,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 11, 2026",
+      label: "Sector listings",
+      title: "AFA music feed adds Edmonton listings",
+      summary: "AFA's music-filtered news feed now shows three July Edmonton items: Edmonton Folks Vol. 2, a Yardbird Suite General Manager role, and a Par-Tee event tied to the CPKC Women's Open.",
+      finding: "These are useful public signals for artist-call access, venue operating capacity, and cross-sector music programming. They do not verify a Music Commissioner appointment, Commission authority, provincial funding, early-action grant agreements, or Action Plan delivery.",
+      sourceIds: ["afa-music-listings-july9", "alberta-music-epl-residence-july8", "alberta-music-kdays-july6", "action-plan", "commission-page"]
+    },
     {
       date: "July 9, 2026",
       label: "Municipal mentorship",
