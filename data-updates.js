@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.20",
-    lastUpdated: "July 11, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. Alberta Music records Explore Edmonton/KDays and Edmonton Public Library opportunities, while AFA's music-filtered news feed now lists three July Edmonton music opportunities and events. These add municipal, venue, artist-call, and cross-sector programming context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
+    version: "1.6.21",
+    lastUpdated: "July 12, 2026",
+    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. West Anthem now directly lists the Par-Tee music-and-sports event that also appears in AFA's music feed, adding cross-sector music-tourism programming context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
   },
   sources: [
+    {
+      id: "west-anthem-partee-july9",
+      title: "Par-Tee at Victoria Park Golf Course Driving Range",
+      publisher: "West Anthem",
+      type: "Event listing",
+      date: "Posted July 9, 2026; accessed July 12, 2026",
+      url: "https://www.westanthem.com/events/par-tee-at-victoria-park-golf-course-driving-range/",
+      note: "West Anthem's event page lists Par-Tee as an August 14, 2026 Edmonton event tied to the CPKC Women's Open, with all-ages women-in-sports-and-music framing, free driving-range access, Eventbrite registration, and a live lineup of Mox Jet, Panic Pixie, and Sister Suzie. Useful as direct stakeholder evidence of cross-sector music-tourism programming; not evidence of provincial funding, Music Commission delivery, Action Plan grant terms, a Music Commissioner appointment, or selected Action Plan outcomes."
+    },
     {
       id: "afa-music-listings-july9",
       title: "AFA music-filtered news listings",
@@ -196,6 +205,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 12, 2026",
+      label: "Partner event",
+      title: "West Anthem lists Par-Tee event",
+      summary: "West Anthem's own event page now verifies the Par-Tee listing that appeared in AFA's feed, describing an Aug. 14 Edmonton event around the CPKC Women's Open with free driving-range access and a three-act live music lineup.",
+      finding: "This gives a direct partner source for cross-sector music-tourism programming and creates a later accountability check for access, artist compensation, partner roles, and audience outcomes. It does not verify a Music Commissioner appointment, Commission authority, provincial funding, early-action grant agreements, or Action Plan delivery.",
+      sourceIds: ["west-anthem-partee-july9", "afa-music-listings-july9", "west-anthem-homepage-june5", "action-plan", "commission-page"]
+    },
     {
       date: "July 11, 2026",
       label: "Sector listings",
