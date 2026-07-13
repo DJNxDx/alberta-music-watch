@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.21",
-    lastUpdated: "July 12, 2026",
-    currentFinding: "The official Music Commissioner posting remains closed and the public Commission page still does not name a Commissioner or publish an implementation workplan. West Anthem now directly lists the Par-Tee music-and-sports event that also appears in AFA's music feed, adding cross-sector music-tourism programming context without verifying Commission delivery, 2026 early-action grant terms, public funding, or a Commissioner appointment."
+    version: "1.6.22",
+    lastUpdated: "July 13, 2026",
+    currentFinding: "NMC now documents a private BMO/Jim Pattison-matched music-therapy expansion that strengthens music-and-wellness partner-capacity context while the official Music Commissioner posting remains closed and the Commission page still does not name a Commissioner, workplan, public budget, or Action Plan grant terms."
   },
   sources: [
+    {
+      id: "nmc-bmo-music-therapy-july7",
+      title: "Healing Through Music: $500,000 Investment from BMO to National Music Centre Expands Music Therapy Programs for Patients Across Canada",
+      publisher: "National Music Centre / Studio Bell",
+      type: "Institution release",
+      date: "July 7, 2026; accessed July 13, 2026",
+      url: "https://www.studiobell.ca/bmo-healing-through-music",
+      note: "NMC says BMO made a $500,000 multi-year commitment, matched dollar-for-dollar by The Jim Pattison Foundation, to expand NMC's Music Therapy Initiative in hospitals, mental health services, and community care settings across Canada, with Alberta delivery history in Calgary acute-care hospitals and expansion references in Saskatchewan, Manitoba, and British Columbia. Useful as NMC music-and-wellness capacity and private-philanthropy baseline; not evidence of Government of Alberta funding, Music Commission delivery, 2026 early-action grant terms, Action Plan program funding, or a Music Commissioner appointment."
+    },
     {
       id: "west-anthem-partee-july9",
       title: "Par-Tee at Victoria Park Golf Course Driving Range",
@@ -205,6 +214,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 13, 2026",
+      label: "Partner capacity",
+      title: "NMC logs private music-therapy expansion",
+      summary: "National Music Centre says BMO has made a $500,000 multi-year commitment, matched by The Jim Pattison Foundation, to expand NMC's Music Therapy Initiative across hospitals, mental health services, and community care settings.",
+      finding: "This adds music-and-wellness partner-capacity context and a later accountability test for reach, Alberta access, matching funds, and public/private roles. It does not verify a Music Commissioner appointment, Commission authority, provincial funding, early-action grant terms, or Action Plan delivery.",
+      sourceIds: ["nmc-bmo-music-therapy-july7", "nmc-program-guide-2026", "nmc-10-year-impact-2026", "music-cities-events-alberta-2026", "commission-page"]
+    },
     {
       date: "July 12, 2026",
       label: "Partner event",
