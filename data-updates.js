@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.22",
-    lastUpdated: "July 13, 2026",
-    currentFinding: "NMC now documents a private BMO/Jim Pattison-matched music-therapy expansion that strengthens music-and-wellness partner-capacity context while the official Music Commissioner posting remains closed and the Commission page still does not name a Commissioner, workplan, public budget, or Action Plan grant terms."
+    version: "1.6.23",
+    lastUpdated: "July 17, 2026",
+    currentFinding: "AFA's approved 2026-27 budget now provides a $38.1 million agency-wide funding baseline, a 14% increase in spending for arts organizations, and an explicit commitment to support the Music Action Plan, but it does not identify a music-specific allocation, Action Plan program terms, early-action grant agreements, or a Music Commissioner appointment."
   },
   sources: [
+    {
+      id: "afa-2026-27-budget-june25",
+      title: "AFA 2026-27 annual budget",
+      publisher: "Alberta Foundation for the Arts",
+      type: "Budget statement",
+      date: "June 25, 2026; accessed July 17, 2026",
+      url: "https://www.affta.ab.ca/news/afa-2026-27-annual-budget",
+      note: "AFA Board Chair Cynthia P. Moore says the board approved its 2026-27 budget following a $38.1 million allocation through Budget 2026, will increase total spending to support arts organizations by 14% over the prior year, and will work with government colleagues to support the Alberta Music Action Plan. Useful as an agency-wide funding and implementation-intent baseline; it does not disclose a music-specific allocation, Action Plan program terms, Commission operating budget, early-action grant agreements, partner deliverables, or a Music Commissioner appointment."
+    },
     {
       id: "nmc-bmo-music-therapy-july7",
       title: "Healing Through Music: $500,000 Investment from BMO to National Music Centre Expands Music Therapy Programs for Patients Across Canada",
@@ -214,6 +223,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 17, 2026",
+      label: "AFA budget",
+      title: "AFA links approved budget to Action Plan support",
+      summary: "AFA's board chair says its approved 2026-27 budget follows a $38.1 million allocation, increases spending for arts organizations by 14%, and commits the agency to work with government colleagues to support the Music Action Plan.",
+      finding: "This is the clearest public AFA statement yet connecting its approved annual budget and implementation intent to the plan. It remains an agency-wide baseline, not a music-specific allocation or proof of Commission authority, a Commissioner appointment, early-action grant agreements, partner deliverables, or new Action Plan program terms.",
+      sourceIds: ["afa-2026-27-budget-june25", "afa-impact-2025-26-june19", "action-plan", "commission-page"]
+    },
     {
       date: "July 13, 2026",
       label: "Partner capacity",
