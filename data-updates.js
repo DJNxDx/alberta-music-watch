@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.23",
-    lastUpdated: "July 17, 2026",
-    currentFinding: "AFA's approved 2026-27 budget now provides a $38.1 million agency-wide funding baseline, a 14% increase in spending for arts organizations, and an explicit commitment to support the Music Action Plan, but it does not identify a music-specific allocation, Action Plan program terms, early-action grant agreements, or a Music Commissioner appointment."
+    version: "1.6.24",
+    lastUpdated: "July 19, 2026",
+    currentFinding: "Calgary's 2026 Stampede noise rules and July 12 complaint counts provide a direct municipal implementation baseline for the Action Plan's future Music Friendly work, while the Commission page still names no Commissioner, workplan, public budget, or grant terms."
   },
   sources: [
+    {
+      id: "calgary-stampede-noise-july12",
+      title: "Stampede Noise Complaints and Infractions",
+      publisher: "City of Calgary",
+      type: "Municipal enforcement update",
+      date: "July 12, 2026; accessed July 19, 2026",
+      url: "https://newsroom.calgary.ca/stampede-noise-complaints-infractions/",
+      note: "The City reported 275 noise complaints related to 2026 Stampede events and festival activities as of 11 a.m. July 12, including 165 for Cowboys Music Festival and 43 for Badlands Music Festival. It said peace officers were monitoring permitted events, bass remained a challenge, and organizers could face enforcement where warranted; a fuller post-Stampede summary was still pending. Useful as a municipal festival-policy and venue-operations baseline, not evidence of provincial Music Friendly program delivery, Commission action, Action Plan funding, or a Music Commissioner appointment."
+    },
+    {
+      id: "calgary-stampede-noise-rules-2026",
+      title: "Noise at major events: Stampede Noise Exemption Permit 2026",
+      publisher: "City of Calgary",
+      type: "Municipal permit guidance",
+      date: "2026 permit conditions; accessed July 19, 2026",
+      url: "https://www.calgary.ca/bylaws/noise-major-events.html",
+      note: "The City says its 2026 Stampede permit conditions require concerts outside Stampede Park to end at midnight, retain a 75 dBA live-music limit before midnight while reducing bass to 82 dBC, and measure compliance at residential complaint locations. Useful as a direct municipal record of how festival activity, venue operations, residents, notice, appeals, and enforcement are being balanced; not evidence that the Alberta Music Commission designed the rules or delivered the Action Plan's future Music Friendly program."
+    },
     {
       id: "afa-2026-27-budget-june25",
       title: "AFA 2026-27 annual budget",
@@ -223,6 +241,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 19, 2026",
+      label: "Municipal venue policy",
+      title: "Calgary logs festival-noise pressure under 2026 rules",
+      summary: "Calgary's 2026 Stampede permit rules keep live music at 75 dBA before midnight, reduce bass to 82 dBC, and require concerts outside Stampede Park to end by midnight; by July 12, the City had logged 275 event and festival complaints, including 165 for Cowboys and 43 for Badlands.",
+      finding: "This is direct municipal evidence of the venue-and-resident trade-offs that the Action Plan's promised Music Friendly program will need to address. It does not show that the province or Commission designed these rules, resolved the complaints, delivered municipal supports, appointed a Commissioner, or funded an Action Plan program; Calgary says a fuller post-Stampede summary is still pending.",
+      sourceIds: ["calgary-stampede-noise-july12", "calgary-stampede-noise-rules-2026", "action-plan", "commission-page"]
+    },
     {
       date: "July 17, 2026",
       label: "AFA budget",
