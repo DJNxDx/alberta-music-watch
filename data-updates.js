@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.24",
-    lastUpdated: "July 19, 2026",
-    currentFinding: "Calgary's 2026 Stampede noise rules and July 12 complaint counts provide a direct municipal implementation baseline for the Action Plan's future Music Friendly work, while the Commission page still names no Commissioner, workplan, public budget, or grant terms."
+    version: "1.6.25",
+    lastUpdated: "July 21, 2026",
+    currentFinding: "A 2025-26 Community Initiatives Program recipient list names nine clearly music-oriented projects receiving $236,915 in existing project grants, adding a recipient-level funding baseline but not evidence of new Action Plan money, Commission delivery, or a Music Commissioner appointment."
   },
   sources: [
+    {
+      id: "cip-project-intake3-music-2025-26",
+      title: "Community Initiatives Program Project-Based Intake 3, 2025-26 Approved Applicants",
+      publisher: "Government of Alberta, Arts, Culture and Status of Women",
+      type: "Grant recipient list",
+      date: "May 22, 2026; accessed July 21, 2026",
+      url: "https://www.alberta.ca/system/files/acsw-cip-project-based-approved-applicants-2025-26.pdf",
+      note: "The official recipient list names at least nine clearly music-oriented awards totaling $236,915: Music Calgary Show Series ($30,000), St. Albert Singers Guild technology ($5,000), Make Music Edmonton ($11,525), Grande Prairie Boys' Choir ($10,000), Edmonton Winds' 50th anniversary season ($15,000), Rocky Mountain Symphony's touring-orchestra initiative ($49,890), the Grand North American Old Time Fiddle Championship ($18,000), Windwood Music Festival ($22,500), and Youth Singers of Calgary technology and equipment renewal ($75,000). Useful as recipient-level evidence of existing community-project funding across several Alberta municipalities; the document does not label these as Music Action Plan grants, identify Commission involvement, prove additive music funding, or disclose early-action grant terms."
+    },
     {
       id: "calgary-stampede-noise-july12",
       title: "Stampede Noise Complaints and Infractions",
@@ -241,6 +250,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 21, 2026",
+      label: "Recipient-level funding",
+      title: "CIP list records $236,915 across nine music projects",
+      summary: "A late-indexed provincial recipient list names nine clearly music-oriented Community Initiatives Program awards totaling $236,915, spanning live events, ensembles, touring, festivals, and equipment in seven Alberta municipalities.",
+      finding: "This adds an auditable recipient-level baseline for existing provincial project support. It does not establish that the money is new or dedicated to the Music Action Plan, that the Commission selected or administers the awards, that a Commissioner has been appointed, or that the plan's early-action grant terms are public.",
+      sourceIds: ["cip-project-intake3-music-2025-26", "action-plan", "music-org-operating", "commission-page"]
+    },
     {
       date: "July 19, 2026",
       label: "Municipal venue policy",
