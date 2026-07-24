@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.25",
-    lastUpdated: "July 21, 2026",
-    currentFinding: "A 2025-26 Community Initiatives Program recipient list names nine clearly music-oriented projects receiving $236,915 in existing project grants, adding a recipient-level funding baseline but not evidence of new Action Plan money, Commission delivery, or a Music Commissioner appointment."
+    version: "1.6.26",
+    lastUpdated: "July 24, 2026",
+    currentFinding: "A City of Calgary release gives River Hall a measurable municipal placemaking baseline: more than 10,000 prior-season visitors, 34 events, 80-plus local programming partners, and a free 2026 season with live music and a community stage. It is not evidence of provincial Music Friendly delivery, Commission action, Action Plan funding, or a Music Commissioner appointment."
   },
   sources: [
+    {
+      id: "calgary-river-hall-july22",
+      title: "River Hall launches its longest season after welcoming 10,000 visitors",
+      publisher: "City of Calgary",
+      type: "Municipal placemaking update",
+      date: "July 22, 2026; accessed July 24, 2026",
+      url: "https://newsroom.calgary.ca/river-hall-launches-its-longest-season-after-welcoming-10000-visitors/",
+      note: "The City says River Hall welcomed more than 10,000 visitors, hosted 34 events, and worked with more than 80 local programming partners in its prior season. The free, all-ages 2026 season runs July 23 to Sept. 27 and includes a community stage with live music, DJs, and performances as part of the City's Downtown Strategy. Useful as a measurable municipal public-space, access, and partner-capacity baseline; the release does not disclose artist compensation, program spending, repeat-attendance data, provincial funding, Music Commission involvement, Music Friendly program terms, or a Music Commissioner appointment."
+    },
     {
       id: "cip-project-intake3-music-2025-26",
       title: "Community Initiatives Program Project-Based Intake 3, 2025-26 Approved Applicants",
@@ -250,6 +259,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 24, 2026",
+      label: "Municipal placemaking",
+      title: "River Hall adds a measurable free-music baseline",
+      summary: "A City of Calgary release says River Hall's prior season welcomed more than 10,000 visitors across 34 events with over 80 local programming partners; its free July 23-Sept. 27 season includes live music, DJs, performances, and a community stage.",
+      finding: "This creates a municipal Music Friendly accountability baseline for public-space access, partner reach, artist compensation, spending, repeat attendance, and long-term use. It does not establish that the province or Commission designed or funded River Hall, that Action Plan or Music Friendly program terms are public, or that a Music Commissioner has been appointed.",
+      sourceIds: ["calgary-river-hall-july22", "calgary-stampede-noise-rules-2026", "action-plan", "commission-page"]
+    },
     {
       date: "July 21, 2026",
       label: "Recipient-level funding",
