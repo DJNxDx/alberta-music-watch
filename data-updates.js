@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.26",
-    lastUpdated: "July 24, 2026",
-    currentFinding: "A City of Calgary release gives River Hall a measurable municipal placemaking baseline: more than 10,000 prior-season visitors, 34 events, 80-plus local programming partners, and a free 2026 season with live music and a community stage. It is not evidence of provincial Music Friendly delivery, Commission action, Action Plan funding, or a Music Commissioner appointment."
+    version: "1.6.28",
+    lastUpdated: "July 30, 2026",
+    currentFinding: "Bird Creatives' Edmonton AMPLIFIED callout says every selected artist will be paid and names the City of Edmonton, Explore Edmonton, Government of Alberta, Alberta Music and West Anthem as collaborators. This creates a direct compensation and partner-delivery baseline, but not a disclosed budget, fee schedule, selection result, Action Plan program, Commission workplan, or Music Commissioner appointment."
   },
   sources: [
+    {
+      id: "bird-edmonton-amplified-july30",
+      title: "Edmonton AMPLIFIED Callout",
+      publisher: "Bird Creatives",
+      type: "Partner program callout",
+      date: "Application deadline July 6, 2026; accessed July 30, 2026",
+      url: "https://www.birdcreatives.com/edmonton-amplified-callout",
+      note: "Bird Creatives describes Edmonton AMPLIFIED as a year-round initiative producing paid performance opportunities for Alberta artists through community events, festival partnerships and major city celebrations. It lists free community events from August 2026 to February 2027, CPKC Women's Open programming, and collaboration among the City of Edmonton, Explore Edmonton, Government of Alberta, Bird Creatives, Alberta Music and West Anthem. The callout says every selected artist will be paid, with fees varying by event, venue, artist configuration and available program budgets. Useful as direct implementer evidence of a compensation floor and named partner model; it does not disclose the program budget, fee schedule, funding shares, selections or outcomes, or establish Music Commission authority, Action Plan program delivery, or a Music Commissioner appointment."
+    },
+    {
+      id: "bird-west-anthem-convention-july16",
+      title: "Alberta Music Cities Convention 2026: How Alberta's Music Scene is Evolving",
+      publisher: "Bird Creatives",
+      type: "Partner consultant update",
+      date: "July 16, 2026; accessed July 29, 2026",
+      url: "https://www.birdcreatives.com/west-anthem-music-city-convention-2026",
+      note: "Bird Creatives says it served as West Anthem's main consultant on the Music City Strategies and has been contracted by National Music Centre, in partnership with West Anthem and Music Cities Events, as General Manager for the Sept. 29-Oct. 1 Alberta Music Cities Convention. West Anthem's own homepage corroborates Bird's project-consultant role. Bird describes the Action Plan as a beginning whose next phase must turn stated priorities into funded, tangible action. Useful as direct partner-role and stakeholder-accountability context; the page does not disclose contract value, public funding or grant terms, Music Commission authority, completed Action Plan outcomes, or a Music Commissioner appointment."
+    },
     {
       id: "calgary-river-hall-july22",
       title: "River Hall launches its longest season after welcoming 10,000 visitors",
@@ -259,6 +277,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "July 30, 2026",
+      label: "Paid performance baseline",
+      title: "Edmonton AMPLIFIED promises pay across partner series",
+      summary: "Bird Creatives' callout says all selected artists will be paid through Edmonton AMPLIFIED and names the City of Edmonton, Explore Edmonton, Government of Alberta, Alberta Music and West Anthem as collaborators.",
+      finding: "This is a direct compensation and partner-delivery baseline for a multi-event Edmonton initiative. It does not disclose the total budget, fee schedule, partner funding shares, selected artists or audience outcomes, and it does not establish Action Plan program terms, Music Commission authority or workplan, or a Music Commissioner appointment.",
+      sourceIds: ["bird-edmonton-amplified-july30", "west-anthem-homepage-june5", "west-anthem-partee-july9", "action-plan", "commission-page"]
+    },
+    {
+      date: "July 29, 2026",
+      label: "Partner accountability",
+      title: "West Anthem consultant names convention delivery role",
+      summary: "Bird Creatives, which West Anthem lists as project consultant, says National Music Centre contracted it to manage the 2026 Alberta Music Cities Convention with West Anthem and Music Cities Events and calls funded, tangible action the Action Plan's next test.",
+      finding: "This is direct stakeholder evidence of an operational convention role and a useful public delivery standard. It does not establish contract value, public funding or early-action grant terms, Music Commission authority or workplan, completed Action Plan outcomes, or a Music Commissioner appointment.",
+      sourceIds: ["bird-west-anthem-convention-july16", "west-anthem-homepage-june5", "music-cities-events-alberta-2026", "nmc-program-guide-2026", "action-plan", "commission-page"]
+    },
     {
       date: "July 24, 2026",
       label: "Municipal placemaking",
