@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.28",
-    lastUpdated: "July 30, 2026",
-    currentFinding: "Bird Creatives' Edmonton AMPLIFIED callout says every selected artist will be paid and names the City of Edmonton, Explore Edmonton, Government of Alberta, Alberta Music and West Anthem as collaborators. This creates a direct compensation and partner-delivery baseline, but not a disclosed budget, fee schedule, selection result, Action Plan program, Commission workplan, or Music Commissioner appointment."
+    version: "1.6.29",
+    lastUpdated: "August 1, 2026",
+    currentFinding: "A July 30 Order in Council appoints Kimberley Capstick as Deputy Minister of Indigenous Relations effective August 17, setting a dated leadership appointment for an Action Plan collaborator. It does not publish Indigenous music partner participation, co-design authority, dedicated resources, barrier reporting, a Commission workplan, or a Music Commissioner appointment."
   },
   sources: [
+    {
+      id: "orders-in-council-july30-indigenous-relations",
+      title: "Orders Approved - July 30, 2026",
+      publisher: "Government of Alberta",
+      type: "Orders in Council",
+      date: "July 30, 2026; published July 31, 2026",
+      url: "https://www.alberta.ca/release.cfm?xID=96580347ABF5A-B25E-79BC-E71D3C838B0EBC0E",
+      note: "Official Order in Council 300/2026 appoints Kimberley Capstick as Deputy Minister of Indigenous Relations effective August 17, 2026. Useful as the direct legal record setting the effective date for an Action Plan cross-government collaborator; it does not publish direct Indigenous music partner participation, co-design terms, dedicated resources, barrier reporting, Music Commission authority or workplan, or a Music Commissioner appointment."
+    },
     {
       id: "bird-edmonton-amplified-july30",
       title: "Edmonton AMPLIFIED Callout",
@@ -277,6 +286,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 1, 2026",
+      label: "Indigenous Relations governance",
+      title: "Order dates Indigenous Relations appointment",
+      summary: "A July 30 Order in Council appoints Kimberley Capstick as Deputy Minister of Indigenous Relations effective August 17, giving the Action Plan's named cross-government collaborator a dated leadership milestone.",
+      finding: "This sharpens the public governance chain, while Capstick's prior Arts, Culture and Status of Women role remains relevant to the plan's drafting history. It does not establish direct Indigenous music partner participation, co-design authority, dedicated resources, barrier reporting, a Music Commissioner appointment, or a Commission workplan.",
+      sourceIds: ["orders-in-council-july30-indigenous-relations", "deputy-ministers-council-june6", "action-plan", "commission-page"]
+    },
     {
       date: "July 30, 2026",
       label: "Paid performance baseline",
