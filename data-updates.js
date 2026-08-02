@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.29",
-    lastUpdated: "August 1, 2026",
-    currentFinding: "A July 30 Order in Council appoints Kimberley Capstick as Deputy Minister of Indigenous Relations effective August 17, setting a dated leadership appointment for an Action Plan collaborator. It does not publish Indigenous music partner participation, co-design authority, dedicated resources, barrier reporting, a Commission workplan, or a Music Commissioner appointment."
+    version: "1.6.30",
+    lastUpdated: "August 2, 2026",
+    currentFinding: "The existing Community Initiatives Program Project Grant is now available through GATE Front Office with a one-time September 1 intake deadline, changing the application route and timing for eligible arts and culture nonprofits. The public record does not identify new or music-specific funding, connect the change to the Music Action Plan, or establish Music Commission delivery or a Music Commissioner appointment."
   },
   sources: [
+    {
+      id: "cip-project-gate-aug2",
+      title: "Community Initiatives Program (CIP) Project Grant",
+      publisher: "Government of Alberta",
+      type: "Grant program guidance",
+      date: "Accessed August 2, 2026",
+      url: "https://www.alberta.ca/cip-project-grant",
+      note: "The official program page says CIP Project is now available through GATE Front Office with a one-time September 1, 2026 intake deadline before moving to regular February 15 and August 15 deadlines. The existing cross-sector program offers up to $75,000 on a matching basis and includes eligible arts and culture projects, community events, performers and technology; total Government of Alberta funding cannot exceed 50% of project cost. Useful as a funding-access and administration baseline for eligible music nonprofits; the page does not identify new or music-specific funding, link the transition to the Music Action Plan, disclose Action Plan early-action grant terms, or establish Music Commission involvement or a Music Commissioner appointment."
+    },
     {
       id: "orders-in-council-july30-indigenous-relations",
       title: "Orders Approved - July 30, 2026",
@@ -286,6 +295,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 2, 2026",
+      label: "Existing grant access",
+      title: "CIP moves community projects into GATE",
+      summary: "The existing Community Initiatives Program Project Grant is now open through GATE Front Office with a one-time September 1 deadline before shifting to regular February 15 and August 15 intakes.",
+      finding: "The move changes the application route and timing for eligible arts, culture and music nonprofits seeking up to $75,000 in matched project support. It does not identify new or music-specific money, connect the change to the Music Action Plan, publish early-action grant terms, establish Commission involvement, or verify a Music Commissioner appointment.",
+      sourceIds: ["cip-project-gate-aug2", "cip-project-intake3-music-2025-26", "action-plan"]
+    },
     {
       date: "August 1, 2026",
       label: "Indigenous Relations governance",
