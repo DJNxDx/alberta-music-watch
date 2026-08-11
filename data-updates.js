@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.30",
-    lastUpdated: "August 2, 2026",
-    currentFinding: "The existing Community Initiatives Program Project Grant is now available through GATE Front Office with a one-time September 1 intake deadline, changing the application route and timing for eligible arts and culture nonprofits. The public record does not identify new or music-specific funding, connect the change to the Music Action Plan, or establish Music Commission delivery or a Music Commissioner appointment."
+    version: "1.6.31",
+    lastUpdated: "August 11, 2026",
+    currentFinding: "The Alberta Music Cities Convention organizer's accessible page metadata now reports 28 speaker profiles, including seven with August 5 created dates across public music offices, nightlife policy, artist support, recording-sector leadership and live-music research. The live page also names Indigenous Music Office participation, but still says its program is coming soon and does not disclose partner funding, Music Commission authority, Action Plan delivery or a Music Commissioner appointment."
   },
   sources: [
+    {
+      id: "music-cities-speakers-aug11",
+      title: "Alberta Music Cities Convention 2026 speakers and partners",
+      publisher: "Music Cities Events / Sound Diplomacy",
+      type: "Event speaker and partnership page",
+      date: "Profiles created August 5, 2026; accessed August 11, 2026",
+      url: "https://www.musiccitiesevents.com/speakers-alberta-mcc-2026",
+      note: "The event organizer's accessible page metadata now reports 28 speaker profile items. Seven carry August 5 CMS created dates: Brian Block of NITECAP and the City of Austin, David \"Click\" Cox of CLK Creative Works, Andrea Khoo of Singapore's National Arts Council, Ruby Marchand of the Recording Academy, Sergio Parra Aguilera of the Canadian Live Music Association, DeMarcus Suggs of the City of Memphis Office of Creative and Cultural Economy, and Jaclyn Tam of the City of Toronto Music Office. The live roster also identifies Indigenous Music Office program manager Brenton Thorvaldson and Canadian Council for Indigenous Business executive Shannon Sutherland, while the Partnerships section exposes an Indigenous Music Office logo. Useful as a current policy-forum participation and partner-representation record; the page still labels the program as coming soon and does not publish session assignments, speaker compensation, access or subsidy terms, partner funding or contract shares, Music Commission authority or workplan, Action Plan outcomes, or a Music Commissioner appointment."
+    },
     {
       id: "cip-project-gate-aug2",
       title: "Community Initiatives Program (CIP) Project Grant",
@@ -295,6 +304,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 11, 2026",
+      label: "Convention participation",
+      title: "Convention expands its public speaker record",
+      summary: "The organizer's accessible metadata now lists 28 speaker profiles, including seven with August 5 created dates spanning municipal music offices, nightlife policy, public arts funding, Recording Academy leadership and Canadian live-music research; the live page also names Indigenous Music Office participation.",
+      finding: "This strengthens the accountability baseline for municipal music policy, nighttime governance, artist support, recording-sector representation and Indigenous participation. It still does not publish the program or session assignments, speaker compensation, access or subsidy terms, partner funding or contract shares, Commission authority or workplan, Action Plan outcomes, or a Music Commissioner appointment.",
+      sourceIds: ["music-cities-speakers-aug11", "music-cities-partners-july7", "music-cities-events-alberta-2026", "action-plan", "commission-page"]
+    },
     {
       date: "August 2, 2026",
       label: "Existing grant access",
