@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.31",
-    lastUpdated: "August 11, 2026",
-    currentFinding: "The Alberta Music Cities Convention organizer's accessible page metadata now reports 28 speaker profiles, including seven with August 5 created dates across public music offices, nightlife policy, artist support, recording-sector leadership and live-music research. The live page also names Indigenous Music Office participation, but still says its program is coming soon and does not disclose partner funding, Music Commission authority, Action Plan delivery or a Music Commissioner appointment."
+    version: "1.6.32",
+    lastUpdated: "August 13, 2026",
+    currentFinding: "The Alberta Music Cities Convention organizer has published a timed agenda that schedules a results-oriented West Anthem and Alberta Music Action Plan presentation with the Alberta Music Commissioner. This is material prospective implementation context, but the organizer does not name the Commissioner, and current official government pages still do not publish an appointment, Commission roster, authority, workplan, metrics or results."
   },
   sources: [
+    {
+      id: "music-cities-program-aug13",
+      title: "Alberta Music Cities Convention 2026 event program",
+      publisher: "Music Cities Events / Sound Diplomacy",
+      type: "Event program",
+      date: "Accessed August 13, 2026",
+      url: "https://www.musiccitiesevents.com/schedule-alberta-mcc",
+      note: "The organizer's live timed agenda lists a September 29 closed-door Canadian Music Cities roundtable and public September 30-October 1 sessions on Indigenous music economies and cultural sovereignty, talent investment, small venues, health, placemaking, music offices, tourism and music-friendly policy. It schedules an October 1 presentation titled 'West Anthem Alberta Music Action Plan - Results-oriented presentation with the Alberta Music Commissioner.' Useful as prospective convention-program and accountability evidence; the page does not name the Commissioner, establish an official appointment or participation confirmation, disclose the closed-door invite list or record, define Commission authority, workplan or independence, or publish the claimed metrics, policy wins, strategic pivots, funding or results."
+    },
     {
       id: "music-cities-speakers-aug11",
       title: "Alberta Music Cities Convention 2026 speakers and partners",
@@ -304,6 +313,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 13, 2026",
+      label: "Prospective accountability",
+      title: "Convention agenda signals an unnamed Commissioner",
+      summary: "The convention organizer's new timed agenda schedules an October 1 results-oriented West Anthem and Alberta Music Action Plan presentation with the Alberta Music Commissioner, following a closed-door Canadian Music Cities forum and public policy sessions.",
+      finding: "This creates a concrete future accountability test for the appointment, Commission role and results the session says it will present. It is organizer evidence, not an official appointment record or proof the unnamed Commissioner will participate; no public page yet supplies the person's name, appointment authority, Commission roster, workplan, independence, metrics, funding, policy wins or delivered outcomes.",
+      sourceIds: ["music-cities-program-aug13", "music-cities-speakers-aug11", "music-cities-events-alberta-2026", "action-plan", "commission-page", "job-posting-closed-june10"]
+    },
     {
       date: "August 11, 2026",
       label: "Convention participation",
