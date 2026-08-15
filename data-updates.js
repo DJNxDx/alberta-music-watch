@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.32",
-    lastUpdated: "August 13, 2026",
-    currentFinding: "The Alberta Music Cities Convention organizer has published a timed agenda that schedules a results-oriented West Anthem and Alberta Music Action Plan presentation with the Alberta Music Commissioner. This is material prospective implementation context, but the organizer does not name the Commissioner, and current official government pages still do not publish an appointment, Commission roster, authority, workplan, metrics or results."
+    version: "1.6.33",
+    lastUpdated: "August 15, 2026",
+    currentFinding: "The Canada Council for the Arts has announced a $25 million, five-year Alberta Focus Fund delivered through its existing programs. Its 2024-25 Alberta baseline included $17.8 million in grants and prizes, with $4.3 million classified as Music and Sound. This is material federal arts-funding context, not provincial Music Action Plan funding; no music share, annual schedule, recipient list or Action Plan link is yet published."
   },
   sources: [
+    {
+      id: "canada-council-alberta-focus-fund-june14",
+      title: "Canada Council for the Arts invests $25 million to strengthen Alberta arts communities",
+      publisher: "Canada Council for the Arts",
+      type: "Federal arts funding announcement",
+      date: "June 14, 2026; revised June 22, 2026; accessed August 15, 2026",
+      url: "https://canadacouncil.ca/press/2026/06/alberta-focus-fund",
+      note: "The federal arts funder announces a $25 million Alberta Focus Fund over five years, delivered through existing Canada Council programs to support more projects and strengthen arts-organization capacity across disciplines and regions. It expects benefits for Indigenous, Deaf and disability, racialized, rural and remote, and official-language-minority artists and organizations. Useful as Alberta-wide public arts-funding and access context; the announcement does not publish a music-specific allocation, annual spending schedule, recipient list, program-by-program distribution, provincial matching requirement, Music Commission role, Music Commissioner appointment or Music Action Plan link."
+    },
+    {
+      id: "canada-council-alberta-funding-2024-25",
+      title: "2024-25 Alberta Funding Overview",
+      publisher: "Canada Council for the Arts",
+      type: "Federal grant data",
+      date: "2024-25; accessed August 15, 2026",
+      url: "https://canadacouncil.ca/research/stats-and-stories/alberta",
+      note: "The Canada Council's Alberta overview reports $17.8 million in 2024-25 grants and prizes across 428 awards, including $4.3 million classified as Music and Sound. It also reports 96 arts organizations, 25 groups and 233 artists supported, 114 first-time recipients and awards in 33 communities. Useful as the pre-Focus-Fund baseline for later music share, recipient reach and regional-access comparisons; it is federal funding across disciplines, not a provincial Music Action Plan allocation or Commission result."
+    },
     {
       id: "music-cities-program-aug13",
       title: "Alberta Music Cities Convention 2026 event program",
@@ -313,6 +331,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 15, 2026",
+      label: "Federal arts funding",
+      title: "Canada Council sets a $25M Alberta funding test",
+      summary: "A late-indexed Canada Council announcement creates a $25 million, five-year Alberta Focus Fund through existing federal programs; the Council's 2024-25 Alberta baseline was $17.8 million in grants and prizes, including $4.3 million for Music and Sound.",
+      finding: "This adds a material public benchmark for whether Alberta music applicants, organizations, Indigenous artists, underserved communities and rural or remote regions receive broader access and measurable gains. It is federal cross-discipline funding, not provincial Music Action Plan money, and the announcement does not yet publish a music share, annual schedule, recipient list, program distribution, provincial match, Music Commission role or Action Plan outcome.",
+      sourceIds: ["canada-council-alberta-focus-fund-june14", "canada-council-alberta-funding-2024-25", "action-plan", "commission-page"]
+    },
     {
       date: "August 13, 2026",
       label: "Prospective accountability",
