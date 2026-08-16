@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.33",
-    lastUpdated: "August 15, 2026",
-    currentFinding: "The Canada Council for the Arts has announced a $25 million, five-year Alberta Focus Fund delivered through its existing programs. Its 2024-25 Alberta baseline included $17.8 million in grants and prizes, with $4.3 million classified as Music and Sound. This is material federal arts-funding context, not provincial Music Action Plan funding; no music share, annual schedule, recipient list or Action Plan link is yet published."
+    version: "1.6.34",
+    lastUpdated: "August 16, 2026",
+    currentFinding: "Alberta's current-fiscal grant table records $6.287 million in 2026-27 Arts, Culture and Status of Women payments to Francis Winspear Centre for Music for Phase 3 and completion work. This is material payment-level venue-infrastructure evidence, but the table does not tie the payments to Music Action Plan delivery or resolve the announced $800,000 early-action allocations."
   },
   sources: [
+    {
+      id: "acsw-grant-payments-winspear-q1-2026-27",
+      title: "Grant payments disclosure: 2026-27 Arts, Culture and Status of Women payments",
+      publisher: "Government of Alberta / Treasury Board and Finance",
+      type: "Government grant-payment data",
+      date: "Payments April 2-June 16, 2026; accessed August 16, 2026",
+      url: "https://www.alberta.ca/grant-payments-disclosure-table",
+      note: "The current-fiscal-year export lists three Arts, Culture and Status of Women payments to Francis Winspear Centre for Music: $1,739,304.15 on April 2 and $287,963.35 on June 16 under Winspear Completion Project, plus $4.26 million on May 14 under Winspear Centre's Phase 3, totaling $6,287,267.50. It also lists $22.05 million to the Alberta Foundation for the Arts on April 7. Useful as a payment-level capital and agency-funding baseline. The export has no current-fiscal entries under National Music Centre, Alberta Music Industry Association or West Anthem, but that absence does not prove an award or payment did not occur because reporting can lag and recipient or program names can differ. The table does not identify these payments as Music Action Plan or Commission delivery, publish early-action grant agreements, or disclose a Music Commissioner appointment."
+    },
     {
       id: "canada-council-alberta-focus-fund-june14",
       title: "Canada Council for the Arts invests $25 million to strengthen Alberta arts communities",
@@ -331,6 +340,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 16, 2026",
+      label: "Provincial grant payments",
+      title: "Grant table records $6.29M for Winspear",
+      summary: "A current-fiscal-year Government of Alberta export records three Arts, Culture and Status of Women payments totaling $6,287,267.50 to Francis Winspear Centre for Music for Phase 3 and completion work between April 2 and June 16.",
+      finding: "This is actual 2026-27 provincial payment evidence for major music-venue infrastructure, not a new Music Action Plan grant by itself. The export also shows $22.05 million paid to the Alberta Foundation for the Arts but no current-fiscal entries under National Music Centre, Alberta Music Industry Association or West Anthem; that does not prove the announced $800,000 early-action awards were unpaid or absent, but it leaves their allocations, agreements, purposes, deliverables and any Commission role unresolved.",
+      sourceIds: ["acsw-grant-payments-winspear-q1-2026-27", "afa-launch", "assembly-may5-hansard", "action-plan"]
+    },
     {
       date: "August 15, 2026",
       label: "Federal arts funding",
