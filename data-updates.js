@@ -1,8 +1,8 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.34",
-    lastUpdated: "August 16, 2026",
-    currentFinding: "Alberta's current-fiscal grant table records $6.287 million in 2026-27 Arts, Culture and Status of Women payments to Francis Winspear Centre for Music for Phase 3 and completion work. This is material payment-level venue-infrastructure evidence, but the table does not tie the payments to Music Action Plan delivery or resolve the announced $800,000 early-action allocations."
+    version: "1.6.35",
+    lastUpdated: "August 18, 2026",
+    currentFinding: "Current official CIP guidance identifies August 15, not September 1, as the first GATE Front Office intake and says the program is temporarily paused. This corrects the tracker's August 2 timing record; it does not add music-specific funding or Music Action Plan delivery evidence."
   },
   sources: [
     {
@@ -55,9 +55,9 @@ window.AMW_DATA_UPDATES = {
       title: "Community Initiatives Program (CIP) Project Grant",
       publisher: "Government of Alberta",
       type: "Grant program guidance",
-      date: "Accessed August 2, 2026",
+      date: "Accessed August 2; rechecked August 18, 2026",
       url: "https://www.alberta.ca/cip-project-grant",
-      note: "The official program page says CIP Project is now available through GATE Front Office with a one-time September 1, 2026 intake deadline before moving to regular February 15 and August 15 deadlines. The existing cross-sector program offers up to $75,000 on a matching basis and includes eligible arts and culture projects, community events, performers and technology; total Government of Alberta funding cannot exceed 50% of project cost. Useful as a funding-access and administration baseline for eligible music nonprofits; the page does not identify new or music-specific funding, link the transition to the Music Action Plan, disclose Action Plan early-action grant terms, or establish Music Commission involvement or a Music Commissioner appointment."
+      note: "The current official program page identifies August 15, 2026 as the first GATE Front Office intake, says the program is temporarily paused and not accepting applications, and lists regular February 15 and August 15 deadlines. This supersedes the September 1 transition deadline previously reported in this tracker's August 2 record; the page does not provide a change log, so the exact date its public wording changed is unknown. The existing cross-sector program offers up to $75,000 on a matching basis and includes eligible community events, artists, performers and technology; total Government of Alberta funding cannot exceed 50% of project cost. Useful as a corrected funding-access and administration baseline for eligible music nonprofits; the page does not identify new or music-specific funding, link the transition to the Music Action Plan, disclose Action Plan early-action grant terms, or establish Music Commission involvement or a Music Commissioner appointment."
     },
     {
       id: "orders-in-council-july30-indigenous-relations",
@@ -341,6 +341,14 @@ window.AMW_DATA_UPDATES = {
   ],
   briefItems: [
     {
+      date: "August 18, 2026",
+      label: "Grant access correction",
+      title: "CIP guidance corrects the GATE deadline",
+      summary: "The current official CIP Project page identifies August 15, not September 1, as the first GATE Front Office intake and now says the program is temporarily paused before its regular February 15 and August 15 cycle.",
+      finding: "This corrects the tracker's August 2 timing record and keeps the public access baseline current. It does not identify new or music-specific funding, connect the change to the Music Action Plan, publish early-action grant terms, establish Commission involvement, or verify a Music Commissioner appointment; the official page does not provide a change log showing when its public wording changed.",
+      sourceIds: ["cip-project-gate-aug2", "cip-project-intake3-music-2025-26", "action-plan"]
+    },
+    {
       date: "August 16, 2026",
       label: "Provincial grant payments",
       title: "Grant table records $6.29M for Winspear",
@@ -376,8 +384,8 @@ window.AMW_DATA_UPDATES = {
       date: "August 2, 2026",
       label: "Existing grant access",
       title: "CIP moves community projects into GATE",
-      summary: "The existing Community Initiatives Program Project Grant is now open through GATE Front Office with a one-time September 1 deadline before shifting to regular February 15 and August 15 intakes.",
-      finding: "The move changes the application route and timing for eligible arts, culture and music nonprofits seeking up to $75,000 in matched project support. It does not identify new or music-specific money, connect the change to the Music Action Plan, publish early-action grant terms, establish Commission involvement, or verify a Music Commissioner appointment.",
+      summary: "The existing Community Initiatives Program Project Grant moved into GATE Front Office for an August 15 transition intake before its regular February 15 and August 15 cycle.",
+      finding: "The move changed the application route and timing for eligible arts, culture and music nonprofits seeking up to $75,000 in matched project support. The tracker's original September 1 deadline was corrected on August 18 against the current official guidance. The program does not identify new or music-specific money, connect the change to the Music Action Plan, publish early-action grant terms, establish Commission involvement, or verify a Music Commissioner appointment.",
       sourceIds: ["cip-project-gate-aug2", "cip-project-intake3-music-2025-26", "action-plan"]
     },
     {
