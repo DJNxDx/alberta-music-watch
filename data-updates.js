@@ -1,10 +1,37 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.35",
-    lastUpdated: "August 18, 2026",
-    currentFinding: "Current official CIP guidance identifies August 15, not September 1, as the first GATE Front Office intake and says the program is temporarily paused. This corrects the tracker's August 2 timing record; it does not add music-specific funding or Music Action Plan delivery evidence."
+    version: "1.6.36",
+    lastUpdated: "August 19, 2026",
+    currentFinding: "Alberta Music's August 18 post names the association as a Canada House showcasing partner for Reeperbahn and lists Calgary-based Dempsey Bolton in the 20-act slate. This adds a named export-partner and artist baseline, but the public sources do not connect the activity to the Action Plan's early-action grants or disclose partner costs, artist support, selection records, Commission involvement or outcomes."
   },
   sources: [
+    {
+      id: "alberta-music-reeperbahn-lineup-aug18",
+      title: "CIMA Announces Canada House Lineup for Reeperbahn 2026",
+      publisher: "Alberta Music",
+      type: "Sector export update",
+      date: "August 18, 2026",
+      url: "https://www.albertamusic.org/2026/08/cima-announces-canada-house-lineup-for-reeperbahn-2026/",
+      note: "Alberta Music's post says Canada House will run September 17-18 during Reeperbahn in Hamburg, lists 20 acts including Dempsey Bolton, and names Alberta Music as one of eight showcasing partners. Useful as a selected export-showcase and partner-delivery baseline; the post does not identify which partner presents each act, publish selection records, costs, travel or business support, disclose public funding, connect the activity to the $800,000 in Action Plan early-action grants, establish Commission involvement or report outcomes."
+    },
+    {
+      id: "cima-reeperbahn-canada-house-call-2026",
+      title: "Call for Applications: Canada House at Reeperbahn 2026",
+      publisher: "Canadian Independent Music Association",
+      type: "Export showcase application guidance",
+      date: "2026 application; accessed August 19, 2026",
+      url: "https://www.cimamusic.ca/news/call-for-applications-canada-house-at-reeperbahn-2026/",
+      note: "CIMA's application page sets September 16-19 dates, requires both CIMA and Reeperbahn applications by May 8 and says each artist must have a business representative. Showcase applicants are not charged, while the presenter, such as a provincial host partner, incurs showcasing costs; business-only participants are invoiced separately. Useful as the direct access and cost-structure baseline, but it does not disclose applicant or adjudication records, map presenters to selected artists, state the amount borne by Alberta Music, promise travel support or identify Action Plan or Music Commission funding."
+    },
+    {
+      id: "dempsey-bolton-bandcamp-calgary-aug19",
+      title: "Dempsey Bolton artist page",
+      publisher: "Dempsey Bolton / Bandcamp",
+      type: "Artist-controlled profile",
+      date: "Accessed August 19, 2026",
+      url: "https://dempseybolton.bandcamp.com/",
+      note: "The artist-controlled page identifies Dempsey Bolton as based in Calgary, Alberta. Useful for corroborating the Alberta location of an act named in the Canada House slate; it does not by itself confirm an individual performance time, travel, presenter relationship, funding, selection process, business outcome or Action Plan connection."
+    },
     {
       id: "acsw-grant-payments-winspear-q1-2026-27",
       title: "Grant payments disclosure: 2026-27 Arts, Culture and Status of Women payments",
@@ -340,6 +367,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 19, 2026",
+      label: "Export partner delivery",
+      title: "Alberta Music joins a Reeperbahn export slate",
+      summary: "Alberta Music's August 18 post names it among eight Canada House showcasing partners and lists 20 acts, including Dempsey Bolton, whose artist-controlled page identifies Calgary as his base.",
+      finding: "This adds a named international export-partner and Alberta-artist baseline. CIMA's application guidance says the presenting partner bears showcasing costs and each selected artist needs a business representative, but the public record does not map Alberta Music to a specific act, disclose its costs or artist support, publish selection records, confirm an individual set time, connect the activity to the $800,000 in Action Plan early-action grants, establish Commission involvement or report business outcomes.",
+      sourceIds: ["alberta-music-reeperbahn-lineup-aug18", "cima-reeperbahn-canada-house-call-2026", "dempsey-bolton-bandcamp-calgary-aug19", "action-plan", "commission-page"]
+    },
     {
       date: "August 18, 2026",
       label: "Grant access correction",
