@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.36",
-    lastUpdated: "August 19, 2026",
-    currentFinding: "Alberta Music's August 18 post names the association as a Canada House showcasing partner for Reeperbahn and lists Calgary-based Dempsey Bolton in the 20-act slate. This adds a named export-partner and artist baseline, but the public sources do not connect the activity to the Action Plan's early-action grants or disclose partner costs, artist support, selection records, Commission involvement or outcomes."
+    version: "1.6.37",
+    lastUpdated: "August 21, 2026",
+    currentFinding: "National Music Centre says its new Live from the King Eddy series will give 10 Canadian acts access to the Rolling Stones Mobile Studio in Calgary; the first three named acts are from Toronto, Montreal and Quebec. This creates an Alberta-access and partner-delivery test, but the public record does not publish the full lineup, selection rules, artist support value, funding source, Alberta allocation, Action Plan or Commission involvement, or outcomes."
   },
   sources: [
+    {
+      id: "nmc-live-king-eddy-aug18",
+      title: "The Free Label to Record Live Album at the King Eddy Using Rolling Stones Mobile Studio, September 26 & 27",
+      publisher: "National Music Centre / Studio Bell",
+      type: "Partner artist-development update",
+      date: "August 18, 2026; accessed August 21, 2026",
+      url: "https://www.studiobell.ca/the-free-label-to-record-live-album-at-the-king-eddy-using-rolling-stones-mobile-studio-september-26-27",
+      note: "NMC announces a new Live from the King Eddy series that will bring 10 Canadian acts to Calgary to record live albums using the Rolling Stones Mobile Studio. The first three named acts are Toronto's The Free Label, Montreal's The Damn Truth and Quebec singer-songwriter Sara Dufour; seven acts remain unnamed. Useful as a concrete venue, recording-access and early-action-partner baseline. The release does not publish a public application or selection process, artist support value, recording-rights terms, funding source, Alberta-artist allocation, connection to the $800,000 in Action Plan early-action grants, Commission involvement or results."
+    },
     {
       id: "alberta-music-reeperbahn-lineup-aug18",
       title: "CIMA Announces Canada House Lineup for Reeperbahn 2026",
@@ -367,6 +376,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 21, 2026",
+      label: "Partner artist access",
+      title: "NMC sets a 10-act national studio access test",
+      summary: "National Music Centre says Live from the King Eddy will bring 10 Canadian acts to Calgary to record live albums using the Rolling Stones Mobile Studio; the first three named acts are from Toronto, Montreal and Quebec.",
+      finding: "This is a concrete use of a historic venue and recording asset by an organization named among the Action Plan's early-action grant recipients. It also creates a clear Alberta-access test: seven artists remain unnamed, and the public record does not disclose an open call, selection rules, artist support value, recording-rights terms, funding source, Alberta allocation, early-action grant connection, Commission involvement or outcomes.",
+      sourceIds: ["nmc-live-king-eddy-aug18", "afa-launch", "action-plan", "commission-page"]
+    },
     {
       date: "August 19, 2026",
       label: "Export partner delivery",
