@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.37",
-    lastUpdated: "August 21, 2026",
-    currentFinding: "National Music Centre says its new Live from the King Eddy series will give 10 Canadian acts access to the Rolling Stones Mobile Studio in Calgary; the first three named acts are from Toronto, Montreal and Quebec. This creates an Alberta-access and partner-delivery test, but the public record does not publish the full lineup, selection rules, artist support value, funding source, Alberta allocation, Action Plan or Commission involvement, or outcomes."
+    version: "1.6.38",
+    lastUpdated: "August 25, 2026",
+    currentFinding: "The Canadian Press reports that Alberta appointed Jennifer Venance as its first Music Commissioner and that the role is funded through existing ministry resources. The appointment resolves the identity question, but the official Commission page still does not name her or publish an appointment record, start date, salary, selection process, delegated authority, workplan, Commission roster, budget, performance measures or early-action grant terms."
   },
   sources: [
+    {
+      id: "canadian-press-venance-aug24",
+      title: "Alberta announces music commissioner to grow industry culturally, economically",
+      publisher: "The Canadian Press / 650 CKOM",
+      type: "Reported provincial appointment",
+      date: "August 24, 2026; accessed August 25, 2026",
+      url: "https://www.ckom.com/2026/08/24/alberta-announces-music-commissioner-to-grow-industry-culturally-economically/",
+      note: "The Canadian Press reports that Alberta appointed Jennifer Venance as its first Music Commissioner. The report says Venance previously worked in provincial school-curriculum development, has more than two decades of experience as a musician and music educator, and will act as a liaison between the province and the music industry. It attributes to Minister Tanya Fir's press secretary the statement that the role is funded through existing ministry resources approved in Budget 2026 and that Venance's salary and compensation will be publicly reported. Useful as a direct, named appointment and funding-source report. The official Commission page checked August 25 still does not name Venance or publish an appointment instrument, start date, salary, selection record, delegated authority, workplan, Commission roster, budget, performance measures or early-action grant agreements."
+    },
     {
       id: "nmc-live-king-eddy-aug18",
       title: "The Free Label to Record Live Album at the King Eddy Using Rolling Stones Mobile Studio, September 26 & 27",
@@ -376,6 +385,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 25, 2026",
+      label: "Commission appointment",
+      title: "Alberta names its first Music Commissioner",
+      summary: "The Canadian Press reports that Alberta appointed Jennifer Venance as its first Music Commissioner; she previously worked in provincial school-curriculum development and has more than two decades of experience as a musician and music educator.",
+      finding: "The appointment resolves the Commission's leadership identity and moves the audit from recruitment to delivery. A ministry press-secretary statement says the position uses existing ministry resources and that salary and compensation will be publicly reported. The official Commission page still does not name Venance or publish an appointment record, start date, salary, selection process, delegated authority, workplan, Commission roster, budget, performance measures or early-action grant agreements.",
+      sourceIds: ["canadian-press-venance-aug24", "commission-page", "job-profile", "action-plan"]
+    },
     {
       date: "August 21, 2026",
       label: "Partner artist access",
