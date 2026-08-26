@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.37",
-    lastUpdated: "August 21, 2026",
-    currentFinding: "National Music Centre says its new Live from the King Eddy series will give 10 Canadian acts access to the Rolling Stones Mobile Studio in Calgary; the first three named acts are from Toronto, Montreal and Quebec. This creates an Alberta-access and partner-delivery test, but the public record does not publish the full lineup, selection rules, artist support value, funding source, Alberta allocation, Action Plan or Commission involvement, or outcomes."
+    version: "1.6.38",
+    lastUpdated: "August 25, 2026",
+    currentFinding: "Alberta appointed Jennifer Venance as its inaugural Music Commissioner on August 24, moving the Commission from recruitment into named leadership. The official release identifies her government, arts-education and community-engagement background; a Canadian Press report attributes to the minister's press secretary that the role is funded through existing ministry resources and that compensation will be disclosed. A Commission workplan, dedicated operating budget, advisory structure, selection record, start date and implementation metrics remain unpublished."
   },
   sources: [
+    {
+      id: "alberta-music-commissioner-venance-aug24",
+      title: "A new voice to sing Alberta's song",
+      publisher: "Government of Alberta",
+      type: "Government appointment release",
+      date: "August 24, 2026; accessed August 25, 2026",
+      url: "https://www.alberta.ca/release.cfm?xID=97662129D460F-A8D8-DDBF-0AF9108B4DF029D6",
+      note: "The official release names Jennifer Venance as Alberta's inaugural Music Commissioner and says she will be the central point of contact between government and the music sector, advance partnerships, support business development and promote Alberta talent. It identifies her most recent role as director of K-12 curriculum and French education with Alberta Education and Childcare and says she has more than 20 years of experience as a musician and music educator. The release does not publish a start date, selection record, salary, Commission operating budget, advisory structure, workplan, performance measures, early-action grant terms or new funding commitment."
+    },
+    {
+      id: "canadian-press-venance-aug24",
+      title: "Alberta announces music commissioner to grow industry culturally, economically",
+      publisher: "The Canadian Press / 650 CKOM",
+      type: "Reported provincial appointment",
+      date: "August 24, 2026; accessed August 25, 2026",
+      url: "https://www.ckom.com/2026/08/24/alberta-announces-music-commissioner-to-grow-industry-culturally-economically/",
+      note: "The Canadian Press corroborates the appointment and attributes to Minister Tanya Fir's press secretary the statement that the role is funded through existing ministry resources approved in Budget 2026 and that Venance's salary and compensation will be publicly reported. Useful as attributed funding and disclosure context, not a substitute for a primary budget line, payroll disclosure, appointment instrument or Commission operating plan."
+    },
     {
       id: "nmc-live-king-eddy-aug18",
       title: "The Free Label to Record Live Album at the King Eddy Using Rolling Stones Mobile Studio, September 26 & 27",
@@ -377,6 +395,14 @@ window.AMW_DATA_UPDATES = {
   ],
   briefItems: [
     {
+      date: "August 25, 2026",
+      label: "Commission leadership",
+      title: "Alberta names Jennifer Venance as Music Commissioner",
+      summary: "An August 24 Government of Alberta release appoints Jennifer Venance as the province's inaugural Music Commissioner after the public competition closed June 8; it identifies her recent K-12 curriculum leadership and more than 20 years as a musician and music educator.",
+      finding: "This closes the named-appointment test and gives Action Plan implementation an identifiable public lead inside the ministry. Canadian Press attributes to the minister's press secretary that the role uses existing ministry resources and that compensation will be disclosed, so the appointment is not yet evidence of additive Commission funding. The public record still lacks the selection record, start date, salary disclosure, Commission operating budget, advisory structure, workplan, early-action grant agreements and performance measures.",
+      sourceIds: ["alberta-music-commissioner-venance-aug24", "canadian-press-venance-aug24", "job-posting-closed-june10", "job-profile", "action-plan", "commission-page"]
+    },
+    {
       date: "August 21, 2026",
       label: "Partner artist access",
       title: "NMC sets a 10-act national studio access test",
@@ -665,6 +691,30 @@ window.AMW_DATA_UPDATES = {
       sourceIds: ["cbc-edmonton-am-may1", "action-plan"]
     }
   ],
+  ratings: [
+    {
+      label: "Commission creation",
+      score: 86,
+      status: "Commissioner appointed",
+      rationale: "Jennifer Venance is now the named Commissioner. A Commission budget, advisory structure, workplan, selection record, start date and reporting measures remain unpublished."
+    }
+  ],
+  promises: [
+    {
+      id: "1.1",
+      status: "Partially delivered",
+      evidence: "The Commission and Action Plan pages are live, the public competition closed June 8, and an August 24 government release names Jennifer Venance as Alberta's inaugural Music Commissioner. The release describes her role and background, while Canadian Press attributes to the minister's press secretary that the position uses existing ministry resources and that compensation will be disclosed. A Commission operating budget, advisory structure, workplan, selection record, start date and performance reporting remain unpublished.",
+      auditQuestion: "When will the Commission publish its operating budget, workplan, advisory process, performance measures, appointment terms and annual outcomes?",
+      sourceIds: ["action-plan", "action-plan-page", "commission-page", "job-posting", "job-profile", "job-posting-closed-june10", "alberta-music-commissioner-venance-aug24", "canadian-press-venance-aug24"]
+    }
+  ],
+  timeline: [
+    {
+      date: "August 24, 2026",
+      title: "Jennifer Venance appointed Music Commissioner",
+      summary: "Government names Alberta's inaugural Music Commissioner; the official release describes her remit and background, while a Canadian Press report says the position uses existing ministry resources and compensation will be publicly reported."
+    }
+  ],
   funding: [
     {
       label: "West Anthem Alberta Music Cities Grant Program 2025",
@@ -693,6 +743,12 @@ window.AMW_DATA_UPDATES = {
   ],
   reactions: [
     {
+      label: "Appointment reaction",
+      title: "NMC and West Anthem welcome the Commissioner",
+      summary: "The government release quotes Andrew Mosker, National Music Centre president and West Anthem chair, welcoming Canada's first provincial Music Commissioner and signalling that both organizations expect to work with Jennifer Venance. The quote supports partner acceptance, not an independent workplan, funding or outcome record.",
+      sourceIds: ["alberta-music-commissioner-venance-aug24", "commission-page"]
+    },
+    {
       label: "Recruitment signal",
       title: "External music-policy actors are watching the appointment",
       summary: "Sound Diplomacy's public recruitment signal treats the Alberta role as policy, investment, industry-partnership, and external-representation capacity. That is useful expectations evidence, not proof of implementation outcomes.",
@@ -706,6 +762,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   entities: [
+    {
+      id: "commissioner",
+      name: "Jennifer Venance",
+      type: "Music Commissioner",
+      role: "Alberta's inaugural Music Commissioner, appointed August 24, 2026 to serve as the central point of contact between government and the music sector and advance Action Plan implementation, partnerships, business development and market access.",
+      accountability: "Publish appointment terms, Commission budget and staffing, advisory processes, workplan, performance measures, funding influence, conflict safeguards and annual outcomes.",
+      links: ["ministry", "west-anthem", "alberta-music", "nmc", "municipal-partners", "indigenous-relations"]
+    },
     {
       id: "ministry",
       name: "Ministry of Arts, Culture and Status of Women",
@@ -730,7 +794,8 @@ window.AMW_DATA_UPDATES = {
   prependUnique(data.briefItems, updates.briefItems, (item) => `${item.date}|${item.title}`);
   prependUnique(data.reactions, updates.reactions, (item) => `${item.label}|${item.title}`);
   appendUnique(data.funding, updates.funding, (item) => item.label);
-  appendUnique(data.promises, updates.promises, (item) => item.id);
+  upsertByKey(data.ratings, updates.ratings, (item) => item.label);
+  upsertByKey(data.promises, updates.promises, (item) => item.id);
   appendUnique(data.timeline, updates.timeline, (item) => `${item.date}|${item.title}`);
   upsertByKey(data.entities, updates.entities, (item) => item.id);
 })();
