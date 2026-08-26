@@ -356,9 +356,19 @@
   }
 
   function renderDeadline() {
-    const deadlineEl = document.querySelector("[data-deadline]");
+    const deadlineEl = document.querySelector(".deadline");
     const numberEl = document.getElementById("deadlineNumber");
     const labelEl = document.getElementById("deadlineLabel");
+
+    if (!deadlineEl || !numberEl || !labelEl) return;
+
+    if (deadlineEl.dataset.appointee) {
+      numberEl.textContent = deadlineEl.dataset.appointee;
+      labelEl.textContent = deadlineEl.dataset.statusLabel || "Music Commissioner appointed";
+      deadlineEl.classList.add("closed");
+      return;
+    }
+
     const deadline = new Date(deadlineEl.dataset.deadline);
     const now = new Date();
     const diffDays = Math.ceil((deadline - now) / (1000 * 60 * 60 * 24));
