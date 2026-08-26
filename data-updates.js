@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.38",
-    lastUpdated: "August 25, 2026",
-    currentFinding: "Alberta appointed Jennifer Venance as its inaugural Music Commissioner on August 24, moving the Commission from recruitment into named leadership. The official release identifies her government, arts-education and community-engagement background; a Canadian Press report attributes to the minister's press secretary that the role is funded through existing ministry resources and that compensation will be disclosed. A Commission workplan, dedicated operating budget, advisory structure, selection record, start date and implementation metrics remain unpublished."
+    version: "1.6.39",
+    lastUpdated: "August 26, 2026",
+    currentFinding: "Calgary Arts Development's August 25 impact story says its four-year operating-grant structure gives Calgary ReggaeFest planning stability and that the returned 2025 festival drew more than 1,000 attendees over two days. The story places this within $15 million invested through 653 Calgary arts grants in 2025, but does not disclose ReggaeFest's award amount, artist pay, local-artist count, 2026 results, provincial funding, Action Plan funding or Music Commission involvement."
   },
   sources: [
+    {
+      id: "cada-reggaefest-impact-aug25",
+      title: "Calgary Reggae Festival Society: Impact Stories",
+      publisher: "Calgary Arts Development",
+      type: "Municipal arts-funding impact story",
+      date: "August 25, 2026; accessed August 26, 2026",
+      url: "https://calgaryartsdevelopment.com/news-information/blog/calgary-reggae-festival-society-impact-stories/",
+      note: "Calgary Arts Development says its four-year operating-grant structure gives Calgary ReggaeFest predictable support and publishes festival president Leo Cripps's account that the grant provides financial stability. The story says the volunteer-run festival returned in August 2025 with more than a dozen acts and over 1,000 attendees across two days, and places the example within $15 million invested through 653 CADA grants in 2025. Useful as a municipal music-funding and reported outcome baseline; it does not disclose ReggaeFest's grant amount, artist pay, local-artist count, 2026 attendance, provincial funding, Action Plan grant support, Music Friendly program delivery or Music Commission involvement."
+    },
     {
       id: "alberta-music-commissioner-venance-aug24",
       title: "A new voice to sing Alberta's song",
@@ -394,6 +403,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 26, 2026",
+      label: "Municipal funding outcomes",
+      title: "CADA links multi-year support to festival stability",
+      summary: "Calgary Arts Development's August 25 impact story says its four-year operating-grant structure helped Calgary ReggaeFest plan beyond a recurring event cycle; the returned 2025 festival presented more than a dozen acts and drew over 1,000 attendees across two days.",
+      finding: "This supplies the kind of municipal funding-and-outcome baseline the Action Plan's partner map can be tested against: predictable support, recurring presentation and reported audience reach. CADA places the example within $15 million invested through 653 arts grants in 2025, but the story does not publish ReggaeFest's award amount, artist pay, local-artist count, 2026 results, provincial contribution, Music Friendly program terms, Action Plan funding or Music Commission involvement.",
+      sourceIds: ["cada-reggaefest-impact-aug25", "amplifying-opportunities", "action-plan"]
+    },
     {
       date: "August 25, 2026",
       label: "Commission leadership",
