@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.39",
-    lastUpdated: "August 26, 2026",
-    currentFinding: "Calgary Arts Development's August 25 impact story says its four-year operating-grant structure gives Calgary ReggaeFest planning stability and that the returned 2025 festival drew more than 1,000 attendees over two days. The story places this within $15 million invested through 653 Calgary arts grants in 2025, but does not disclose ReggaeFest's award amount, artist pay, local-artist count, 2026 results, provincial funding, Action Plan funding or Music Commission involvement."
+    version: "1.6.40",
+    lastUpdated: "August 30, 2026",
+    currentFinding: "A late-indexed National Music Centre program page names 10 Alberta-based acts selected for two-day mini-residencies at Studio Bell and publishes the studio access, engineering support, internal criteria and absence of travel support. NMC credits Walt and Irene DeBoni for supporting the program; the public record does not identify an Action Plan grant, Music Commission role, program value, application volume, regional distribution, artist compensation or completed outcomes."
   },
   sources: [
+    {
+      id: "nmc-mini-residencies-selections-aug30",
+      title: "NMC Artist Mini-Residencies",
+      publisher: "National Music Centre / Studio Bell",
+      type: "Partner artist-access results and program terms",
+      date: "Accessed August 30, 2026",
+      url: "https://www.studiobell.ca/mini-residencies",
+      note: "NMC names 10 Alberta-based acts selected for two-day mini-residencies running from July 2026 to June 2027: Ackerley, Sharif, Rafiq, de Jong Improvising Unit; Colin Carbonera; Hip Hip Thursday; Kreesha Turner; Noel Fanaeian; 0Stella; Rachel Gleddie; Sarah Houston; The Three Sisters; and Witch Victim. Each residency provides two eight-hour recording sessions, an NMC audio engineer, studio and optional Living Collection access, and a short-form video feature. The page says an internal committee assessed music quality, artistic potential and project feasibility; travel is not provided, and Walt and Irene DeBoni are credited as supporters. Useful as a named Alberta artist-access and partner-delivery baseline; it does not disclose application volume, adjudicators or scores, program value, artist compensation, travel-barrier effects, geographic distribution, recording ownership, completed outputs, Action Plan early-action grant support or Music Commission involvement."
+    },
     {
       id: "cada-reggaefest-impact-aug25",
       title: "Calgary Reggae Festival Society: Impact Stories",
@@ -403,6 +412,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "August 30, 2026",
+      label: "Partner artist access",
+      title: "NMC names its 10 Alberta mini-residency acts",
+      summary: "A late-indexed National Music Centre result names 10 Alberta-based acts selected for two-day Studio Bell mini-residencies and publishes the included studio access, engineering support, internal criteria and absence of travel support.",
+      finding: "This is a concrete selected cohort and access package at an organization named among the Action Plan's early-action recipients. NMC separately credits Walt and Irene DeBoni for supporting the program, while the public record does not publish application volume, adjudicators or scores, program value, artist compensation, travel-barrier effects, regional distribution, recording ownership, completed outputs, Action Plan grant support or Music Commission involvement; it should therefore be tracked as partner delivery, not yet as provincial Action Plan delivery.",
+      sourceIds: ["nmc-mini-residencies-selections-aug30", "afa-launch", "action-plan", "commission-page"]
+    },
     {
       date: "August 26, 2026",
       label: "Municipal funding outcomes",
