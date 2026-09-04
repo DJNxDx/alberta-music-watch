@@ -1,6 +1,6 @@
 # Alberta Music Watch Nightly Audit Runbook
 
-Last updated: June 1, 2026
+Last updated: September 4, 2026
 
 This document keeps the operating memory for Alberta Music Watch inside the project folder. The nightly automation should treat this file, `README.md`, `backend/README.md`, and the repository scripts as the durable source of project procedure.
 
@@ -26,7 +26,7 @@ At the start of each run, read this runbook and the repository `README.md`.
 
 ## Nightly Workflow
 
-1. Sync `main` from GitHub. If shell Git is blocked by DNS or local Git metadata issues, use the GitHub connector compare fallback when available. If `git fetch origin main` fails with a bad `Icon\r` ref, inspect and remove only zero-byte `Icon\r` artifacts under `.git/refs` with `bash scripts/clean-git-icon-refs.sh`, then retry the fetch.
+1. Run `bash scripts/sync-audit-main.sh` from a clean workspace. It removes only inspected zero-byte regular files named exactly `Icon\r` anywhere under `.git/refs` (including the root, heads, remotes, tags and Codex refs), fetches `origin main`, checks out `main`, and fast-forwards. If history differs but file trees match exactly, it creates a `backup/main-before-sync-*` branch before aligning clean local `main` to the successfully fetched remote commit. It stops on uncommitted work, an unfinished Git operation, failed fetch, or divergent file content. If shell Git is blocked by network or Git metadata permissions, use the GitHub connector compare fallback: continue only when the checked-out clean `HEAD` is the exact GitHub `main` commit. Tree parity alone is not a successful sync. Do not widen cleanup beyond the exact zero-byte artifact rule or bypass an approval rejection.
 2. Review the private Hostinger evidence queue with `scripts/fetch-evidence-queue.sh /private/tmp/amw-admin-submissions.json`.
 3. Review each pending private submission with `scripts/review-evidence-submission.sh`.
 4. Inspect open GitHub issues whose title begins exactly with `[Evidence]`.
@@ -36,6 +36,14 @@ At the start of each run, read this runbook and the repository `README.md`.
 8. Run `bash scripts/validate-site-data.sh` and `git diff --check`. The wrapper uses system `node` when available and falls back to the bundled Codex runtime used by local automations.
 9. Confirm the runtime `window.AMW_DATA.meta.lastUpdated` produced by `data.js` plus `data-updates.js` matches the static fallback date in `index.html`.
 10. Publish a normal non-draft PR, inspect the diff, merge when safe, then verify GitHub Pages and the live site.
+
+## Keeping Local Main Ready
+
+After a squash merge, run `bash scripts/sync-audit-main.sh` again. Keep local audit commits on their dated branches; never advance local `main` to an audit branch merely because its files match the GitHub merge. GitHub's merge commit is the canonical `main` history. If shell fetch is unavailable, preserve the audit branch and record the remote merge SHA for the next successful sync.
+
+Inspect existing open automation PRs before creating another one. Reuse a pending PR when its scope matches, and do not count its unmerged sources as production content. If platform approval review rejects a merge, record the exact PR/head and reason; do not try another tool to bypass it or repeat the unchanged rejected action on every nightly run. Continue any independent review/research and report the required user action.
+
+The September 4, 2026 repair retained the old local main at `backup/main-before-repair-2026-09-04` and saved a complete bundle of main plus the September 1 audit branch under `.deploy/git-repair-2026-09-04/pre-repair.bundle`. The pending September 1 branch and PR #57 were preserved.
 
 ## Evidence Intake Rules
 
