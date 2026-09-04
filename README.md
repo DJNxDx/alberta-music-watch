@@ -54,6 +54,8 @@ Backend code lives in `backend/`. Deploy it to a Hostinger PHP/HTML subdomain, c
 
 The durable operating memory for the daily audit lives in `docs/nightly-audit-runbook.md`. The Codex automation should run from `/Users/hhmusicnichdavies/Documents/Alberta Music Watch`, read the runbook at the start of each run, review private submissions, inspect reviewed `[Evidence]` issues, add source-backed brief records, validate the site, and publish through a normal PR.
 
+Start with `bash scripts/sync-audit-main.sh` from a clean workspace. It removes only zero-byte `Icon\r` artifacts under Git's refs directory, fetches GitHub `main`, and verifies exact commit identity. If squash-merge history has diverged while file trees are identical, it preserves the old `main` on a backup branch before aligning it. Different file trees or uncommitted work stop the sync without a reset.
+
 ## Update workflow
 
 Use `data.js` as the baseline dataset and `data-updates.js` for small reviewed daily additions. Add new daily brief findings as new mini-records at the top of `briefItems`; do not delete older brief records unless they are factually wrong and the PR explains why. For larger restructuring, fold the update layer back into `data.js` in a dedicated cleanup PR.

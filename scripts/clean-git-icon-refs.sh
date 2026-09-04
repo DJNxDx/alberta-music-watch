@@ -19,17 +19,22 @@ fi
 
 non_zero_found=0
 while IFS= read -r -d '' path; do
-  echo "Ref artifact is not zero bytes; leaving untouched: $path" >&2
+  printf 'Ref artifact is not zero bytes; leaving untouched: %q\n' "$path" >&2
   non_zero_found=1
 done < <(find "$refs_dir" -name $'Icon\r' -type f ! -size 0 -print0)
 
 removed=0
 while IFS= read -r -d '' path; do
   if [[ "$dry_run" == "1" ]]; then
-    echo "Would remove zero-byte bad ref artifact: $path"
+    printf 'Would remove zero-byte bad ref artifact: %q\n' "$path"
   else
+    if [[ -L "$path" || ! -f "$path" || -s "$path" ]]; then
+      printf 'Ref artifact changed during inspection; leaving untouched: %q\n' "$path" >&2
+      non_zero_found=1
+      continue
+    fi
     rm -- "$path"
-    echo "Removed zero-byte bad ref artifact: $path"
+    printf 'Removed zero-byte bad ref artifact: %q\n' "$path"
   fi
   removed=$((removed + 1))
 done < <(find "$refs_dir" -name $'Icon\r' -type f -size 0 -print0)
