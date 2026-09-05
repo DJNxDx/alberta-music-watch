@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.40",
-    lastUpdated: "August 30, 2026",
-    currentFinding: "A late-indexed National Music Centre program page names 10 Alberta-based acts selected for two-day mini-residencies at Studio Bell and publishes the studio access, engineering support, internal criteria and absence of travel support. NMC credits Walt and Irene DeBoni for supporting the program; the public record does not identify an Action Plan grant, Music Commission role, program value, application volume, regional distribution, artist compensation or completed outcomes."
+    version: "1.6.41",
+    lastUpdated: "September 1, 2026",
+    currentFinding: "The Alberta Music Cities Convention's expanded public program now assigns speakers to Indigenous economies, talent-workforce, venue, music-office and local-policy sessions and retains an October 1 results presentation with the Music Commissioner. A separate Canadian Live Music Association update publishes a Sled Island economic-impact baseline, but not the underlying study period or methodology. Both records create accountability tests; neither is evidence of delivered Music Action Plan outcomes."
   },
   sources: [
+    {
+      id: "music-cities-final-program-sep1",
+      title: "Alberta Music Cities Convention 2026 expanded public program",
+      publisher: "Music Cities Events / Sound Diplomacy",
+      type: "Prospective policy program and speaker assignments",
+      date: "Accessed September 1, 2026",
+      url: "https://www.musiccitiesevents.com/schedule-alberta-mcc",
+      note: "The expanded Sept. 29-Oct. 1 Calgary agenda now assigns named speakers to policy sessions: David McLeod of Native Communications Inc. and NMC's Indigenous Program Advisory Committee on Indigenous music economies and cultural sovereignty; Jeremy Dutcher and Indigenous Music Office program manager Brenton Thorvaldson on Indigenous economies; a Women in Music workforce panel including Canadian Council for Indigenous Business executive Shannon Sutherland; and sessions on small venues, music offices, local strategy, placemaking, tourism and music-friendly workforce policy. It retains an Oct. 1 'results-oriented' Alberta Music Action Plan presentation with the Music Commissioner that promises metrics, policy wins and strategic pivots. Useful as a prospective participation and accountability record; the sessions have not occurred, the downloadable program remains marked coming soon, and the page does not publish the closed-door roundtable roster or record, speaker compensation or access terms, presentation materials, promised metrics, Commission workplan, funding or delivered Action Plan outcomes."
+    },
+    {
+      id: "clma-sled-island-impact-aug27",
+      title: "2026 AGM, Federal & Provincial Advocacy Updates & Sled Island impact",
+      publisher: "Canadian Live Music Association",
+      type: "Named sector economic-impact figures",
+      date: "August 27, 2026; accessed September 1, 2026",
+      url: "https://www.canadianlivemusic.ca/news/august-2026-newsletter",
+      note: "CLMA publishes what it calls Sled Island's latest numbers: $3.3 million in total economic impact, $1.9 million added to GDP, $1.3 million in visitor spending, 18 full-time-equivalent jobs and more than $408,000 in taxes. Useful as a named live-music-sector outcome baseline for later comparison. The newsletter does not state the study year, reporting period, geography, data source, model, assumptions or underlying report, so the figures should not be treated as independently audited, attributed to a particular public grant, or classified as Music Action Plan or Commission delivery."
+    },
     {
       id: "nmc-mini-residencies-selections-aug30",
       title: "NMC Artist Mini-Residencies",
@@ -412,6 +430,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "September 1, 2026",
+      label: "Policy forum",
+      title: "Convention assigns its policy sessions",
+      summary: "The Alberta Music Cities Convention's expanded public agenda now assigns named speakers to Indigenous economies, workforce, small-venue, music-office and local-policy sessions and retains an October 1 results presentation with the Music Commissioner.",
+      finding: "This improves transparency about who is scheduled to shape the Calgary policy forum, including Native Communications Inc., NMC's Indigenous Program Advisory Committee, the Indigenous Music Office, Women in Music and Canadian Council for Indigenous Business. It is still prospective: the sessions have not occurred, the downloadable program remains marked coming soon, and the page does not publish the closed-door roundtable roster or record, speaker compensation or access terms, session materials, promised metrics or policy wins, Commission workplan, funding or delivered Action Plan outcomes.",
+      sourceIds: ["music-cities-final-program-sep1", "music-cities-program-aug13", "music-cities-speakers-aug11", "action-plan", "commission-page"]
+    },
+    {
+      date: "September 1, 2026",
+      label: "Sector economic baseline",
+      title: "CLMA publishes a Sled Island impact baseline",
+      summary: "The Canadian Live Music Association's August 27 newsletter reports $3.3 million in total economic impact, $1.9 million added to GDP, $1.3 million in visitor spending, 18 full-time-equivalent jobs and more than $408,000 in taxes for Sled Island.",
+      finding: "These figures add a named sector-reported festival baseline for the Action Plan's economic and municipal accountability tests. The newsletter does not publish the underlying report or identify the study year, reporting period, geography, data source, model or assumptions, so the numbers should not be treated as independently audited, causally attributed to a public grant, or classified as Music Action Plan or Music Commission delivery.",
+      sourceIds: ["clma-sled-island-impact-aug27", "action-plan"]
+    },
     {
       date: "August 30, 2026",
       label: "Partner artist access",
