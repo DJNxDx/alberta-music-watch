@@ -1,10 +1,73 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.40",
-    lastUpdated: "August 30, 2026",
-    currentFinding: "A late-indexed National Music Centre program page names 10 Alberta-based acts selected for two-day mini-residencies at Studio Bell and publishes the studio access, engineering support, internal criteria and absence of travel support. NMC credits Walt and Irene DeBoni for supporting the program; the public record does not identify an Action Plan grant, Music Commission role, program value, application volume, regional distribution, artist compensation or completed outcomes."
+    version: "1.6.46",
+    lastUpdated: "September 16, 2026",
+    currentFinding: "Two current partner records add public implementation signals: Bird Creatives names the Alberta Music Commission as a supporter of Edmonton AMPLIFIED, and the Alberta Music Cities Convention agenda now names Jennifer Venance for its October 1 Action Plan presentation. Neither source discloses the support type, timing, agreement, funding, authority, staffing, metrics or completed outcomes."
   },
   sources: [
+    {
+      id: "bird-edmonton-amplified-commission-sep16",
+      title: "Edmonton AMPLIFIED",
+      publisher: "Bird Creatives",
+      type: "Current partner program and Commission-support attribution",
+      date: "2026 program; accessed September 16, 2026",
+      url: "https://www.birdcreatives.com/edmonton-amplified",
+      note: "Bird Creatives' current program page names the City of Edmonton, Alberta Music Commission and Explore Edmonton as supporters of Edmonton AMPLIFIED, describes citywide programming from August 2026 through January 2027, and lists a free September 12 showcase co-presented with Purple City Music Festival. It also says West Anthem will attend selected community-series events. Useful as direct implementer evidence that publicly attributes support to the Commission; the page does not say when that wording or support began, define the type or value of support, publish an agreement, budget or funding share, identify Commission authority or staff work, connect the program to the $800,000 in Action Plan early-action grants, or report attendance, actual artist fees or completed outcomes."
+    },
+    {
+      id: "feast-beach-provincial-funding-sep10",
+      title: "Feast at the Beach brings food, music and families to Kinosoo Beach",
+      publisher: "Lakeland Connect",
+      type: "Reported rural festival funding",
+      date: "September 10, 2026; accessed September 13, 2026",
+      url: "https://lakelandconnect.net/2026/09/10/feast-at-the-beach-2026-cold-lake/",
+      note: "Jena Colbourne's named local report says the Government of Alberta provided $75,000 for the Cold Lake Regional Chamber of Commerce's 2026 Feast at the Beach and quotes Bonnyville-Cold Lake-St. Paul MLA Scott Cyr describing the investment as support for an event that attracts visitors and local economic activity. The article names six performers and says Cyr thanked Arts, Culture and Status of Women Minister Tanya Fir. Useful as attributed rural festival-funding context; it is not a grant agreement or payment record and does not identify the program, award or payment date, eligible costs, selection process, music share, artist compensation, attendance, measured economic impact, Action Plan funding or Music Commission involvement."
+    },
+    {
+      id: "feast-beach-event-2026",
+      title: "Feast at the Beach 2026",
+      publisher: "Cold Lake Regional Chamber of Commerce / Feast at the Beach",
+      type: "Festival organizer program and supporter page",
+      date: "2026 event; accessed September 13, 2026",
+      url: "https://feastatthebeach.ca/",
+      note: "The organizer describes Feast at the Beach as a free food-and-music festival at Kinosoo Beach, names Cory Marks, Derina Harvey Band, Alex Hughes, Tony Stevens, Berlyn and Quinton Blair in the 2026 lineup, and says the 2026 event was funded in part by the Government of Alberta. This corroborates the event, music program and provincial support but does not publish the $75,000 amount, funding program, agreement, payment date, artist fees, attendance, outcomes, Action Plan link or Music Commission role."
+    },
+    {
+      id: "acsw-grant-payments-music-june30-sep8",
+      title: "Grant payments disclosure: current-fiscal music entries through June 30",
+      publisher: "Government of Alberta / Treasury Board and Finance",
+      type: "Government grant-payment data",
+      date: "Payments June 23-30, 2026; accessed September 8 and rechecked September 13, 2026",
+      url: "https://www.alberta.ca/grant-payments-disclosure-table",
+      note: "The current 2026-27 table lists $57,040 paid June 23 to CKUA Radio Network / CKUA Radio Foundation under CI-CKUA, plus June 30 crowdfunding payments of $4,250 to the Orchestra Society of Calgary and $1,195 to the Bow Valley Music Festival Society, totaling $62,485 across the three clearly music-related recipients. These entries add current-fiscal music-payment records beyond those documented in this tracker's August 16 source record, whose latest cited payment was June 16. Useful as a recipient-level cultural-industry and crowdfunding payment baseline; the table does not publish grant agreements, award dates, project descriptions, application or adjudication records, artist compensation, outcomes, a link to the Music Action Plan or its $800,000 early-action grants, or a Music Commission role."
+    },
+    {
+      id: "nmc-ohsotokino-cohort-sep3",
+      title: "National Music Centre Welcomes Seven Indigenous Artists for 2026 OHSOTO’KINO Music Incubator",
+      publisher: "National Music Centre / Studio Bell",
+      type: "Indigenous artist-development cohort",
+      date: "September 3, 2026; accessed September 7, 2026",
+      url: "https://www.studiobell.ca/national-music-centre-welcomes-seven-indigenous-artists-for-2026-ohsotokino-music-incubator",
+      note: "NMC names Big Tones, Chills, Ellescriv, Ger Carriere, Graeme Jonez, Stacie Arden Smith and Teagan Littlechief for a five-day artist-development intensive at Studio Bell ending in a September 17 public showcase. The release identifies Chills as Pine Creek First Nation and currently Calgary-based, and Ger Carriere as a Cree artist currently based in Edmonton. It says NMC's National Indigenous Programming Advisory Committee, which includes First Nations, Métis and Inuit representation, selected the cohort, and credits TD for supporting OHSOTO'KINO. Useful as a named Indigenous artist-access, geographic-reach and partner-delivery baseline; the release does not disclose application volume, adjudication scores, program value, participant compensation, the source or amount of any provincial support, a link to the $800,000 in Action Plan early-action grants, Music Commission involvement or completed outcomes."
+    },
+    {
+      id: "music-cities-final-program-sep1",
+      title: "Alberta Music Cities Convention 2026 expanded public program",
+      publisher: "Music Cities Events / Sound Diplomacy",
+      type: "Prospective policy program and speaker assignments",
+      date: "Accessed September 1; rechecked September 16, 2026",
+      url: "https://www.musiccitiesevents.com/schedule-alberta-mcc",
+      note: "The expanded Sept. 29-Oct. 1 Calgary agenda assigns named speakers to policy sessions on Indigenous music economies and cultural sovereignty, talent investment, small venues, music offices, local strategy, placemaking, tourism and music-friendly workforce policy. On recheck September 16, the Oct. 1 'results-oriented' Alberta Music Action Plan presentation names Jennifer Venance as Alberta Music Commissioner and promises metrics, policy wins and strategic pivots. Useful as a prospective participation and accountability record; the sessions have not occurred, the downloadable program remains marked coming soon, and the page does not publish the closed-door roundtable roster or record, speaker compensation or access terms, presentation materials, promised metrics, Commission workplan, funding or delivered Action Plan outcomes."
+    },
+    {
+      id: "clma-sled-island-impact-aug27",
+      title: "2026 AGM, Federal & Provincial Advocacy Updates & Sled Island impact",
+      publisher: "Canadian Live Music Association",
+      type: "Named sector economic-impact figures",
+      date: "August 27, 2026; accessed September 1, 2026",
+      url: "https://www.canadianlivemusic.ca/news/august-2026-newsletter",
+      note: "CLMA publishes what it calls Sled Island's latest numbers: $3.3 million in total economic impact, $1.9 million added to GDP, $1.3 million in visitor spending, 18 full-time-equivalent jobs and more than $408,000 in taxes. Useful as a named live-music-sector outcome baseline for later comparison. The newsletter does not state the study year, reporting period, geography, data source, model, assumptions or underlying report, so the figures should not be treated as independently audited, attributed to a particular public grant, or classified as Music Action Plan or Commission delivery."
+    },
     {
       id: "nmc-mini-residencies-selections-aug30",
       title: "NMC Artist Mini-Residencies",
@@ -127,9 +190,9 @@ window.AMW_DATA_UPDATES = {
       title: "Community Initiatives Program (CIP) Project Grant",
       publisher: "Government of Alberta",
       type: "Grant program guidance",
-      date: "Accessed August 2; rechecked August 18, 2026",
+      date: "Accessed August 2; rechecked August 18 and September 5, 2026",
       url: "https://www.alberta.ca/cip-project-grant",
-      note: "The current official program page identifies August 15, 2026 as the first GATE Front Office intake, says the program is temporarily paused and not accepting applications, and lists regular February 15 and August 15 deadlines. This supersedes the September 1 transition deadline previously reported in this tracker's August 2 record; the page does not provide a change log, so the exact date its public wording changed is unknown. The existing cross-sector program offers up to $75,000 on a matching basis and includes eligible community events, artists, performers and technology; total Government of Alberta funding cannot exceed 50% of project cost. Useful as a corrected funding-access and administration baseline for eligible music nonprofits; the page does not identify new or music-specific funding, link the transition to the Music Action Plan, disclose Action Plan early-action grant terms, or establish Music Commission involvement or a Music Commissioner appointment."
+      note: "The current official program page records September 1, 2026 as the one-time GATE Front Office transition intake, identifies February 15, 2027 as the next deadline and lists regular February 15 and August 15 cycles. This reverses the August 18 wording that led this tracker to correct its original September 1 record to August 15; the page provides no change log, so the timing and reason for its public revisions are unknown. The existing cross-sector program offers up to $75,000 on a matching basis and includes eligible community events, artists, performers and technology; total Government of Alberta funding cannot exceed 50% of project cost. Useful as a corrected funding-access and administration baseline for eligible music nonprofits; the page does not identify new or music-specific funding, link the transition to the Music Action Plan, disclose Action Plan early-action grant terms, or establish Music Commission involvement."
     },
     {
       id: "orders-in-council-july30-indigenous-relations",
@@ -413,6 +476,62 @@ window.AMW_DATA_UPDATES = {
   ],
   briefItems: [
     {
+      date: "September 16, 2026",
+      label: "Commission visibility",
+      title: "Partners name Commission support and Venance session",
+      summary: "Bird Creatives now names the Alberta Music Commission as a supporter of Edmonton AMPLIFIED, while the Alberta Music Cities Convention agenda names Jennifer Venance for its October 1 Action Plan presentation.",
+      finding: "These direct partner records add a public program-support attribution and a named speaker-level implementation test. They do not establish what the Commission supplied, when the support or page wording began, whether money changed hands, what agreement or authority governs the work, how artists were selected or what fees were paid, or what outcomes resulted. The convention presentation remains prospective, and its promised metrics, policy wins and roadmap are not yet public.",
+      sourceIds: ["bird-edmonton-amplified-commission-sep16", "bird-edmonton-amplified-july30", "music-cities-final-program-sep1", "alberta-music-commissioner-venance-aug24", "action-plan", "commission-page"]
+    },
+    {
+      date: "September 13, 2026",
+      label: "Rural festival funding",
+      title: "Cold Lake festival reports $75,000 provincial support",
+      summary: "A named local report says Alberta provided $75,000 to the 2026 Feast at the Beach, and the organizer confirms provincial support and a six-act live-music lineup.",
+      finding: "This adds a rural event-funding baseline, but not verified Music Action Plan delivery. The current provincial grant-payment export still ends on June 30 for Arts, Culture and Status of Women and does not list the Cold Lake Regional Chamber recipient; public sources do not identify the program, agreement or payment date, separate the music share from the food and family festival, disclose artist compensation, report attendance or measured outcomes, or establish Music Commission involvement.",
+      sourceIds: ["feast-beach-provincial-funding-sep10", "feast-beach-event-2026", "acsw-grant-payments-music-june30-sep8", "action-plan", "commission-page"]
+    },
+    {
+      date: "September 8, 2026",
+      label: "Provincial grant payments",
+      title: "Grant table adds $62,485 across three music recipients",
+      summary: "Alberta's current-fiscal grant table lists $57,040 for CKUA and crowdfunding payments of $4,250 for the Orchestra Society of Calgary and $1,195 for the Bow Valley Music Festival Society, dated June 23-30.",
+      finding: "This extends the public payment-level funding baseline beyond the tracker's August 16 source record, whose latest cited payment was June 16. It does not establish new or Action Plan-specific money: the table publishes no grant agreements, award dates, project descriptions, application or adjudication records, artist compensation, outcomes, connection to the $800,000 early-action grants or Music Commission role.",
+      sourceIds: ["acsw-grant-payments-music-june30-sep8", "acsw-grant-payments-winspear-q1-2026-27", "action-plan", "commission-page"]
+    },
+    {
+      date: "September 7, 2026",
+      label: "Indigenous artist access",
+      title: "NMC names seven artists for Indigenous incubator",
+      summary: "National Music Centre has named seven Indigenous artists for its five-day OHSOTO'KINO incubator, including artists currently based in Calgary and Edmonton, with selection by its Indigenous programming advisory committee.",
+      finding: "This adds a named participant, geographic-reach and Indigenous-governance baseline for a program delivered by an Action Plan early-action partner. NMC credits TD for supporting OHSOTO'KINO; the release does not identify provincial funding or connect the cohort to the $800,000 in early-action grants, and it does not publish applicant volume, selection scores, program value, participant compensation, Music Commission involvement or completed outcomes.",
+      sourceIds: ["nmc-ohsotokino-cohort-sep3", "afa-launch", "action-plan", "commission-page"]
+    },
+    {
+      date: "September 5, 2026",
+      label: "Grant access correction",
+      title: "CIP page restores the September transition date",
+      summary: "The current official CIP Project page records September 1, 2026 as the one-time GATE Front Office transition intake and February 15, 2027 as the next deadline, reversing the tracker's August 18 correction to August 15.",
+      finding: "This second correction keeps the public application-timing record aligned with the current government page while preserving the earlier revision history. The page provides no change log, so it does not establish when or why the public wording changed. The existing cross-sector program remains capped at $75,000 on a matching basis and does not identify new or music-specific money, connect the transition to the Music Action Plan, publish early-action grant terms or establish Music Commission delivery.",
+      sourceIds: ["cip-project-gate-aug2", "cip-project-intake3-music-2025-26", "action-plan"]
+    },
+    {
+      date: "September 1, 2026",
+      label: "Policy forum",
+      title: "Convention assigns its policy sessions",
+      summary: "The Alberta Music Cities Convention's expanded public agenda now assigns named speakers to Indigenous economies, workforce, small-venue, music-office and local-policy sessions and retains an October 1 results presentation with the Music Commissioner.",
+      finding: "This improves transparency about who is scheduled to shape the Calgary policy forum, including Native Communications Inc., NMC's Indigenous Program Advisory Committee, the Indigenous Music Office, Women in Music and Canadian Council for Indigenous Business. It is still prospective: the sessions have not occurred, the downloadable program remains marked coming soon, and the page does not publish the closed-door roundtable roster or record, speaker compensation or access terms, session materials, promised metrics or policy wins, Commission workplan, funding or delivered Action Plan outcomes.",
+      sourceIds: ["music-cities-final-program-sep1", "music-cities-program-aug13", "music-cities-speakers-aug11", "action-plan", "commission-page"]
+    },
+    {
+      date: "September 1, 2026",
+      label: "Sector economic baseline",
+      title: "CLMA publishes a Sled Island impact baseline",
+      summary: "The Canadian Live Music Association's August 27 newsletter reports $3.3 million in total economic impact, $1.9 million added to GDP, $1.3 million in visitor spending, 18 full-time-equivalent jobs and more than $408,000 in taxes for Sled Island.",
+      finding: "These figures add a named sector-reported festival baseline for the Action Plan's economic and municipal accountability tests. The newsletter does not publish the underlying report or identify the study year, reporting period, geography, data source, model or assumptions, so the numbers should not be treated as independently audited, causally attributed to a public grant, or classified as Music Action Plan or Music Commission delivery.",
+      sourceIds: ["clma-sled-island-impact-aug27", "action-plan"]
+    },
+    {
       date: "August 30, 2026",
       label: "Partner artist access",
       title: "NMC names its 10 Alberta mini-residency acts",
@@ -454,10 +573,10 @@ window.AMW_DATA_UPDATES = {
     },
     {
       date: "August 18, 2026",
-      label: "Grant access correction",
-      title: "CIP guidance corrects the GATE deadline",
-      summary: "The current official CIP Project page identifies August 15, not September 1, as the first GATE Front Office intake and now says the program is temporarily paused before its regular February 15 and August 15 cycle.",
-      finding: "This corrects the tracker's August 2 timing record and keeps the public access baseline current. It does not identify new or music-specific funding, connect the change to the Music Action Plan, publish early-action grant terms, establish Commission involvement, or verify a Music Commissioner appointment; the official page does not provide a change log showing when its public wording changed.",
+      label: "Superseded grant correction",
+      title: "CIP page briefly shifted the GATE deadline",
+      summary: "On August 18, the official CIP Project page identified August 15 instead of September 1 as the transition intake; the current page has since restored September 1 and now identifies February 15, 2027 as the next deadline.",
+      finding: "This retained record explains why the tracker corrected its August 2 timing on August 18 and why the September 5 brief reverses that correction. The official page provides no change log, so the timing and reason for the public revisions remain unknown. Neither version identifies new or music-specific funding, connects the transition to the Music Action Plan, publishes early-action grant terms or establishes Music Commission delivery.",
       sourceIds: ["cip-project-gate-aug2", "cip-project-intake3-music-2025-26", "action-plan"]
     },
     {
@@ -496,8 +615,8 @@ window.AMW_DATA_UPDATES = {
       date: "August 2, 2026",
       label: "Existing grant access",
       title: "CIP moves community projects into GATE",
-      summary: "The existing Community Initiatives Program Project Grant moved into GATE Front Office for an August 15 transition intake before its regular February 15 and August 15 cycle.",
-      finding: "The move changed the application route and timing for eligible arts, culture and music nonprofits seeking up to $75,000 in matched project support. The tracker's original September 1 deadline was corrected on August 18 against the current official guidance. The program does not identify new or music-specific money, connect the change to the Music Action Plan, publish early-action grant terms, establish Commission involvement, or verify a Music Commissioner appointment.",
+      summary: "The existing Community Initiatives Program Project Grant moved into GATE Front Office for a one-time September 1 transition intake before its regular February 15 and August 15 cycle.",
+      finding: "The move changed the application route and timing for eligible arts, culture and music nonprofits seeking up to $75,000 in matched project support. The official page briefly led the tracker to substitute August 15 on August 18, but the current page again records September 1 and identifies February 15, 2027 as the next deadline. The program does not identify new or music-specific money, connect the change to the Music Action Plan, publish early-action grant terms or establish Commission delivery.",
       sourceIds: ["cip-project-gate-aug2", "cip-project-intake3-music-2025-26", "action-plan"]
     },
     {
