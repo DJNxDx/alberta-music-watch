@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.46",
-    lastUpdated: "September 16, 2026",
-    currentFinding: "Two current partner records add public implementation signals: Bird Creatives names the Alberta Music Commission as a supporter of Edmonton AMPLIFIED, and the Alberta Music Cities Convention agenda now names Jennifer Venance for its October 1 Action Plan presentation. Neither source discloses the support type, timing, agreement, funding, authority, staffing, metrics or completed outcomes."
+    version: "1.6.47",
+    lastUpdated: "September 24, 2026",
+    currentFinding: "West Anthem has opened an anonymous Sound Bites survey to rank all seven Action Plan priorities, eight initial actions and wider sector challenges so it can advise the Music Commissioner. The public record does not disclose a Commission mandate, contract, funding, response window, sampling plan, results-publication commitment or decision process."
   },
   sources: [
+    {
+      id: "west-anthem-sound-bites-survey-sep24",
+      title: "Sound Bites Sessions 2026",
+      publisher: "West Anthem",
+      type: "Sector consultation and Commission-advice page",
+      date: "Accessed September 24, 2026",
+      url: "https://www.westanthem.com/music-city-initiatives/",
+      note: "West Anthem says it is engaging with the Government of Alberta on the Action Plan and Music Commission and gathering music-community feedback so it can advise the Music Commissioner. Its linked survey says responses are anonymous and confidential and results will be shared only in aggregate; it asks respondents to rate all seven Action Plan priorities and eight initial actions, identify the sector's greatest career obstacle, and suggest policies or programs from other jurisdictions. Useful as direct evidence of a public consultation and advisory channel; the page does not disclose who commissioned or funded the work, a formal Commission mandate or agreement, survey dates, sampling or outreach plan, respondent safeguards beyond the stated anonymity, a results-publication commitment, how advice will be weighted, or whether government will act on it. The survey also says the Commission is still to be established even though Jennifer Venance was appointed August 24, so its timing and currentness should not be inferred from that wording."
+    },
+    {
+      id: "cada-west-anthem-sound-bites-sep23",
+      title: "Sound Bites Sessions 2026",
+      publisher: "Calgary Arts Development / West Anthem",
+      type: "Municipal arts opportunity notice",
+      date: "September 23, 2026; accessed September 24, 2026",
+      url: "https://calgaryartsdevelopment.com/classified-ads/sound-bites-sessions-west-anthem-2026/",
+      note: "Calgary Arts Development's dated classified notice publishes West Anthem's statement that it is working directly with the Alberta Music Commission on Sound Bites and that anonymous, confidential feedback on which Action Plan priorities matter most will inform what West Anthem brings forward on behalf of Alberta's music community. Useful as a dated municipal-hosted record of the consultation and the claimed direct working relationship; it does not publish a contract, terms of reference, funding, response window, survey methodology, participant reach, result, Commission decision process or government confirmation of the relationship."
+    },
     {
       id: "bird-edmonton-amplified-commission-sep16",
       title: "Edmonton AMPLIFIED",
@@ -475,6 +493,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "September 24, 2026",
+      label: "Public consultation",
+      title: "West Anthem opens Action Plan priority survey",
+      summary: "West Anthem has opened an anonymous Sound Bites survey to rank all seven Action Plan priorities and eight initial actions, identify career barriers and suggest policies from other jurisdictions so it can advise the Music Commissioner.",
+      finding: "This creates a public input channel and the first current source-backed description of West Anthem gathering feedback specifically to advise the Commissioner. Calgary Arts Development's September 23 notice says West Anthem is working directly with the Commission, while West Anthem's own page more narrowly says it is engaging with government and will advise the Commissioner. Neither source discloses who commissioned or funded the work, a mandate or agreement, survey dates, sampling and outreach methods, participant reach, a public-results commitment, how advice will be weighted, or whether government will act on it. The survey's statement that the Commission is still to be established also conflicts with the August 24 appointment record, so that wording is treated as stale rather than evidence about current Commission status.",
+      sourceIds: ["west-anthem-sound-bites-survey-sep24", "cada-west-anthem-sound-bites-sep23", "alberta-music-commissioner-venance-aug24", "action-plan", "commission-page"]
+    },
     {
       date: "September 16, 2026",
       label: "Commission visibility",
