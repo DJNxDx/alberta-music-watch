@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.47",
-    lastUpdated: "September 24, 2026",
-    currentFinding: "West Anthem has opened an anonymous Sound Bites survey to rank all seven Action Plan priorities, eight initial actions and wider sector challenges so it can advise the Music Commissioner. The public record does not disclose a Commission mandate, contract, funding, response window, sampling plan, results-publication commitment or decision process."
+    version: "1.6.48",
+    lastUpdated: "September 25, 2026",
+    currentFinding: "The official 2026 YYC Music Awards results identify Music Commissioner Jennifer Venance as an award presenter at the September 20 Calgary event. This verifies a completed public-facing sector appearance, but the record does not identify her category, remarks, meetings, Commission resources, policy work, funding decisions or outcomes."
   },
   sources: [
+    {
+      id: "yycma-venance-presenter-sep20",
+      title: "2026 Winners",
+      publisher: "YYC Music Awards",
+      type: "Completed sector event and Commissioner visibility record",
+      date: "September 20, 2026; accessed September 25, 2026",
+      url: "https://yycmusicawards.com/categories/yycma-winners/2026-winners/",
+      note: "The official results page says Music Commissioner Jennifer Venance was among the presenters at the September 20 awards event at Calgary's Grey Eagle Event Centre. Useful as direct evidence of a completed public-facing sector appearance after her appointment; the page does not identify which award she presented, publish remarks or meeting records, define a Commission role in the event, disclose public funding or staff resources, or connect the appearance to a policy decision, program deliverable or measured outcome."
+    },
     {
       id: "west-anthem-sound-bites-survey-sep24",
       title: "Sound Bites Sessions 2026",
@@ -493,6 +502,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "September 25, 2026",
+      label: "Commission activity",
+      title: "Awards record confirms Commissioner sector appearance",
+      summary: "YYC Music Awards identifies Jennifer Venance as an award presenter at its September 20 Calgary event, providing the first verified completed public-facing sector appearance in this audit after her appointment.",
+      finding: "This moves one Commission visibility record from prospective participation to a completed sector touchpoint. The source identifies Venance by her Commissioner title and says she was among the award presenters, but it does not identify her category, publish remarks or meeting records, show a formal Commission role, disclose funding or staff resources, or demonstrate a policy decision, program deliverable or outcome. The appearance is therefore recorded as engagement evidence, not implementation evidence.",
+      sourceIds: ["yycma-venance-presenter-sep20", "alberta-music-commissioner-venance-aug24", "commission-page", "action-plan"]
+    },
     {
       date: "September 24, 2026",
       label: "Public consultation",
