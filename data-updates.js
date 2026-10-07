@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.48",
-    lastUpdated: "September 25, 2026",
-    currentFinding: "The official 2026 YYC Music Awards results identify Music Commissioner Jennifer Venance as an award presenter at the September 20 Calgary event. This verifies a completed public-facing sector appearance, but the record does not identify her category, remarks, meetings, Commission resources, policy work, funding decisions or outcomes."
+    version: "1.6.49",
+    lastUpdated: "October 7, 2026",
+    currentFinding: "An official October 3 release includes music-sector engagement in Minister Tanya Fir's planned October 4-13 overseas mission. Music-specific costs, participants, agreements and outcomes remain undisclosed in that announcement."
   },
   sources: [
+    {
+      id: "fir-cultural-industries-mission-oct3",
+      title: "Promoting Alberta's cultural industries abroad",
+      publisher: "Government of Alberta",
+      type: "Ministerial mission announcement",
+      date: "October 3, 2026; accessed October 7, 2026",
+      url: "https://www.alberta.ca/release.cfm?xID=97888F458CE70-E4B1-3C63-E727351EB96ABA03",
+      note: "The release announces an October 4-13 mission to Ireland, Scotland and England covering film, television, music, arts and women's leadership. It lists Windmill Lane Recording Studios among planned visits and promises later expense disclosure. This is a prospective promotion record; it does not identify music-sector delegates, music-specific costs, Commission participation, signed agreements or completed outcomes."
+    },
     {
       id: "yycma-venance-presenter-sep20",
       title: "2026 Winners",
@@ -502,6 +511,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 7, 2026",
+      label: "International promotion",
+      title: "Fir mission includes music-sector engagement",
+      summary: "Government's October 3 announcement includes music-sector meetings and a planned Windmill Lane Recording Studios visit in Minister Tanya Fir's October 4-13 cultural-industries mission to Ireland and the United Kingdom.",
+      finding: "This adds an international-promotion activity to track against the Action Plan's business-development goals. The itinerary is a plan, not proof that meetings occurred or benefits reached Alberta musicians. Follow-up tests are music-specific participants and costs, agreements, artist or business access, and measurable results; the announcement establishes no Commission role or new music funding.",
+      sourceIds: ["fir-cultural-industries-mission-oct3", "action-plan", "commission-page"]
+    },
     {
       date: "September 25, 2026",
       label: "Commission activity",
