@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.49",
-    lastUpdated: "October 7, 2026",
-    currentFinding: "An official October 3 release includes music-sector engagement in Minister Tanya Fir's planned October 4-13 overseas mission. Music-specific costs, participants, agreements and outcomes remain undisclosed in that announcement."
+    version: "1.6.50",
+    lastUpdated: "October 8, 2026",
+    currentFinding: "NMC reports more than 300 delegates attended the completed Music Cities Convention. Alberta Music names provincial and municipal host partners for BreakOut West 2027 in Edmonton. Neither record establishes new Action Plan funding or Commission outcomes."
   },
   sources: [
+    {
+      id: "nmc-music-cities-recap-oct5",
+      title: "Alberta Music Cities Convention 2026 Looks to the Future",
+      publisher: "National Music Centre / Amplify",
+      type: "Host-reported convention attendance and recap",
+      date: "October 5, 2026; accessed October 8, 2026",
+      url: "https://amplify.nmc.ca/take-a-look-back-at-alberta-music-cities-convention-2026/",
+      note: "NMC reports more than 300 delegates gathered at Studio Bell over three days and thanks partners including West Anthem, Alberta Music, Government of Alberta and Calgary Arts Development. This is host-reported attendance and completed-event evidence. The accessible article does not publish the Commissioner's presentation, promised metrics, policy decisions, roundtable record, costs or funding shares. Embedded social videos were not transcribed or used to substantiate speaker-level claims."
+    },
+    {
+      id: "alberta-music-breakout-west-2027-oct7",
+      title: "BreakOut West heads to Edmonton, September 22-26, 2027",
+      publisher: "Alberta Music",
+      type: "Sector event announcement and host-partner attribution",
+      date: "October 7, 2026; accessed October 8, 2026",
+      url: "https://www.albertamusic.org/2026/10/breakout-west-heads-to-edmonton-to-celebrate-the-25th-annual-music-event-september-22-26-2027/",
+      note: "Alberta Music reports that its executive director Carly Klassen and BreakOut West executive director Michael Dawson announced Edmonton's September 22-26, 2027 event in Victoria on October 3. It names Government of Alberta, City of Edmonton and Explore Edmonton as host partners. The announcement provides no partner contribution amounts, agreements, artist selection or compensation terms, Action Plan funding link, Commission role or completed 2027 outcomes."
+    },
     {
       id: "fir-cultural-industries-mission-oct3",
       title: "Promoting Alberta's cultural industries abroad",
@@ -511,6 +529,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 8, 2026",
+      label: "Convention follow-up",
+      title: "NMC reports completed convention and 300-plus delegates",
+      summary: "NMC's October 5 recap reports more than 300 delegates at the three-day Music Cities Convention at Studio Bell, adding a host-reported attendance baseline to the earlier agenda records.",
+      finding: "The forum is now documented as completed. Its recap does not establish that the scheduled Commissioner presentation occurred or supply its promised metrics and policy wins. Presentation materials, roundtable decisions, costs and measurable Action Plan results remain follow-up tests. Attendance alone does not demonstrate Commission delivery, and embedded video remarks are not treated as verified without a transcript.",
+      sourceIds: ["nmc-music-cities-recap-oct5", "music-cities-final-program-sep1", "action-plan", "commission-page"]
+    },
+    {
+      date: "October 8, 2026",
+      label: "Provincial and municipal partners",
+      title: "Edmonton named BreakOut West 2027 host",
+      summary: "Alberta Music's October 7 announcement sets BreakOut West for September 22-26, 2027 in Edmonton and names the province, City of Edmonton and Explore Edmonton as host partners.",
+      finding: "This adds a concrete future industry-development event and a provincial-municipal partnership to track. Follow-up tests are each partner's contribution, artist access and pay, and measurable benefits. The announcement does not disclose contribution values or agreements, establish Commission involvement or connect the event to Action Plan early-action funding. The 2027 event remains prospective.",
+      sourceIds: ["alberta-music-breakout-west-2027-oct7", "action-plan", "commission-page"]
+    },
     {
       date: "October 7, 2026",
       label: "International promotion",
