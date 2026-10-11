@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.50",
-    lastUpdated: "October 8, 2026",
-    currentFinding: "NMC reports more than 300 delegates attended the completed Music Cities Convention. Alberta Music names provincial and municipal host partners for BreakOut West 2027 in Edmonton. Neither record establishes new Action Plan funding or Commission outcomes."
+    version: "1.6.51",
+    lastUpdated: "October 11, 2026",
+    currentFinding: "NMC publishes a Big Tones follow-up reporting participation in its 2026 Indigenous incubator and linking a performance feature. It credits TD support; provincial funding, artist compensation and Music Commission involvement remain undisclosed."
   },
   sources: [
+    {
+      id: "nmc-ohsotokino-big-tones-oct8",
+      title: "OHSOTO’KINO: Big Tones Lets the Light in on New Track",
+      publisher: "National Music Centre / Amplify",
+      type: "Host-reported Indigenous artist participation and public feature",
+      date: "October 8, 2026; accessed October 11, 2026",
+      url: "https://amplify.nmc.ca/video/ohsotokino-big-tones-finds-the-light-with-shine/",
+      note: "NMC identifies Big Tones as a Pasqua First Nation rapper and says he joined a five-day artist-development program at Studio Bell in 2026. Its accessible text describes mentorship and collaboration, credits TD support for OHSOTO'KINO, and links an artist feature and a performance titled Big Tones Performs Shine. Useful as a host-reported participation follow-up to the September cohort announcement and a public partner output. The videos were not transcribed or used for interview, performance or recording-process claims. The page does not disclose participant compensation, program costs, provincial funding, Action Plan early-action grant support, Music Commission involvement, or measured career outcomes."
+    },
     {
       id: "nmc-music-cities-recap-oct5",
       title: "Alberta Music Cities Convention 2026 Looks to the Future",
@@ -529,6 +538,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 11, 2026",
+      label: "Indigenous artist follow-up",
+      title: "NMC publishes Big Tones incubator follow-up",
+      summary: "NMC's October 8 feature reports that Big Tones participated in its five-day Indigenous artist-development program in 2026 and links an artist feature and a Shine performance, with TD credited for program support.",
+      finding: "This adds host-reported participation and a public artist feature to the September cohort record at an Action Plan early-action partner. The accessible text supports those limited facts; embedded video content has not been independently verified. Participant compensation, program costs, provincial contributions, any early-action grant connection, Commission involvement and measured career benefits remain follow-up questions. The record therefore supports partner activity without establishing provincial Action Plan results.",
+      sourceIds: ["nmc-ohsotokino-big-tones-oct8", "nmc-ohsotokino-cohort-sep3", "action-plan", "commission-page"]
+    },
     {
       date: "October 8, 2026",
       label: "Convention follow-up",
