@@ -1,10 +1,37 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.51",
-    lastUpdated: "October 11, 2026",
-    currentFinding: "NMC publishes a Big Tones follow-up reporting participation in its 2026 Indigenous incubator and linking a performance feature. It credits TD support; provincial funding, artist compensation and Music Commission involvement remain undisclosed."
+    version: "1.6.52",
+    lastUpdated: "October 14, 2026",
+    currentFinding: "Calgary publishes a cultural-plan consultation timetable with music in scope, while NMC and CMI name 12 artists for AE West. These add municipal planning and partner-access records; they do not establish Music Commission delivery or new provincial funding."
   },
   sources: [
+    {
+      id: "calgary-cultural-plan-engagement-oct14",
+      title: "Calgary Cultural Plan Update 2026",
+      publisher: "City of Calgary / Engage",
+      type: "Municipal cultural-policy consultation and reporting timetable",
+      date: "Accessed October 14, 2026",
+      url: "https://engage.calgary.ca/cultural-plan-partner-engagement",
+      note: "The city says partner engagement opens October 17 and runs to November 22, 2026, with workshop registration open. Its updated plan explicitly includes music, access barriers, spaces, Indigenous and equity-deserving community leadership, and a 30-year vision. It schedules What We Heard reports, spring 2027 validation and a fall 2027 Council presentation. Funding allocations, grant approvals, changes to existing programs, partner governance and implementation resource assignments are outside this engagement's decision scope. The city page does not establish a Music Friendly Program, Music Commission role, provincial contribution or implemented policy. Its November 22 end date differs from the November 21 date in CADA's October 13 notice; participants should check the current city guidance."
+    },
+    {
+      id: "cada-calgary-cultural-plan-oct13",
+      title: "An Updated Cultural Plan For Calgary",
+      publisher: "Calgary Arts Development / City of Calgary",
+      type: "Dated municipal sector-engagement notice",
+      date: "October 13, 2026; accessed October 14, 2026",
+      url: "https://calgaryartsdevelopment.com/classified-ads/an-updated-cultural-plan-for-calgary/",
+      note: "The city notice invites organizations, businesses, community partners and collectives into Phase 1 cultural-plan engagement through in-person and virtual workshops or one survey response per organization. It lists October 17-November 21, 2026 and a separate public survey beginning October 24. The linked city page instead lists November 22 as the partner-engagement end date. This verifies an announced municipal input route with music in scope, without establishing adopted policy, new funding or Commission involvement."
+    },
+    {
+      id: "nmc-ae-west-cohort-oct13",
+      title: "Canada's Music Incubator and National Music Centre Announce 12 Artists for 10th Anniversary of Artist Entrepreneur West",
+      publisher: "National Music Centre / Canada's Music Incubator",
+      type: "Named artist-development cohort and prospective program terms",
+      date: "October 13, 2026; accessed October 14, 2026",
+      url: "https://www.studiobell.ca/canadas-music-incubator-and-national-music-centre-announce-12-artists-for-10th-anniversary-of-artist-entrepreneur-west",
+      note: "NMC and CMI name Alick Mac, Anna Lewis, Education Party, Erika Mae, Ila Barker, Jessikah Babe, Kearstin Pfeifer, Keira Myer, Leanne Lightfoot, Miarlequin, Sallie Mae and Spencer Jo for November 2-December 4 AE West at Studio Bell, with a free December 2 King Eddy showcase. They credit Canada Council for the Arts, Government of Canada, Stingray Radio and TD Ready Commitment, plus Manitoba Music and Manitoba Film and Music support for one Indigenous artist through the Vince Fontaine Legacy Award, and say most participant program costs are covered. Program attendance and career benefits remain prospective."
+    },
     {
       id: "nmc-ohsotokino-big-tones-oct8",
       title: "OHSOTO’KINO: Big Tones Lets the Light in on New Track",
@@ -538,6 +565,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 14, 2026",
+      label: "Municipal policy and access",
+      title: "Calgary publishes cultural-plan consultation timetable",
+      summary: "Calgary's updated cultural plan explicitly includes music and announces partner engagement from October 17, with workshops and organizational input. CADA's October 13 notice also announces a separate public survey beginning October 24.",
+      finding: "This creates a municipal input and reporting trail to compare with the Action Plan's Music Friendly commitment. The city schedules What We Heard reports and a fall 2027 Council presentation, but excludes funding allocations, grant approvals and implementation resource assignments from this engagement's decisions. It does not establish Commission involvement or delivery of the provincial program. The city lists November 22 as the partner-engagement end date, while CADA lists November 21; that discrepancy remains visible pending clarification. Follow-up tests are music-sector participation, published feedback, adopted actions and resourcing.",
+      sourceIds: ["calgary-cultural-plan-engagement-oct14", "cada-calgary-cultural-plan-oct13", "action-plan", "commission-page"]
+    },
+    {
+      date: "October 14, 2026",
+      label: "Partner artist access",
+      title: "NMC and CMI name 12 AE West artists",
+      summary: "An October 13 release names 12 artists for November 2-December 4 AE West at Studio Bell and a free December 2 showcase. It credits federal, private and Manitoba supporters and says most participant program costs are covered.",
+      finding: "This adds a named cohort and sponsor baseline to the earlier program listing at an Action Plan partner. Selection transparency, subsidy values, artist compensation, provincial contributions and career outcomes remain follow-up tests. The program is prospective and does not establish Action Plan funding or Commission delivery.",
+      sourceIds: ["nmc-ae-west-cohort-oct13", "nmc-program-guide-2026", "action-plan", "commission-page"]
+    },
     {
       date: "October 11, 2026",
       label: "Indigenous artist follow-up",
