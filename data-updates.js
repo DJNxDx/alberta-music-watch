@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.52",
-    lastUpdated: "October 14, 2026",
-    currentFinding: "Calgary publishes a cultural-plan consultation timetable with music in scope, while NMC and CMI name 12 artists for AE West. These add municipal planning and partner-access records; they do not establish Music Commission delivery or new provincial funding."
+    version: "1.6.53",
+    lastUpdated: "October 16, 2026",
+    currentFinding: "The provincial grant table now lists payments to National Music Centre and Alberta Music, while NMC reports Ger Carriere's incubator participation. These add funding and partner-delivery records; the sources do not connect the payments to Action Plan early-action grants or establish Music Commission results."
   },
   sources: [
+    {
+      id: "acsw-grant-payments-partners-oct16",
+      title: "Grant payments disclosure: National Music Centre and Alberta Music entries through September 17",
+      publisher: "Government of Alberta / Treasury Board and Finance",
+      type: "Government grant-payment data",
+      date: "Payments July 16-September 17, 2026; accessed October 16, 2026",
+      url: "https://www.alberta.ca/grant-payments-disclosure-table",
+      note: "A complete 566-row, 23-page extract of the current 2026-27 Arts, Culture and Status of Women table lists $400,000 to National Music Centre on September 17 under Cultural Industries Initiative - Level 2 and $3,000 on August 6 under CIP Cultural Days - Level 2. Alberta Music Industry Association entries include $150,000 on July 16 under Cultural Industry Support Organizations, $248,000 on August 18 under Cultural Industries Initiative - Level 2, and two distinct transaction rows of $300,000 each on August 27 under Other Initiatives - Level 2. The two identically described $300,000 rows have separate transaction ids, 914270 and 914271; without agreements or a reconciliation, they should not be presented as two separate awards. These extend the payment baseline beyond June 30. The table does not disclose project descriptions, award dates, agreements, artist compensation, results, Music Commission involvement or a link to the $800,000 in Action Plan early-action grants."
+    },
+    {
+      id: "nmc-ohsotokino-ger-carriere-oct15",
+      title: "OHSOTO’KINO: Ger Carriere Writes a Love Letter to Her Younger Self",
+      publisher: "National Music Centre / Amplify",
+      type: "Host-reported Indigenous artist participation and public feature",
+      date: "October 15, 2026; accessed October 16, 2026",
+      url: "https://amplify.nmc.ca/video/ohsotokino-ger-carriere-writes-a-love-letter-to-her-younger-self/",
+      note: "NMC identifies Ger Carriere as a Cumberland House Cree Nation artist and reports her participation in its five-day Indigenous artist-development program at Studio Bell in 2026, with mentorship and collaboration opportunities. The article credits TD support and links an artist feature and a performance titled Ger Carriere Performs Can I Be Her. Read alongside NMC's September cohort announcement identifying her as Edmonton-based, this adds an Alberta-linked participation follow-up and public partner output. Embedded videos were not transcribed or used for speaker-level or performance claims. The page does not disclose participant compensation, program costs, provincial contributions, an Action Plan early-action grant connection, Music Commission involvement or measured career outcomes."
+    },
     {
       id: "calgary-cultural-plan-engagement-oct14",
       title: "Calgary Cultural Plan Update 2026",
@@ -565,6 +583,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 16, 2026",
+      label: "Partner funding disclosure",
+      title: "Grant table adds NMC and Alberta Music payment records",
+      summary: "The provincial table lists $400,000 to National Music Centre on September 17 and $3,000 on August 6. Alberta Music entries include $150,000 on July 16, $248,000 on August 18, and two separately identified $300,000 transaction rows on August 27 with identical recipient, program and amount descriptions.",
+      finding: "These are newly verified payment records for two Action Plan early-action partners, extending the prior June 30 reporting baseline. They do not establish new awards, separate purposes for the two $300,000 rows, or a connection to the announced $800,000 early-action grants. Agreements and reconciliation are needed before assigning those rows to projects or counting distinct awards; artist compensation, deliverables, outcomes and any Commission role remain undisclosed in this table.",
+      sourceIds: ["acsw-grant-payments-partners-oct16", "acsw-grant-payments-music-june30-sep8", "action-plan", "commission-page"]
+    },
+    {
+      date: "October 16, 2026",
+      label: "Indigenous artist follow-up",
+      title: "NMC publishes Ger Carriere incubator follow-up",
+      summary: "NMC's October 15 feature reports Ger Carriere's participation in its five-day Indigenous artist-development program and links an artist feature and a Can I Be Her performance, with TD credited for support. Its September cohort announcement identifies her as Edmonton-based.",
+      finding: "This adds host-reported participation and a public output for an Alberta-linked artist at an Action Plan early-action partner. Accessible text supports these limited facts; embedded video content has not been independently verified. Participant compensation, program costs, provincial contributions, any early-action grant connection, Commission involvement and measured career benefits remain follow-up questions. This partner activity does not establish provincial Action Plan results.",
+      sourceIds: ["nmc-ohsotokino-ger-carriere-oct15", "nmc-ohsotokino-cohort-sep3", "action-plan", "commission-page"]
+    },
     {
       date: "October 14, 2026",
       label: "Municipal policy and access",
