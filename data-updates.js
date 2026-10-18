@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.53",
-    lastUpdated: "October 16, 2026",
-    currentFinding: "The provincial grant table now lists payments to National Music Centre and Alberta Music, while NMC reports Ger Carriere's incubator participation. These add funding and partner-delivery records; the sources do not connect the payments to Action Plan early-action grants or establish Music Commission results."
+    version: "1.6.54",
+    lastUpdated: "October 18, 2026",
+    currentFinding: "Edmonton lists $87,000 for Bird Creatives music activations and $100,000 for Purple City Music Festival, while Canada Council explains how Alberta Focus Fund project support uses existing programs. These municipal and federal records add funding and access baselines without establishing provincial Action Plan funding or Music Commission results."
   },
   sources: [
+    {
+      id: "edmonton-downtown-music-grants-oct18",
+      title: "Downtown Action Plan Fund: funded music projects",
+      publisher: "City of Edmonton",
+      type: "Municipal grant allocations and project descriptions",
+      date: "Accessed October 18, 2026",
+      url: "https://www.edmonton.ca/projects_plans/downtown",
+      note: "The city's funded-project list allocates $87,000 to Bird Creatives for downtown live-music activations aligned with major events and $100,000 to RAIN SHADOW PRODUCTIONS LTD. for Purple City Music Festival, including Indigenous-led mentorship and free youth programming. These are municipal allocation records, not payment confirmations. The page does not identify Bird's grant as Edmonton AMPLIFIED funding or disclose a provincial contribution, Commission role, artist fees or measured outcomes."
+    },
+    {
+      id: "canada-council-alberta-focus-access-oct6",
+      title: "Alberta Focus Fund: An update for Project grant applicants",
+      publisher: "Canada Council for the Arts",
+      type: "Public federal funding-access guidance",
+      date: "October 6, 2026; accessed October 18, 2026",
+      url: "https://communications.canadacouncil.ca/m/391a3b1ac579a2f662f616f099d9455e/m/5907eeac30c3a6e9add6abfb398a3a33/b9407186256b7610b9db05fecf5a3a7f",
+      note: "Canada Council's public October 6 guidance says the previously announced $25-million Alberta Focus Fund begins in 2026-27 at $5 million annually over five years. Project support goes to Alberta-based applications recommended through existing funding components; no separate application or competition is required. Regular eligibility still applies across disciplines. The notice also schedules November 12-13 information sessions. It does not publish music allocations, recipient decisions, payments, provincial co-funding or Commission involvement."
+    },
     {
       id: "acsw-grant-payments-partners-oct16",
       title: "Grant payments disclosure: National Music Centre and Alberta Music entries through September 17",
@@ -583,6 +601,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 18, 2026",
+      label: "Municipal music funding",
+      title: "Edmonton lists Bird and Purple City allocations",
+      summary: "A newly reviewed city table lists $87,000 for Bird Creatives' downtown music activations and $100,000 to Rain Shadow Productions for Purple City Music Festival, with Indigenous-led mentorship and free youth programming in the project description.",
+      finding: "This adds a municipal funding baseline beside Bird's Commission-support attribution. The table does not connect Bird's allocation to Edmonton AMPLIFIED or establish payment, artist compensation, completed benefits, provincial Action Plan funding or a Commission contribution. Agreements and project reporting are the next tests.",
+      sourceIds: ["edmonton-downtown-music-grants-oct18", "bird-edmonton-amplified-commission-sep16", "action-plan", "commission-page"]
+    },
+    {
+      date: "October 18, 2026",
+      label: "Federal funding access",
+      title: "Canada Council clarifies Alberta Focus Fund access",
+      summary: "Newly reviewed October 6 guidance says Alberta-based project applicants access the previously announced federal fund through existing Canada Council programs, with no separate application. Support goes to applications recommended through those programs under their regular eligibility rules.",
+      finding: "This clarifies the access route behind the June announcement without promising a grant to any applicant. Music's share, recipient decisions, payments and reach across communities remain to be reported. The federal investment does not establish provincial Action Plan delivery or Music Commission results.",
+      sourceIds: ["canada-council-alberta-focus-access-oct6", "canada-council-alberta-focus-fund-june14", "action-plan", "commission-page"]
+    },
     {
       date: "October 16, 2026",
       label: "Partner funding disclosure",
