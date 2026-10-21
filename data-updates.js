@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.54",
-    lastUpdated: "October 18, 2026",
-    currentFinding: "Edmonton lists $87,000 for Bird Creatives music activations and $100,000 for Purple City Music Festival, while Canada Council explains how Alberta Focus Fund project support uses existing programs. These municipal and federal records add funding and access baselines without establishing provincial Action Plan funding or Music Commission results."
+    version: "1.6.55",
+    lastUpdated: "October 21, 2026",
+    currentFinding: "Come Together's announced lineup names Bijaan as an Alberta showcase artist and credits Alberta Music and provincial support. This advances the tracked application call to a named selection, while funding amounts, artist costs, completed meetings and business outcomes remain unreported. The announcement does not establish Action Plan funding or Music Commission involvement."
   },
   sources: [
+    {
+      id: "musicontario-come-together-lineup-oct15",
+      title: "Come Together 2026 Lineup Announced!",
+      publisher: "MusicOntario",
+      type: "Organizer announcement of selected artists and attributed support",
+      date: "October 15, 2026; accessed October 21, 2026",
+      url: "https://music-ontario.ca/news/recent-news/read,article/18257/come-together-2026-lineup-announced",
+      note: "MusicOntario names Bijaan (AB) for November 25 at The Baby G in Toronto, lists Alberta Music among eleven organizing associations alongside Indigenous Music Office, SODEC Quebec and CIMA, and credits the Province of Alberta among many supporters. It says selected acts work with provincial associations to identify business contacts for meetings. This follows Alberta Music's June application call but does not disclose selection scores, Alberta's contribution or support type, artist compensation or actual travel assistance, a connection to Action Plan early-action grants, Music Commission involvement or completed business outcomes."
+    },
     {
       id: "edmonton-downtown-music-grants-oct18",
       title: "Downtown Action Plan Fund: funded music projects",
@@ -601,6 +610,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 21, 2026",
+      label: "Artist export access",
+      title: "Come Together names Alberta showcase artist",
+      summary: "A newly reviewed October 15 MusicOntario announcement names Bijaan (AB) for Toronto's November 25 Come Together showcase. It lists Alberta Music as an organizing association and credits the Province of Alberta among the project's supporters.",
+      finding: "The tracked application call now has a named selection and attributed provincial support. Participation and business benefits remain prospective. The announcement gives no provincial amount or support terms, actual artist travel assistance, selection scores, completed meetings or outcomes, and does not establish Action Plan funding or Music Commission involvement.",
+      sourceIds: ["musicontario-come-together-lineup-oct15", "alberta-music-come-together-june19", "action-plan", "commission-page"]
+    },
     {
       date: "October 18, 2026",
       label: "Municipal music funding",
