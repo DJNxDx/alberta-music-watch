@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.55",
-    lastUpdated: "October 21, 2026",
-    currentFinding: "Come Together's announced lineup names Bijaan as an Alberta showcase artist and credits Alberta Music and provincial support. This advances the tracked application call to a named selection, while funding amounts, artist costs, completed meetings and business outcomes remain unreported. The announcement does not establish Action Plan funding or Music Commission involvement."
+    version: "1.6.56",
+    lastUpdated: "October 25, 2026",
+    currentFinding: "Windmill Lane Recording Studios reports that Tanya Fir's delegation toured its Dublin studios and discussed cultural production and tourism. This adds host-reported activity to the announced mission itinerary. Music agreements, investment, costs, artist benefits and any Music Commission role remain unverified by this source."
   },
   sources: [
+    {
+      id: "windmill-lane-fir-visit-oct9",
+      title: "Windmill Lane reports Tanya Fir delegation visit",
+      publisher: "Windmill Lane Recording Studios / LinkedIn",
+      type: "First-party host report of ministerial music-sector visit",
+      date: "October 9, 2026 (public post metadata); accessed October 25, 2026",
+      url: "https://www.linkedin.com/posts/windmill-lane-pulse-recording_naomi-moore-aidan-alcock-and-tony-perrey-activity-7514299863665225730-7G-P",
+      note: "The studio's original public post reports a tour by Tanya Fir and an Alberta ministerial delegation, with discussion of cultural production, tourism and Alberta initiatives. Its public metadata dates the post October 9; the visible post is marked edited and describes the visit as the previous day. This is host-reported activity at a stop in the government's announced itinerary, not an independently verified visit date or evidence of an agreement, investment, artist benefit, mission cost, Action Plan funding or Music Commission involvement."
+    },
     {
       id: "musicontario-come-together-lineup-oct15",
       title: "Come Together 2026 Lineup Announced!",
@@ -610,6 +619,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 25, 2026",
+      label: "International mission follow-up",
+      title: "Windmill Lane reports Fir delegation studio visit",
+      summary: "A newly verified October 9 post from Windmill Lane Recording Studios reports that Tanya Fir's Alberta delegation toured its Dublin studios and discussed cultural production, tourism and Alberta initiatives.",
+      finding: "This advances one planned mission stop to a host-reported visit. It does not establish music agreements, investment, costs, artist access or benefits, Action Plan funding or a Music Commission role. Published mission reporting and expenses remain the next accountability tests; the post's relative visit date is not treated as independently verified.",
+      sourceIds: ["windmill-lane-fir-visit-oct9", "fir-cultural-industries-mission-oct3", "action-plan", "commission-page"]
+    },
     {
       date: "October 21, 2026",
       label: "Artist export access",
