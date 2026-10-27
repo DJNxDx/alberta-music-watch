@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.56",
-    lastUpdated: "October 25, 2026",
-    currentFinding: "Windmill Lane Recording Studios reports that Tanya Fir's delegation toured its Dublin studios and discussed cultural production and tourism. This adds host-reported activity to the announced mission itinerary. Music agreements, investment, costs, artist benefits and any Music Commission role remain unverified by this source."
+    version: "1.6.57",
+    lastUpdated: "October 27, 2026",
+    currentFinding: "Alberta Music's newly reviewed 2025-26 annual report documents paid showcases, Black Music Mentorship participation and sync-licensing training before the Action Plan's April 2026 launch. These self-reported services provide a baseline for testing additional benefits; they do not establish Action Plan funding or Music Commission results."
   },
   sources: [
+    {
+      id: "alberta-music-annual-report-2025-26-oct27",
+      title: "Alberta Music Annual Report 2025-2026",
+      publisher: "Alberta Music Industry Association",
+      type: "Sector organization annual report; self-reported program delivery",
+      date: "2025-2026 report; publication date not stated; accessed October 27, 2026",
+      url: "https://www.albertamusic.org/wp-content/uploads/Alberta-Music-AR-2026-.pdf",
+      note: "Linked from Alberta Music's Studies & Reports page. Printed page 27 reports paid Music Day Canada showcases in Edmonton and Calgary on September 27, 2025 and 27 participants in its February 21-22, 2026 Black Music Mentorship Program, including publishing and sync education. Printed page 24 reports March 21 and 23, 2026 Sync & Strategy sessions in Edmonton and Calgary. These activities predate the Action Plan's April 2026 launch. The report does not disclose showcase fee amounts or program-level provincial contributions for these activities, reconcile the later 2026 partner-payment rows, or establish Action Plan funding, Commission involvement or independently measured career gains."
+    },
     {
       id: "windmill-lane-fir-visit-oct9",
       title: "Windmill Lane reports Tanya Fir delegation visit",
@@ -619,6 +628,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 27, 2026",
+      label: "Partner service baseline",
+      title: "Alberta Music report documents pre-plan artist supports",
+      summary: "A newly reviewed 2025-26 annual report says Alberta Music provided paid September 2025 Music Day Canada showcases, engaged 27 participants in February 2026 Black Music Mentorship programming, and delivered March 2026 sync-licensing sessions in Edmonton and Calgary.",
+      finding: "These self-reported activities predate the Action Plan's April 2026 launch and establish a baseline of existing artist support, including publishing and licensing education. Future reporting should distinguish continued services from additional reach, compensation and career benefits attributable to the plan. The report gives no showcase fee amounts or program-level provincial contributions for these activities and does not reconcile later partner-payment rows or establish Commission results.",
+      sourceIds: ["alberta-music-annual-report-2025-26-oct27", "acsw-grant-payments-partners-oct16", "action-plan", "commission-page"]
+    },
     {
       date: "October 25, 2026",
       label: "International mission follow-up",
