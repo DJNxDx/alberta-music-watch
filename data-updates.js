@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.57",
-    lastUpdated: "October 27, 2026",
-    currentFinding: "Alberta Music's newly reviewed 2025-26 annual report documents paid showcases, Black Music Mentorship participation and sync-licensing training before the Action Plan's April 2026 launch. These self-reported services provide a baseline for testing additional benefits; they do not establish Action Plan funding or Music Commission results."
+    version: "1.6.58",
+    lastUpdated: "October 30, 2026",
+    currentFinding: "October 29 Hansard records Premier Smith reporting Andrew Mosker and an unnamed music commissioner in Nashville for partnership discussions. The exchange adds a public claim and an opposition expense-disclosure request, without verifying the commissioner's identity, agreements, costs or artist benefits."
   },
   sources: [
+    {
+      id: "hansard-nashville-music-exchange-oct29",
+      title: "October 29 Hansard: Premier's Travel to the U.S.",
+      publisher: "Legislative Assembly of Alberta",
+      type: "Legislative record; attributed government and opposition statements",
+      date: "October 29, 2026, morning; accessed October 30, 2026",
+      url: "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20261029_1000_01_han.pdf",
+      note: "Printed pages 2002-2003 record Premier Danielle Smith saying Andrew Mosker and a music commissioner were in Nashville discussing partnerships to make Calgary a music city. The transcript says national music commissioner without naming the official; it does not independently establish Jennifer Venance's attendance. Smith describes her earlier Nashville trip as privately paid and credits it with starting partnership discussions; Naheed Nenshi challenges public costs and requests disclosure of staff, security and social-media-related expenses. These are attributed parliamentary statements, not reconciled expense records or independently verified outcomes. The exchange does not publish delegation terms, agreements, music-sector costs, artist benefits, Action Plan funding or a defined Alberta Music Commission role."
+    },
     {
       id: "alberta-music-annual-report-2025-26-oct27",
       title: "Alberta Music Annual Report 2025-2026",
@@ -628,6 +637,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 30, 2026",
+      label: "Legislative accountability",
+      title: "Hansard records Nashville music-partnership claims",
+      summary: "In October 29 question period, Premier Danielle Smith said Andrew Mosker and a music commissioner were in Nashville discussing Calgary partnerships. She described her earlier trip as privately paid; Naheed Nenshi requested disclosure of staff, security and social-media-related expenses.",
+      finding: "This adds an on-record government claim and an opposition disclosure request. The transcript calls the unnamed official a national music commissioner, so it does not independently verify Jennifer Venance's attendance. Delegation records, agreements, reconciled expenses and artist benefits remain the tests; the exchange does not establish Action Plan funding or delivered Alberta Music Commission results.",
+      sourceIds: ["hansard-nashville-music-exchange-oct29", "action-plan", "commission-page"]
+    },
     {
       date: "October 27, 2026",
       label: "Partner service baseline",
