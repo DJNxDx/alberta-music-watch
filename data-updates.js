@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.58",
-    lastUpdated: "October 30, 2026",
-    currentFinding: "October 29 Hansard records Premier Smith reporting Andrew Mosker and an unnamed music commissioner in Nashville for partnership discussions. The exchange adds a public claim and an opposition expense-disclosure request, without verifying the commissioner's identity, agreements, costs or artist benefits."
+    version: "1.6.59",
+    lastUpdated: "October 31, 2026",
+    currentFinding: "CJWE reports Country Thunder Alberta will not return to Calgary in 2027. This adds festival-infrastructure context for the Action Plan's music-friendly ambitions; it does not establish the cause of the 2027 decision or a Music Commission role."
   },
   sources: [
+    {
+      id: "cjwe-country-thunder-2027-oct30",
+      title: "Country Thunder Won't Be Returning to Calgary in 2027",
+      publisher: "CJWE / Windspeaker Radio Network; Sarah Scott",
+      type: "Named local reporting of organizer announcement",
+      date: "October 30, 2026; accessed October 31, 2026",
+      url: "https://cjwe.ca/2026/10/30/country-thunder-wont-be-returning-to-calgary-in-2027/",
+      note: "Sarah Scott reports that Country Thunder Alberta confirmed it will not return to Calgary in 2027 and thanked artists, crews, partners and fans. This is attributed local reporting, not an independently inspected original organizer statement. The organizer's current home page lists Arizona, Saskatchewan and Wisconsin, but that omission alone does not prove cancellation. The report adds a follow-up to the cancelled 2026 Calgary event; it does not independently establish the reason for the 2027 decision, economic losses, government funding, Commission involvement or an Action Plan outcome. Its account of the organizer's June complaints should be read alongside the city's contemporaneous response, which disputes that account. No video content was used."
+    },
+    {
+      id: "calgary-country-thunder-response-jun24",
+      title: "City of Calgary Comments on Country Thunder Cancellation",
+      publisher: "City of Calgary",
+      type: "Municipal response to disputed festival cancellation circumstances",
+      date: "June 24, 2026; accessed October 31, 2026",
+      url: "https://newsroom.calgary.ca/city-of-calgary-comments-on-country-thunder-cancellation/",
+      note: "The city says it learned of the 2026 cancellation through media, had met organizers that morning and had adjusted construction arrangements and access to accommodate the festival. It says permitted dBA increased while permitted bass levels decreased, and disputes the organizer's account of the barriers. This is the city's attributed position, not an independent resolution of the disagreement. It supplies historical context for October reporting about the festival's 2027 non-return; it is not a new city response to that decision and does not establish Commission intervention, Action Plan delivery or quantified economic effects."
+    },
     {
       id: "hansard-nashville-music-exchange-oct29",
       title: "October 29 Hansard: Premier's Travel to the U.S.",
@@ -637,6 +655,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "October 31, 2026",
+      label: "Festival infrastructure watch",
+      title: "CJWE reports Country Thunder's 2027 Calgary non-return",
+      summary: "An October 30 report by CJWE's Sarah Scott says Country Thunder Alberta confirmed it will not return to Calgary in 2027. This follows June's cancelled event; Calgary's contemporaneous public response disputed the organizer's account of construction and sound-related barriers.",
+      finding: "The non-return is reported by a named local journalist; the original organizer announcement was not independently inspected. It adds a practical accountability test for the Action Plan's music-friendly and cross-government ambitions: publish how festival access and infrastructure disputes are addressed. These sources do not resolve the June disagreement, establish the cause of the 2027 decision, quantify losses or show a Music Commission role. No policy failure or delivered outcome is inferred from the decision alone.",
+      sourceIds: ["cjwe-country-thunder-2027-oct30", "calgary-country-thunder-response-jun24", "action-plan", "commission-page"]
+    },
     {
       date: "October 30, 2026",
       label: "Legislative accountability",
