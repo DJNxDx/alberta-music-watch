@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.59",
-    lastUpdated: "October 31, 2026",
-    currentFinding: "CJWE reports Country Thunder Alberta will not return to Calgary in 2027. This adds festival-infrastructure context for the Action Plan's music-friendly ambitions; it does not establish the cause of the 2027 decision or a Music Commission role."
+    version: "1.6.60",
+    lastUpdated: "November 9, 2026",
+    currentFinding: "Alberta Music is offering limited consultations with Canada's Music Incubator for members in November and December. The registration form credits provincial and municipal arts support; funding amounts, participant reach and any Action Plan link remain undisclosed."
   },
   sources: [
+    {
+      id: "alberta-music-cmi-consultations-nov8",
+      title: "One-on-One Consultations with Canada’s Music Incubator",
+      publisher: "Alberta Music",
+      type: "Partner program announcement",
+      date: "November 8, 2026; accessed November 9, 2026",
+      url: "https://www.albertamusic.org/2026/11/one-on-one-consultations-with-canadas-music-incubator/",
+      note: "Alberta Music announces one-on-one consultations with Canada's Music Incubator staff in November and December 2026 on topics including touring, booking, release strategy, grant writing and artist management. The notice limits bookings to one per person and describes a waitlist once slots fill. It does not report how many appointments are offered or completed."
+    },
+    {
+      id: "alberta-music-cmi-consultation-form-nov9",
+      title: "Canada's Music Incubator Consultation Form",
+      publisher: "Alberta Music",
+      type: "Public registration terms and support credits",
+      date: "Undated form linked from November 8 notice; accessed November 9, 2026",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLScPe-eEMT8Yyjxn_R3E8bIYynVzyvBSYpCoSUc26uOEjb4prA/viewform",
+      note: "The linked form limits this opportunity to Alberta Music members and credits FACTOR, the Government of Alberta, the Edmonton Arts Council and Calgary Arts Development as supporters. These are Alberta Music's program credits. The form does not specify amounts, support terms, funding streams or any Alberta Music Commission role."
+    },
     {
       id: "cjwe-country-thunder-2027-oct30",
       title: "Country Thunder Won't Be Returning to Calgary in 2027",
@@ -655,6 +673,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 9, 2026",
+      label: "Artist business support",
+      title: "Alberta Music offers limited business consultations for members",
+      summary: "Alberta Music's November 8 notice offers one consultation per person with Canada's Music Incubator in November and December, with a waitlist when slots fill. The linked form requires Alberta Music membership and credits FACTOR, the Government of Alberta, the Edmonton Arts Council and Calgary Arts Development.",
+      finding: "The offer provides a concrete example of partner-led business support and a way to assess who can access it. Useful follow-up would show available and completed appointments, regional reach and whether this expands existing services. The support credits give no amounts or funding terms and do not link the consultations to a disclosed grant payment, the Action Plan or the Music Commission.",
+      sourceIds: ["alberta-music-cmi-consultations-nov8", "alberta-music-cmi-consultation-form-nov9", "action-plan", "commission-page"]
+    },
     {
       date: "October 31, 2026",
       label: "Festival infrastructure watch",
