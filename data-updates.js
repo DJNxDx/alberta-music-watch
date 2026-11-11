@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.60",
-    lastUpdated: "November 9, 2026",
-    currentFinding: "Alberta Music is offering limited consultations with Canada's Music Incubator for members in November and December. The registration form credits provincial and municipal arts support; funding amounts, participant reach and any Action Plan link remain undisclosed."
+    version: "1.6.61",
+    lastUpdated: "November 11, 2026",
+    currentFinding: "Winterruption plans a January 2027 Northern Arts Conference and explicitly aims to align its topics with the Action Plan. The organizer names municipal, Bird Creatives and Alberta Music support; amounts, access terms, Commission involvement and outcomes remain unverified."
   },
   sources: [
+    {
+      id: "winterruption-northern-arts-conference-nov11",
+      title: "Northern Arts Conference",
+      publisher: "Winterruption YEG",
+      type: "Organizer announcement; prospective partner programming",
+      date: "Undated page; metadata modified October 30, 2026; accessed November 11, 2026",
+      url: "https://winterruptionyeg.com/northern-arts-conference/",
+      note: "The organizer announces January 21-22, 2027 programming at Edmonton's CKUA Radio building, with business, royalties, contracts, marketing and festival-booking topics, and explicitly says it aims to align with the Alberta Music Action Plan. It names support from the City of Edmonton Downtown Vibrancy program and Bird Creatives' Amplified program, plus a partnership with Alberta Music. It also plans an Alberta Music showcase for five emerging export-ready artists. These are organizer-attributed plans and support credits, not independently verified funding or delivery. The page does not disclose contribution amounts, grant agreements, artist compensation, selection criteria, subsidized access, a direct Music Commission role or completed outcomes. Its publication date is not established by the page metadata alone."
+    },
     {
       id: "alberta-music-cmi-consultations-nov8",
       title: "One-on-One Consultations with Canada’s Music Incubator",
@@ -673,6 +682,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 11, 2026",
+      label: "Partner implementation watch",
+      title: "Winterruption plans conference topics aligned with the Action Plan",
+      summary: "A newly reviewed Winterruption page announces a January 21-22, 2027 Northern Arts Conference in Edmonton, with music-business and career-development topics. The organizer explicitly aims to align with the Action Plan and names municipal Downtown Vibrancy support, Bird Creatives' Amplified program and Alberta Music as partners or supporters.",
+      finding: "This supplies a specific prospective example of a sector organizer using the Action Plan as a programming reference. It is not proof of government adoption, Commission delivery or new provincial money. Publish support amounts and terms, artist fees, participant access and selection, and completed reach and results to assess whether this adds capacity beyond existing services. The organizer's undated page was reviewed today; it is not treated as a new November announcement.",
+      sourceIds: ["winterruption-northern-arts-conference-nov11", "action-plan", "commission-page"]
+    },
     {
       date: "November 9, 2026",
       label: "Artist business support",
