@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.61",
-    lastUpdated: "November 11, 2026",
-    currentFinding: "Winterruption plans a January 2027 Northern Arts Conference and explicitly aims to align its topics with the Action Plan. The organizer names municipal, Bird Creatives and Alberta Music support; amounts, access terms, Commission involvement and outcomes remain unverified."
+    version: "1.6.62",
+    lastUpdated: "November 14, 2026",
+    currentFinding: "Winterruption’s conference ticket page offers Alberta Music members a 50% discount and lists a neurodivergent artists and industry topic. This adds prospective access context; funding, accommodations, Commission involvement and outcomes remain unverified."
   },
   sources: [
+    {
+      id: "winterruption-conference-access-nov14",
+      title: "Northern Arts Conference 2027: registration and access terms",
+      publisher: "Winterruption YEG / Eventbrite",
+      type: "Organizer registration page; prospective access terms",
+      date: "Undated listing; accessed November 14, 2026",
+      url: "https://www.eventbrite.com/e/northern-arts-conference-2027-tickets-1999063620101",
+      note: "Linked directly from Winterruption's conference page, this organizer listing offers Alberta Music members a 50% discount and includes a neurodivergent artists and industry topic. It does not establish an all-in ticket price, general subsidy, accommodations, artist compensation, funding amounts, Commission role or completed outcomes. Publication timing is unverified."
+    },
     {
       id: "winterruption-northern-arts-conference-nov11",
       title: "Northern Arts Conference",
@@ -682,6 +691,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 14, 2026",
+      label: "Conference access follow-up",
+      title: "Winterruption lists member discount and neurodivergent industry topic",
+      summary: "The Northern Arts Conference ticket page linked by Winterruption offers Alberta Music members a 50% discount and lists a neurodivergent artists and industry topic for its January 2027 Edmonton program.",
+      finding: "This adds prospective access context to the organizer's stated Action Plan alignment. A listed topic does not establish accommodations or inclusive participation. Follow up on all-in prices, access for non-members, fee assistance, accommodations and attendance; funding amounts, Commission involvement and outcomes remain unverified. The undated listing was reviewed today, not verified as a new announcement.",
+      sourceIds: ["winterruption-conference-access-nov14", "winterruption-northern-arts-conference-nov11", "action-plan", "commission-page"]
+    },
     {
       date: "November 11, 2026",
       label: "Partner implementation watch",
