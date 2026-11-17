@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.62",
-    lastUpdated: "November 14, 2026",
-    currentFinding: "Winterruption’s conference ticket page offers Alberta Music members a 50% discount and lists a neurodivergent artists and industry topic. This adds prospective access context; funding, accommodations, Commission involvement and outcomes remain unverified."
+    version: "1.6.63",
+    lastUpdated: "November 17, 2026",
+    currentFinding: "Bird Creatives lists admission by donation for Edmonton AMPLIFIED’s November 19 Electric Revue, with ticket donations supporting the Edmonton Queer History Project. This adds prospective access context to a series that credits Commission support; contribution terms, artist fees and results remain undisclosed."
   },
   sources: [
+    {
+      id: "bird-electric-revue-access-nov17",
+      title: "The Electric Revue: admission and community-benefit terms",
+      publisher: "Bird Creatives / Edmonton AMPLIFIED",
+      type: "Organizer event page; prospective access and community-benefit terms",
+      date: "Undated page; November 19, 2026 event; accessed November 17, 2026",
+      url: "https://www.birdcreatives.com/the-electric-revue",
+      note: "Bird Creatives lists this event in its Edmonton AMPLIFIED series for November 19. The linked event page describes live music, burlesque and a discussion of Edmonton's music and burlesque history at CKUA Beresh Arts Den. It lists an 18+ restriction and admission by donation, with ticket donations supporting the Edmonton Queer History Project. These are prospective organizer terms, not verified attendance, donations received or artist compensation. The series credits Alberta Music Commission support, but these pages do not disclose an event-specific Commission contribution, support agreement, artist fees or completed results. The undated page is newly reviewed, not verified as a new announcement."
+    },
     {
       id: "winterruption-conference-access-nov14",
       title: "Northern Arts Conference 2027: registration and access terms",
@@ -691,6 +700,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 17, 2026",
+      label: "Partner access follow-up",
+      title: "Edmonton AMPLIFIED lists donation admission and queer-history benefit",
+      summary: "Bird Creatives lists the November 19 Electric Revue at CKUA Beresh Arts Den as an 18+ event with admission by donation. The organizer says ticket donations will support the Edmonton Queer History Project and plans live music, burlesque and a local-history discussion.",
+      finding: "This adds specific access and community-benefit terms to a series that publicly credits Commission support. Follow up on attendance, donations received, artist fees and the type and value of Commission support. The listing does not establish completed delivery or outcomes, or connect the event to Edmonton's disclosed Bird Creatives allocation or the Action Plan's early-action grants. The undated page was reviewed today; its announcement date is unverified.",
+      sourceIds: ["bird-electric-revue-access-nov17", "bird-edmonton-amplified-commission-sep16", "edmonton-downtown-music-grants-oct18", "action-plan", "commission-page"]
+    },
     {
       date: "November 14, 2026",
       label: "Conference access follow-up",
