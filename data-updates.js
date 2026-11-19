@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.63",
-    lastUpdated: "November 17, 2026",
-    currentFinding: "Bird Creatives lists admission by donation for Edmonton AMPLIFIED’s November 19 Electric Revue, with ticket donations supporting the Edmonton Queer History Project. This adds prospective access context to a series that credits Commission support; contribution terms, artist fees and results remain undisclosed."
+    version: "1.6.64",
+    lastUpdated: "November 19, 2026",
+    currentFinding: "Joe Ceci publishes stakeholder-feedback themes and reports sharing them with Jennifer Venance and Tanya Fir. This adds an attributed consultation record; government adoption, resources and implementation remain unverified."
   },
   sources: [
+    {
+      id: "ceci-music-consultation-themes-nov17",
+      title: "Thank You for Sharing Your Ideas on Alberta's Music Future",
+      publisher: "Joe Ceci / MLA Joe Ceci Arts and Culture Newsletter",
+      type: "Opposition consultation summary; attributed meeting report",
+      date: "November 17, 2026; accessed November 19, 2026",
+      url: "https://joececinewsletter.beehiiv.com/p/thank-you-for-sharing-your-ideas-on-alberta-s-music-future",
+      note: "Ceci reports meeting Commissioner Jennifer Venance and Minister Tanya Fir earlier in the fall to share sector feedback. He summarizes venue, education, career sustainability, ecosystem, youth and inclusion concerns, including support for Indigenous, Black and underrepresented artists. This is his office's account, without respondent counts, raw submissions, a detailed method, a meeting date or an agreed action record. It does not independently verify representativeness, government commitments, funding or delivery."
+    },
+    {
+      id: "alberta-music-amplified-year-end-nov18",
+      title: "Alberta Music – Year-End Celebration!",
+      publisher: "Alberta Music",
+      type: "Partner announcement; prospective access and partnership terms",
+      date: "November 18, 2026; accessed November 19, 2026",
+      url: "https://www.albertamusic.org/2026/11/alberta-music-year-end-celebration/",
+      note: "Alberta Music announces free, all-ages gatherings on December 1 in Calgary and December 9 at Edmonton's ArtsHab Ortona – Solarium, with RSVP requested. It identifies Edmonton AMPLIFIED as the Edmonton partner. This is organizer-attributed prospective programming, not verified delivery. No event-specific Commission contribution, funding agreement, artist compensation or measured results are disclosed."
+    },
     {
       id: "bird-electric-revue-access-nov17",
       title: "The Electric Revue: admission and community-benefit terms",
@@ -700,6 +718,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 19, 2026",
+      label: "Opposition consultation record",
+      title: "Ceci publishes music-sector feedback and reports Commissioner meeting",
+      summary: "In a November 17 newsletter, Joe Ceci says he shared stakeholder feedback with Jennifer Venance and Tanya Fir earlier in the fall. His summary spans venues, education, sustainable careers, the wider ecosystem, youth and inclusion.",
+      finding: "This provides a public account of issues raised with the Commissioner. It is an attributed consultation summary, not a representative survey or a jointly confirmed action record. Follow up on the government's response, assigned actions, resources and reporting. The post does not establish policy adoption or implementation.",
+      sourceIds: ["ceci-music-consultation-themes-nov17", "action-plan", "commission-page", "alberta-music-commissioner-venance-aug24"]
+    },
+    {
+      date: "November 19, 2026",
+      label: "Partner access follow-up",
+      title: "Alberta Music announces free, all-ages gathering with Edmonton AMPLIFIED",
+      summary: "Alberta Music's November 18 notice plans a December 9 Edmonton gathering at ArtsHab Ortona – Solarium with Edmonton AMPLIFIED. Admission is free, all ages, with RSVP requested.",
+      finding: "This adds an explicit partner relationship and access terms to a series whose organizer credits Commission support. Follow up on participation, artist fees and support terms. The notice does not establish event-specific Commission funding, a link to disclosed municipal or provincial payments, completed delivery or outcomes.",
+      sourceIds: ["alberta-music-amplified-year-end-nov18", "bird-edmonton-amplified-commission-sep16", "edmonton-downtown-music-grants-oct18", "action-plan", "commission-page"]
+    },
     {
       date: "November 17, 2026",
       label: "Partner access follow-up",
