@@ -1,10 +1,37 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.64",
-    lastUpdated: "November 19, 2026",
-    currentFinding: "Joe Ceci publishes stakeholder-feedback themes and reports sharing them with Jennifer Venance and Tanya Fir. This adds an attributed consultation record; government adoption, resources and implementation remain unverified."
+    version: "1.6.65",
+    lastUpdated: "November 20, 2026",
+    currentFinding: "Bill 34 passed third reading with ticket-resale price disclosure and powers for further rules. Proclamation, regulations and measurable audience benefits remain follow-up tests; the reviewed records do not establish a Music Commission role."
   },
   sources: [
+    {
+      id: "bill34-ticket-resale-text-nov20",
+      title: "Bill 34: ticket-resale provisions in the Consumer Protection Act amendments",
+      publisher: "Legislative Assembly of Alberta",
+      type: "Government bill; proposed consumer-protection framework",
+      date: "2026 Bill 34; introduced October 28, 2026; accessed November 20, 2026",
+      url: "https://docs.assembly.ab.ca/LADDAR_files/docs/bills/bill/legislature_31/session_2/20251023_bill-034.pdf",
+      note: "Section 2(5)-(7), printed pages 3-4, defines total ticket price to include fees, taxes, charges and costs, requires secondary sellers and platforms to give that total in representations to prospective buyers, and provides regulation-making authority for disclosure and price requirements. Section 2(12) makes these amendments subject to proclamation. The bill specifies no numerical resale-markup cap and does not establish commencement, enforcement results, artist income effects or a Music Commission role. The PDF identifies itself as 2026 Bill 34 despite its older-looking URL filename."
+    },
+    {
+      id: "hansard-bill34-third-reading-nov18",
+      title: "November 18 Hansard: Bill 34 passes third reading",
+      publisher: "Legislative Assembly of Alberta",
+      type: "Legislative record; procedural milestone and attributed ministerial statement",
+      date: "November 18, 2026; accessed November 20, 2026",
+      url: "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20261118_1330_01_han.pdf",
+      note: "Printed pages 2223-2228 record third-reading debate and passage of Bill 34. Dale Nally describes ticket-price transparency and the ability to consider further protections, including resale-markup caps. This verifies a legislative stage and his stated policy intent, not Royal Assent, proclamation, adopted regulations, an operative cap or demonstrated benefits. The unanimous division on page 2228 rejects an adjournment motion; it is not a recorded unanimous vote on third reading."
+    },
+    {
+      id: "bill34-government-ticket-policy-nov20",
+      title: "Protecting Consumers and Property Rights: ticket-resale policy summary",
+      publisher: "Government of Alberta / Service Alberta and Red Tape Reduction",
+      type: "Government policy explanation; future regulation and engagement commitments",
+      date: "Undated policy page; accessed November 20, 2026",
+      url: "https://www.alberta.ca/protecting-consumers-and-property-rights",
+      note: "The government describes total-price disclosure for secondary sellers and resale platforms and authority for further rules on prices, fees, disclosure and resale markups. It says stakeholder engagement will inform regulations and amendments take effect on proclamation. The page still describes the bill as introduced, so the Assembly record is used for the later third-reading milestone. This summary supplies follow-up commitments, not evidence of completed engagement, a selected cap, commencement or a link to Action Plan delivery."
+    },
     {
       id: "ceci-music-consultation-themes-nov17",
       title: "Thank You for Sharing Your Ideas on Alberta's Music Future",
@@ -718,6 +745,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 20, 2026",
+      label: "Live-event consumer policy",
+      title: "Ticket-resale bill passes third reading; implementation remains to be verified",
+      summary: "November 18 Hansard records Bill 34 passing third reading. Its ticket provisions would require secondary sellers and resale platforms to state the total price, including fees and taxes, and enable further price and disclosure rules. The government says stakeholder engagement will inform regulations.",
+      finding: "This newly reviewed record adds a concrete audience-access policy watch alongside the Action Plan. Third reading does not establish Royal Assent or commencement: the ticket amendments require proclamation, and no numerical resale-markup cap is set in the bill. Track engagement, final regulations, commencement, enforcement and audience costs. The reviewed records establish no Music Commission role, artist-income gain or Action Plan outcome.",
+      sourceIds: ["bill34-ticket-resale-text-nov20", "hansard-bill34-third-reading-nov18", "bill34-government-ticket-policy-nov20", "action-plan"]
+    },
     {
       date: "November 19, 2026",
       label: "Opposition consultation record",
