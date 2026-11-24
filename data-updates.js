@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.65",
-    lastUpdated: "November 20, 2026",
-    currentFinding: "Bill 34 passed third reading with ticket-resale price disclosure and powers for further rules. Proclamation, regulations and measurable audience benefits remain follow-up tests; the reviewed records do not establish a Music Commission role."
+    version: "1.6.66",
+    lastUpdated: "November 24, 2026",
+    currentFinding: "Bird Creatives credits the Music Commission with supporting a free Edmonton studio workshop. The form and value of that support, participation and workshop outcomes remain open questions."
   },
   sources: [
+    {
+      id: "bird-studio-lab-lgnds-nov24",
+      title: "Studio Lab @ LGNDS",
+      publisher: "Bird Creatives / Edmonton AMPLIFIED",
+      type: "Organizer event page with partner and support credits",
+      date: "Undated page for October 24, 2026 workshop. Accessed November 24, 2026.",
+      url: "https://www.birdcreatives.com/studio-labs-lgnds",
+      note: "Bird Creatives advertises a free production and recording workshop for emerging to mid-level music creators based in Alberta, with advance registration. It names Alberta Music and West Anthem as event partners and credits the City of Edmonton, Alberta Music Commission and Explore Edmonton with support. The page describes planned programming and leaves the support terms, attendance, compensation and outcomes unverified."
+    },
+    {
+      id: "afa-studio-lab-listing-sep28",
+      title: "Studio Lab @ LGNDS (AFA opportunity listing)",
+      publisher: "Alberta Foundation for the Arts",
+      type: "Dated opportunity listing",
+      date: "September 28, 2026. Accessed November 24, 2026.",
+      url: "https://affta.ab.ca/news/studio-lab-lgnds-production-and-recording-workshop-music-creators",
+      note: "The AFA opportunity listing links to Bird Creatives, describes the free workshop and says space was limited. It repeats the organizer's partner and supporter credits. The listing documents public promotion of the opportunity in September. Event delivery and AFA funding remain unverified."
+    },
     {
       id: "bill34-ticket-resale-text-nov20",
       title: "Bill 34: ticket-resale provisions in the Consumer Protection Act amendments",
@@ -745,6 +763,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 24, 2026",
+      label: "Partner support follow-up",
+      title: "Bird Creatives names Commission support for Edmonton studio workshop",
+      summary: "Newly reviewed records advertise a free October 24 Edmonton AMPLIFIED workshop with limited spaces for Alberta-based emerging to mid-level music creators. Bird Creatives credits Alberta Music and West Anthem as event partners and the City of Edmonton, Alberta Music Commission and Explore Edmonton as supporters.",
+      finding: "The event gives the audit a specific place to follow up on the Commission support already credited at the series level. Open questions include what the Commission provided, whether disclosed grants covered any costs, whether the workshop took place, who it reached and what artists and mentors were paid.",
+      sourceIds: ["bird-studio-lab-lgnds-nov24", "afa-studio-lab-listing-sep28", "bird-edmonton-amplified-commission-sep16", "edmonton-downtown-music-grants-oct18", "action-plan", "commission-page"]
+    },
     {
       date: "November 20, 2026",
       label: "Live-event consumer policy",
