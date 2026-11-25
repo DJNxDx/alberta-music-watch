@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.66",
-    lastUpdated: "November 24, 2026",
-    currentFinding: "Bird Creatives credits the Music Commission with supporting a free Edmonton studio workshop. The form and value of that support, participation and workshop outcomes remain open questions."
+    version: "1.6.67",
+    lastUpdated: "November 25, 2026",
+    currentFinding: "Canada announced $5 million for the Indigenous Music Office, which Alberta names in its Action Plan. Alberta-specific collaboration terms and access for creators remain open questions."
   },
   sources: [
+    {
+      id: "canadian-heritage-music-fund-nov8",
+      title: "Budget 2026 backgrounder on audio and audiovisual funding",
+      publisher: "Canadian Heritage",
+      type: "Federal funding announcement",
+      date: "November 8, 2026. Accessed November 25, 2026.",
+      url: "https://www.canada.ca/en/canadian-heritage/news/2026/11/budget-2026-masters-of-our-destiny--backgrounder-administration-and-implementation-of-600-million-targeted-support-for-canadas-audio-and-audiovisua.html",
+      note: "The Canada Music Fund row announces $67 million in national funding for 2026–27 and lists $5 million for the Indigenous Music Office as a new direct recipient. The backgrounder gives no Alberta-specific allocation, payment record or joint workplan with Alberta."
+    },
+    {
+      id: "indigenous-music-office-federal-funding-nov10",
+      title: "Indigenous Music Office Receives Historic $5 Million Federal Investment",
+      publisher: "Indigenous Music Office",
+      type: "Recipient statement and planned program development",
+      date: "November 10, 2026. Accessed November 25, 2026.",
+      url: "https://indigenousmusicoffice.com/indigenous-music-office-receives-historic-5-million-federal-investment/",
+      note: "The office confirms its first direct funding through the Canada Music Fund and says it will build its team and prepare new programs. The linked full announcement describes gaps identified in its national consultations, including recording resources, mentorship and access to industry opportunities. Program details and timelines are forthcoming."
+    },
     {
       id: "bird-studio-lab-lgnds-nov24",
       title: "Studio Lab @ LGNDS",
@@ -763,6 +781,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 25, 2026",
+      label: "Indigenous partnership follow-up",
+      title: "Federal announcement names Indigenous Music Office for $5 million",
+      summary: "Newly reviewed November records show Canadian Heritage allocating $5 million to the Indigenous Music Office through the Canada Music Fund for 2026–27. The office says it plans to build its team and prepare new programs.",
+      finding: "Action 5.2 calls for Alberta to work with Indigenous Relations and the Indigenous Music Office on barriers including funding access, marketing and geography. Look for a public record of collaboration, who will design and deliver any joint work, and how creators in Alberta can participate. Alberta-specific funding, participation and outcomes remain unverified.",
+      sourceIds: ["canadian-heritage-music-fund-nov8", "indigenous-music-office-federal-funding-nov10", "action-plan"]
+    },
     {
       date: "November 24, 2026",
       label: "Partner support follow-up",
