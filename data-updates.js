@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.67",
-    lastUpdated: "November 25, 2026",
-    currentFinding: "Canada announced $5 million for the Indigenous Music Office, which Alberta names in its Action Plan. Alberta-specific collaboration terms and access for creators remain open questions."
+    version: "1.6.68",
+    lastUpdated: "November 26, 2026",
+    currentFinding: "Alberta reports providing $200,000 for Edmonton's BreakOut West bid. The release projects at least 12 Alberta artists in 2027. The funding agreement and artist selection and pay terms remain open questions."
   },
   sources: [
+    {
+      id: "alberta-breakout-west-bid-funding-nov25",
+      title: "Alberta's best take the stage at BreakOut West",
+      publisher: "Government of Alberta",
+      type: "Provincial funding disclosure and prospective event figures",
+      date: "November 25, 2026. Accessed November 26, 2026.",
+      url: "https://www.alberta.ca/release.cfm?xID=98195C1457DAC-C49C-75EE-E962930A1C5B4AEF",
+      note: "Alberta says it provided $200,000 for the successful Edmonton host bid, with additional funding from the City of Edmonton and Explore Edmonton. It links the event to the Action Plan and Commission mandate and expects at least 12 Alberta artists at the September 22–26, 2027 event. The release leaves the grant recipient, funding stream, payment details, partner amounts and specific Commission responsibilities unverified."
+    },
+    {
+      id: "nmc-osten-gift-residency-nov25",
+      title: "National Music Centre Receives $1 Million Gift from Calgary Philanthropist Al Osten",
+      publisher: "National Music Centre / Studio Bell",
+      type: "Recipient announcement of philanthropic funding and planned artist residency",
+      date: "November 25, 2026. Accessed November 26, 2026.",
+      url: "https://www.studiobell.ca/national-music-centre-receives-1-million-gift-from-calgary-philanthropist-al-osten",
+      note: "NMC announces a $1 million gift from Al Osten and the Osten-Victor Fund for exhibitions and programming. It names an annual Alberta singer-songwriter residency in its studios among the plans supported by the gift. The release gives no residency allocation, intake date, eligibility, selection process or compensation terms."
+    },
     {
       id: "canadian-heritage-music-fund-nov8",
       title: "Budget 2026 backgrounder on audio and audiovisual funding",
@@ -781,6 +799,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 26, 2026",
+      label: "Provincial bid funding",
+      title: "Alberta reports $200,000 for Edmonton's BreakOut West bid",
+      summary: "A November 25 provincial release says Alberta provided $200,000 for Edmonton's successful bid to host BreakOut West on September 22–26, 2027. The release names additional funding from the City of Edmonton and Explore Edmonton and projects at least 12 Alberta performers.",
+      finding: "The release adds a provincial dollar amount to the October host announcement and explicitly links the event to the Action Plan and Commission mandate. The next checks are the funding agreement, the Commission's role, selection and pay for Alberta artists, and actual participation after the event.",
+      sourceIds: ["alberta-breakout-west-bid-funding-nov25", "alberta-music-breakout-west-2027-oct7", "action-plan", "commission-page"]
+    },
+    {
+      date: "November 26, 2026",
+      label: "Philanthropic funding",
+      title: "National Music Centre names Alberta artist residency in $1 million gift announcement",
+      summary: "NMC announced a $1 million gift from Al Osten and the Osten-Victor Fund for exhibitions and programming. Its plans include an annual Alberta singer-songwriter residency in the NMC studios.",
+      finding: "The gift gives the audit a philanthropic funding record for a planned artist opportunity. The share allocated to the residency, who can apply, how artists will be selected and what support they will receive remain open questions.",
+      sourceIds: ["nmc-osten-gift-residency-nov25"]
+    },
     {
       date: "November 25, 2026",
       label: "Indigenous partnership follow-up",
