@@ -1,10 +1,19 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.68",
-    lastUpdated: "November 26, 2026",
-    currentFinding: "Alberta reports providing $200,000 for Edmonton's BreakOut West bid. The release projects at least 12 Alberta artists in 2027. The funding agreement and artist selection and pay terms remain open questions."
+    version: "1.6.69",
+    lastUpdated: "November 27, 2026",
+    currentFinding: "Alberta Music credits the province and three other supporters for December performance masterclasses in Calgary and Edmonton. Funding amounts, artist selection and compensation remain unverified."
   },
   sources: [
+    {
+      id: "alberta-music-performance-masterclass-nov25",
+      title: "Live Performance Masterclass with Olivier Laroche",
+      publisher: "Alberta Music",
+      type: "Organizer announcement with program support credits and registration",
+      date: "November 25, 2026. Accessed November 27, 2026.",
+      url: "https://www.albertamusic.org/2026/11/live-performance-masterclass-with-olivier-laroche/",
+      note: "Alberta Music lists December 5 at The Lab by One Big Jam in Calgary and December 6 at Dive Bar in Edmonton and links a public RSVP form. It credits FACTOR, the Government of Alberta, Edmonton Arts Council and Calgary Arts Development for program support. The notice gives no contribution amounts, selection or pay terms for the coached acts, or link to an Action Plan grant or Commission role."
+    },
     {
       id: "alberta-breakout-west-bid-funding-nov25",
       title: "Alberta's best take the stage at BreakOut West",
@@ -799,6 +808,14 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 27, 2026",
+      label: "Partner training and support",
+      title: "Alberta Music lists supporters for two live performance masterclasses",
+      summary: "Alberta Music plans sessions with Olivier Laroche on December 5 in Calgary and December 6 in Edmonton. At each session an audience can watch Laroche coach an artist or band. The organizer links a public RSVP form and credits FACTOR, the Government of Alberta, Edmonton Arts Council and Calgary Arts Development.",
+      finding: "The notice identifies a training opportunity and its credited supporters. Follow up on how the coached acts were selected and paid, who attended, and which funding agreements covered the sessions. The source leaves any Action Plan funding or Commission role unverified.",
+      sourceIds: ["alberta-music-performance-masterclass-nov25"]
+    },
     {
       date: "November 26, 2026",
       label: "Provincial bid funding",
