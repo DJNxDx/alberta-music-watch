@@ -1,10 +1,28 @@
 window.AMW_DATA_UPDATES = {
   meta: {
-    version: "1.6.69",
-    lastUpdated: "November 27, 2026",
-    currentFinding: "Alberta Music credits the province and three other supporters for December performance masterclasses in Calgary and Edmonton. Funding amounts, artist selection and compensation remain unverified."
+    version: "1.6.70",
+    lastUpdated: "November 28, 2026",
+    currentFinding: "Alberta lists $75,000 approved for Music Cities Convention hosting and $10,000 for Purple City's Indigenous showcase. Payment, matching costs and any link to Action Plan funding remain unverified."
   },
   sources: [
+    {
+      id: "cip-project-intake1-approvals-nov3",
+      title: "Community Initiatives Program Project-Based Approved Applicants 2026–27",
+      publisher: "Government of Alberta, Arts, Culture and Status of Women",
+      type: "Grant recipient list",
+      date: "November 3, 2026. Accessed November 28, 2026.",
+      url: "https://www.alberta.ca/system/files/acsw-community-initiatives-program-2026-27.pdf",
+      note: "The program page identifies this table with the January 15, 2026 intake. PDF page 4 lists $75,000 approved for National Music Centre to host the Alberta Music Cities Convention in Calgary and $10,000 for Rain Shadow Productions Ltd. to host the Purple City Festival Indigenous Showcase in Edmonton. The list identifies the applicants, amounts and hosting costs. It gives no payment dates, matching contributions, artist fees or Action Plan or Commission funding designation."
+    },
+    {
+      id: "afa-purple-city-indigenous-showcase-sep3",
+      title: "Indigenous Showcase – Edmonton AMPLIFIED X Purple City Music Festival",
+      publisher: "Alberta Foundation for the Arts",
+      type: "Dated opportunity listing",
+      date: "September 3, 2026. Accessed November 28, 2026.",
+      url: "https://www.affta.ab.ca/news/indigenous-showcase-edmonton-amplified-x-purple-city-music-festival",
+      note: "The listing advertises a free September 12 Indigenous showcase at All Saints' Anglican Cathedral in Edmonton, presented by Edmonton AMPLIFIED and Purple City Fest. It documents advertised access and presenters. Grant payment, event spending, attendance and artist compensation remain unverified."
+    },
     {
       id: "alberta-music-performance-masterclass-nov25",
       title: "Live Performance Masterclass with Olivier Laroche",
@@ -808,6 +826,22 @@ window.AMW_DATA_UPDATES = {
     }
   ],
   briefItems: [
+    {
+      date: "November 28, 2026",
+      label: "Provincial grant approvals",
+      title: "Alberta lists hosting grants for Music Cities Convention and Purple City showcase",
+      summary: "A newly reviewed November 3 Community Initiatives Program list shows $75,000 approved for National Music Centre to host the Alberta Music Cities Convention in Calgary and $10,000 for Rain Shadow Productions Ltd. to host Edmonton's Purple City Festival Indigenous Showcase. The Alberta Foundation for the Arts advertised the showcase as free.",
+      finding: "Alberta identifies the list with its January 15 intake, which predates the Action Plan launch. Follow up on payments, matching costs and artist fees. The approval list leaves Action Plan funding and Commission involvement unverified. Edmonton's $100,000 Purple City allocation covers a broader project, and the records leave any overlap in covered costs unresolved.",
+      sourceIds: ["cip-project-intake1-approvals-nov3", "cip-project-gate-aug2", "nmc-music-cities-recap-oct5", "afa-purple-city-indigenous-showcase-sep3", "edmonton-downtown-music-grants-oct18", "action-plan"]
+    },
+    {
+      date: "November 28, 2026",
+      label: "Commission public contact",
+      title: "Commission page names Jennifer Venance in its public contact section",
+      summary: "The provincial Commission page now names Jennifer Venance as Music Commissioner in its public contact section, lists an updated local phone number and links the November 25 BreakOut West release in a new News section.",
+      finding: "The update gives artists and sector organizations a named point of contact on the Commission page. The Commission's workplan, reporting schedule and specific BreakOut West responsibilities remain open questions.",
+      sourceIds: ["commission-page", "alberta-music-commissioner-venance-aug24", "alberta-breakout-west-bid-funding-nov25"]
+    },
     {
       date: "November 27, 2026",
       label: "Partner training and support",
